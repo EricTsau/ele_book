@@ -1,0 +1,79 @@
+{
+  "voice": "zh-TW-HsiaoChenNeural",
+  "locale": "zh-TW",
+  "description": "Taiwanese Mandarin female synthetic voice",
+  "lines": [
+    {
+      "file": "scene-0-line-0.mp3",
+      "speaker": "熊爸爸",
+      "text": "先散個步，等粥涼一點再吃。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-line-1.mp3",
+      "speaker": "小熊",
+      "text": "我要走在爸爸媽媽中間！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-0.mp3",
+      "speaker": "金髮女孩",
+      "text": "這一小碗，溫度剛剛好。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-1.mp3",
+      "speaker": "金髮女孩",
+      "text": "可是，我還沒有問過主人呢。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-0.mp3",
+      "speaker": "金髮女孩",
+      "text": "哎呀！我把小椅子弄壞了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-1.mp3",
+      "speaker": "金髮女孩",
+      "text": "等主人回來，我得好好道歉。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-0.mp3",
+      "speaker": "小熊",
+      "text": "我的粥不見了，椅子也壞了！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-1.mp3",
+      "speaker": "熊媽媽",
+      "text": "我們先把客人叫醒，問清楚發生什麼事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-0.mp3",
+      "speaker": "金髮女孩",
+      "text": "對不起，我沒有先問就進來了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-1.mp3",
+      "speaker": "熊爸爸",
+      "text": "謝謝妳說實話，也請記得尊重別人。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-0.mp3",
+      "speaker": "金髮女孩",
+      "text": "請問，我可以進來一起吃早餐嗎？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-1.mp3",
+      "speaker": "小熊",
+      "text": "可以呀！謝謝妳修好我的椅子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    }
+  ]
+}

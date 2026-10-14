@@ -1,0 +1,79 @@
+{
+  "voice": "zh-TW-HsiaoChenNeural",
+  "locale": "zh-TW",
+  "description": "Taiwanese Mandarin female synthetic voice",
+  "lines": [
+    {
+      "file": "scene-0-line-0.mp3",
+      "speaker": "傑克",
+      "text": "對不起，我應該先和妳商量。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-line-1.mp3",
+      "speaker": "媽媽",
+      "text": "一起想辦法，比一個人衝動決定更好。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-0.mp3",
+      "speaker": "傑克",
+      "text": "哇！豆子真的長到雲上了！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-1.mp3",
+      "speaker": "媽媽",
+      "text": "小心每一步，記得平安回家。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-0.mp3",
+      "speaker": "傑克",
+      "text": "這座城堡，怎麼什麼都這麼大！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-1.mp3",
+      "speaker": "金鵝",
+      "text": "請幫幫我，我好想回到池塘。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-0.mp3",
+      "speaker": "傑克",
+      "text": "跟緊我，我們悄悄走出去。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-1.mp3",
+      "speaker": "巨人",
+      "text": "是誰碰到了我的鈴鐺？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-0.mp3",
+      "speaker": "傑克",
+      "text": "別慌，我們沿著原路回家。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-1.mp3",
+      "speaker": "金鵝",
+      "text": "我看見池塘了！謝謝你！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-0.mp3",
+      "speaker": "傑克",
+      "text": "這一次，我們一起把菜園照顧好。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-1.mp3",
+      "speaker": "媽媽",
+      "text": "踏實長大的豆子，也有自己的魔法。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "voice": "zh-TW-HsiaoChenNeural",
+  "locale": "zh-TW",
+  "description": "Taiwanese Mandarin female synthetic voice",
+  "lines": [
+    {
+      "file": "scene-0-line-0.mp3",
+      "speaker": "獅子",
+      "text": "是誰把我的午覺吵醒了？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-line-1.mp3",
+      "speaker": "小老鼠",
+      "text": "對不起，我真的不是故意的。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-0.mp3",
+      "speaker": "小老鼠",
+      "text": "請讓我回家，有一天我也會幫助你。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-1.mp3",
+      "speaker": "獅子",
+      "text": "這麼小的你，也能幫得上忙嗎？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-0.mp3",
+      "speaker": "獅子",
+      "text": "回家吧，下次記得看清楚路。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-1.mp3",
+      "speaker": "小老鼠",
+      "text": "謝謝你，我會記住這份善意！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-0.mp3",
+      "speaker": "獅子",
+      "text": "有人能幫幫忙嗎？我被網子困住了！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-1.mp3",
+      "speaker": "小老鼠",
+      "text": "我聽見了！先別亂動，我來想辦法。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-0.mp3",
+      "speaker": "小老鼠",
+      "text": "一根，再一根，很快就好了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-1.mp3",
+      "speaker": "獅子",
+      "text": "你真的做到了！謝謝你救了我。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-0.mp3",
+      "speaker": "獅子",
+      "text": "原來，每個人都有能幫上忙的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-1.mp3",
+      "speaker": "小老鼠",
+      "text": "朋友不分大小，我們互相照顧！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    }
+  ]
+}

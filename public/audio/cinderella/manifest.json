@@ -1,0 +1,79 @@
+{
+  "voice": "zh-TW-HsiaoChenNeural",
+  "locale": "zh-TW",
+  "description": "Taiwanese Mandarin female synthetic voice",
+  "lines": [
+    {
+      "file": "scene-0-line-0.mp3",
+      "speaker": "灰姑娘",
+      "text": "我也想有一次，為自己好好跳支舞。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-line-1.mp3",
+      "speaker": "灰姑娘",
+      "text": "我的願望，應該也值得被聽見。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-0.mp3",
+      "speaker": "仙女",
+      "text": "午夜之前回家，記得照顧好自己。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-1.mp3",
+      "speaker": "灰姑娘",
+      "text": "謝謝妳，我一定會記住時間。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-0.mp3",
+      "speaker": "王子",
+      "text": "可以邀妳跳一支舞嗎？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-1.mp3",
+      "speaker": "灰姑娘",
+      "text": "可以呀，不熟的舞步，我們慢慢學。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-0.mp3",
+      "speaker": "灰姑娘",
+      "text": "時間到了，我得回家了！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-1.mp3",
+      "speaker": "王子",
+      "text": "等等，至少讓我知道妳的名字！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-0.mp3",
+      "speaker": "灰姑娘",
+      "text": "那天跳舞的人是我，我叫仙杜瑞拉。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-1.mp3",
+      "speaker": "王子",
+      "text": "我記得妳，也想繼續聽妳的故事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-0.mp3",
+      "speaker": "灰姑娘",
+      "text": "我想把這份溫暖，也分享給別人。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-1.mp3",
+      "speaker": "王子",
+      "text": "我們一起，讓更多願望被聽見。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    }
+  ]
+}

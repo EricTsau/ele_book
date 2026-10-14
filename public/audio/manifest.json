@@ -1,0 +1,133 @@
+{
+  "voice": "zh-TW-HsiaoChenNeural",
+  "locale": "zh-TW",
+  "description": "Taiwanese Mandarin female synthetic voice",
+  "lines": [
+    {
+      "file": "scene-0-line-0.mp3",
+      "speaker": "小豬大哥",
+      "text": "我要蓋一間最快完成的房子！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-line-1.mp3",
+      "speaker": "小豬二哥",
+      "text": "我的家，要有木頭的香味。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-line-2.mp3",
+      "speaker": "小豬弟弟",
+      "text": "我想蓋一間結實又安心的家。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-0.mp3",
+      "speaker": "小豬大哥",
+      "text": "看！我的家這麼快就蓋好了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-1.mp3",
+      "speaker": "小豬大哥",
+      "text": "現在，可以去草地上玩囉！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-0.mp3",
+      "speaker": "小豬二哥",
+      "text": "一根木頭，再一根木頭！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-1.mp3",
+      "speaker": "小豬二哥",
+      "text": "蓋好了！我要請大哥來喝茶。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-0.mp3",
+      "speaker": "小豬弟弟",
+      "text": "慢慢來，每一塊磚都要放穩。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-1.mp3",
+      "speaker": "小豬弟弟",
+      "text": "辛苦一點也沒關係，安全最重要！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-0.mp3",
+      "speaker": "大野狼",
+      "text": "小豬，小豬，讓我進去！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-1.mp3",
+      "speaker": "小豬大哥",
+      "text": "不行！我才不開門呢！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-2.mp3",
+      "speaker": "大野狼",
+      "text": "那我就用力吹——呼！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-0.mp3",
+      "speaker": "小豬二哥",
+      "text": "大哥別怕，我們一起想辦法！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-1.mp3",
+      "speaker": "大野狼",
+      "text": "呼——呼——看我的厲害！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-2.mp3",
+      "speaker": "小豬大哥",
+      "text": "快！弟弟的家就在前面！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-6-line-0.mp3",
+      "speaker": "小豬弟弟",
+      "text": "快進來！這裡很安全。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-6-line-1.mp3",
+      "speaker": "大野狼",
+      "text": "呼！怎麼……一點都吹不動？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-6-line-2.mp3",
+      "speaker": "小豬二哥",
+      "text": "太好了！大野狼走掉了！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-7-line-0.mp3",
+      "speaker": "小豬大哥",
+      "text": "下次，我也要耐心地蓋房子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-7-line-1.mp3",
+      "speaker": "小豬二哥",
+      "text": "我們一起做，一定做得到！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-7-line-2.mp3",
+      "speaker": "小豬弟弟",
+      "text": "有你們在，就是最溫暖的家。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    }
+  ]
+}

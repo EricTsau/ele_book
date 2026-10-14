@@ -1,0 +1,79 @@
+{
+  "voice": "zh-TW-HsiaoChenNeural",
+  "locale": "zh-TW",
+  "description": "Taiwanese Mandarin female synthetic voice",
+  "lines": [
+    {
+      "file": "scene-0-line-0.mp3",
+      "speaker": "小紅帽",
+      "text": "外婆，我帶著麵包和想念來看妳了！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-line-1.mp3",
+      "speaker": "小紅帽",
+      "text": "沿著小路走，就會平平安安到家。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-0.mp3",
+      "speaker": "大野狼",
+      "text": "跟我走吧，那邊的花可漂亮了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-1.mp3",
+      "speaker": "小紅帽",
+      "text": "謝謝，我要走原來的小路。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-0.mp3",
+      "speaker": "小紅帽",
+      "text": "外婆，妳的聲音怎麼不一樣？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-1.mp3",
+      "speaker": "大野狼",
+      "text": "快進來呀，我正在等妳呢。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-0.mp3",
+      "speaker": "小紅帽",
+      "text": "這不是外婆！請來幫幫忙！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-1.mp3",
+      "speaker": "巡林員",
+      "text": "先待在我身後，我們一起確認。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-0.mp3",
+      "speaker": "外婆",
+      "text": "妳沒有冒險靠近，做得真好。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-1.mp3",
+      "speaker": "小紅帽",
+      "text": "我一發現不對勁，就找人幫忙！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-0.mp3",
+      "speaker": "小紅帽",
+      "text": "下次來看妳，我也會注意安全。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-1.mp3",
+      "speaker": "外婆",
+      "text": "一籃麵包，加上一份聰明的關心。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    }
+  ]
+}

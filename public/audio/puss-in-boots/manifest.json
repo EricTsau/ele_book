@@ -1,0 +1,79 @@
+{
+  "voice": "zh-TW-HsiaoChenNeural",
+  "locale": "zh-TW",
+  "description": "Taiwanese Mandarin female synthetic voice",
+  "lines": [
+    {
+      "file": "scene-0-line-0.mp3",
+      "speaker": "青年",
+      "text": "我們只有彼此，要怎麼生活呢？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-line-1.mp3",
+      "speaker": "靴子貓",
+      "text": "給我一雙靴子，我們一起找機會！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-0.mp3",
+      "speaker": "靴子貓",
+      "text": "每幫一個忙，就多認識一位朋友。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-1.mp3",
+      "speaker": "青年",
+      "text": "我也一起來，不能只讓你辛苦。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-0.mp3",
+      "speaker": "靴子貓",
+      "text": "這些蔬果，是大家一起辛勤種出來的。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-1.mp3",
+      "speaker": "國王",
+      "text": "願意合作的人，正是我們需要的夥伴。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-0.mp3",
+      "speaker": "巨魔",
+      "text": "不管多大、多小，我都變得出來！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-1.mp3",
+      "speaker": "靴子貓",
+      "text": "那麼，小老鼠也難不倒你囉？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-0.mp3",
+      "speaker": "小老鼠",
+      "text": "我答應，不再把別人的家占為己有。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-1.mp3",
+      "speaker": "靴子貓",
+      "text": "說到做到，我們就讓你自由離開。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-0.mp3",
+      "speaker": "青年",
+      "text": "謝謝你，讓我看見自己的機會。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-1.mp3",
+      "speaker": "靴子貓",
+      "text": "朋友就是要一起，把日子過得更好。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    }
+  ]
+}

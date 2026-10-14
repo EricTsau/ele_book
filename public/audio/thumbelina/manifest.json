@@ -1,0 +1,79 @@
+{
+  "voice": "zh-TW-HsiaoChenNeural",
+  "locale": "zh-TW",
+  "description": "Taiwanese Mandarin female synthetic voice",
+  "lines": [
+    {
+      "file": "scene-0-line-0.mp3",
+      "speaker": "拇指姑娘",
+      "text": "一片花瓣，就像我的小被子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-line-1.mp3",
+      "speaker": "拇指姑娘",
+      "text": "我想看看，花園外面是什麼樣子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-0.mp3",
+      "speaker": "拇指姑娘",
+      "text": "我不想留在這裡，請尊重我的選擇。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-1.mp3",
+      "speaker": "青蛙",
+      "text": "原來，我應該先問過妳的意思。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-0.mp3",
+      "speaker": "田鼠",
+      "text": "外面太冷了，進來喝碗熱湯吧。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-1.mp3",
+      "speaker": "拇指姑娘",
+      "text": "謝謝你，我也想幫忙照顧這個家。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-0.mp3",
+      "speaker": "拇指姑娘",
+      "text": "別怕，我會陪你等春天。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-1.mp3",
+      "speaker": "燕子",
+      "text": "妳的身體雖小，帶來的溫暖卻很多。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-0.mp3",
+      "speaker": "燕子",
+      "text": "抓穩囉，我們一起飛向花開的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-1.mp3",
+      "speaker": "拇指姑娘",
+      "text": "這一次，我選擇自己的方向！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-0.mp3",
+      "speaker": "拇指姑娘",
+      "text": "這裡好美，也剛好適合我。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-1.mp3",
+      "speaker": "燕子",
+      "text": "不管妳住哪裡，我們都是好朋友。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    }
+  ]
+}

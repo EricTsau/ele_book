@@ -1,0 +1,79 @@
+{
+  "voice": "zh-TW-HsiaoChenNeural",
+  "locale": "zh-TW",
+  "description": "Taiwanese Mandarin female synthetic voice",
+  "lines": [
+    {
+      "file": "scene-0-line-0.mp3",
+      "speaker": "小灰鴨",
+      "text": "世界好大呀，我也想出去看看。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-line-1.mp3",
+      "speaker": "鴨媽媽",
+      "text": "來吧，跟著我，慢慢學著游水。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-0.mp3",
+      "speaker": "小灰鴨",
+      "text": "我的羽毛，為什麼跟大家不同？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-1.mp3",
+      "speaker": "鴨媽媽",
+      "text": "不同不代表不好，你值得被溫柔對待。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-0.mp3",
+      "speaker": "小灰鴨",
+      "text": "你們的翅膀，真像會飛的雲。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-1.mp3",
+      "speaker": "白天鵝",
+      "text": "照顧好自己，我們春天再見。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-0.mp3",
+      "speaker": "小灰鴨",
+      "text": "再冷的冬天，也會過去吧？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-1.mp3",
+      "speaker": "小灰鴨",
+      "text": "我會吃飽、休息，等暖暖的春天。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-0.mp3",
+      "speaker": "小天鵝",
+      "text": "水裡那隻白色的鳥，真的是我嗎？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-1.mp3",
+      "speaker": "白天鵝",
+      "text": "是你呀。你終於長成自己的模樣了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-0.mp3",
+      "speaker": "小天鵝",
+      "text": "謝謝妳，在我還沒長大時就愛我。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-1.mp3",
+      "speaker": "鴨媽媽",
+      "text": "不論什麼模樣，你都是珍貴的孩子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    }
+  ]
+}

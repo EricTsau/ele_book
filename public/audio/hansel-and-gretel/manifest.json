@@ -1,0 +1,79 @@
+{
+  "voice": "zh-TW-HsiaoChenNeural",
+  "locale": "zh-TW",
+  "description": "Taiwanese Mandarin female synthetic voice",
+  "lines": [
+    {
+      "file": "scene-0-line-0.mp3",
+      "speaker": "妹妹",
+      "text": "哥哥，我們是不是迷路了？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-line-1.mp3",
+      "speaker": "哥哥",
+      "text": "別怕，我們牽著手，一起想辦法。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-0.mp3",
+      "speaker": "哥哥",
+      "text": "看！這是我們放過的白色石頭。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-1.mp3",
+      "speaker": "妹妹",
+      "text": "我們記住這裡，天亮再找下一顆。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-0.mp3",
+      "speaker": "妹妹",
+      "text": "這間房子，看起來像一塊大蛋糕！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-1.mp3",
+      "speaker": "女巫",
+      "text": "快進來吧，這裡有好多糖果。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-0.mp3",
+      "speaker": "哥哥",
+      "text": "鑰匙在椅子後面，我們一起找機會。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-1.mp3",
+      "speaker": "妹妹",
+      "text": "我會小心，你先不要著急。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-0.mp3",
+      "speaker": "妹妹",
+      "text": "門開了！哥哥，跟著我！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-1.mp3",
+      "speaker": "哥哥",
+      "text": "我們一起走，誰也不留下。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-0.mp3",
+      "speaker": "妹妹",
+      "text": "家裡的麵包，比糖果還要甜。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-1.mp3",
+      "speaker": "哥哥",
+      "text": "下一次，我們會跟緊家人。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    }
+  ]
+}
