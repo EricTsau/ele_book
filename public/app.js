@@ -1,3 +1,5 @@
+import {createSoundscape} from './soundscape.js';
+import {choreographPigs} from './story-motion.js';
 import { books, findBook } from './books.js';
 import { coverArt } from './covers.js';
 import { animateFairytale } from './fairytale3d.js';
@@ -16,6 +18,7 @@ let activeLine = -1, transition = null, autoTimer = null, toastTimer = null, las
 let timelines = [];
 const reader = $('reader');
 const narration = $('story-audio');
+const soundscape=createSoundscape();window.__storySound=soundscape;let sound=true;
 let audioEpoch = 0;
 const gsap = window.gsap;
 window.__timelines = {};
@@ -44,11 +47,8 @@ chapters.forEach((c,i) => {
   if(s.house)tl.from(s.house.rotation,{x:-Math.PI/2,duration:1,ease:'back.out(1.05)'},.12);
   for(const [j,p] of s.pigs.entries()){
    tl.from(p.root.scale,{y:.01,duration:.75,ease:'back.out(1.6)'},.3+j*.14);
-   tl.from(p.root.position,{z:p.root.position.z+.55,duration:1,ease:'power2.out'},.25+j*.14);
-   tl.to(p.arms[1].rotation,{z:-1.1,duration:.45,yoyo:true,repeat:5},1.2);
-   tl.to(p.root.position,{y:.12,duration:.55,repeat:5,yoyo:true,ease:'sine.inOut'},5.5+j*.12);
-   tl.to(p.arms[0].rotation,{z:.8,duration:.5,yoyo:true,repeat:5},11);
   }
+  choreographPigs(tl,s,c,i);
   if(s.wolf){
    tl.from(s.wolf.root.scale,{y:.01,duration:1,ease:'back.out(1)'},.5);
    tl.to(s.wolf.root.rotation,{z:-.18,duration:.8},6.7);
@@ -73,7 +73,7 @@ chapters.forEach((c,i) => {
    }
   }
  }else{tl.to({value:0},{value:1,duration:16});}
- tl.eventCallback('onUpdate',()=>{if(reader.open&&current===i&&!interacting)updateDialogue(tl.time());});
+ tl.eventCallback('onUpdate',()=>{if(reader.open&&current===i&&!interacting){updateDialogue(tl.time());soundscape.tick(tl.time(),playing,voice&&!narration.paused&&!narration.ended);}});
  tl.eventCallback('onComplete',()=>{if(!reader.open||current!==i)return;playing=false;if(i===chapters.length-1){state.completed=true;persist();updateLibrary();}syncPlayback();scheduleAuto();});
  timelines.push(tl);window.__timelines[`${currentBook.id==='three-little-pigs'?'pigs':currentBook.id}-${i}`]=tl;
 });
@@ -85,11 +85,12 @@ function updateLibrary(){
  const favorites=books.filter(book=>libraryState.books[book.id].favorite).length;
  $('favorite-count').textContent=String(favorites);$('tab-count').textContent=String(favorites).padStart(2,'0');$('all-count').textContent=String(books.length);
  const query=$('search').value.trim().toLowerCase();
- const visible=books.filter(book=>(`${book.title} ${book.english} ${book.subtitle} 經典童話`).toLowerCase().includes(query)&&(filter==='all'||libraryState.books[book.id].favorite));
+ const collection=$('collection-filter').value;
+ const visible=books.filter(book=>(`${book.title} ${book.english} ${book.subtitle} ${book.collection==='original'?'原創故事':'經典童話 改寫'}`).toLowerCase().includes(query)&&(collection==='all'||(book.collection||'classic')===collection)&&(filter==='all'||libraryState.books[book.id].favorite));
  $('book-grid').innerHTML=visible.map(book=>{
   const saved=libraryState.books[book.id],first=book.id==='three-little-pigs',n=book.chapters.length;
   const status=saved.completed?'已讀完 · 再讀一次':saved.started?`讀到第 ${saved.page+1} / ${n} 章`:'等你翻開';
-  return `<article class="book-card ${first?'featured-book':''}" ${first?'id="book-card"':''} data-book="${book.id}"><button class="thumbnail" ${first?'id="card-cover"':''} data-action="read" data-id="${book.id}" aria-label="閱讀${book.title}"><span class="mini-tag">經典童話 · ${n} 個場景</span>${coverArt(book)}<span class="thumb-title" style="background:${book.color}">${book.title}<small>${book.english}</small></span></button><div class="card-content"><div class="card-top"><span class="availability"><i></i> 3D 立體有聲繪本</span><button class="favorite-button" ${first?'id="favorite"':''} data-action="favorite" data-id="${book.id}" aria-label="${saved.favorite?'取消收藏':'收藏'}${book.title}" aria-pressed="${saved.favorite}">${saved.favorite?'♥':'♡'}</button></div><h3>${book.title}</h3><p>${book.subtitle}</p><div class="book-meta"><span>${book.age}</span><span>${n} 個故事場景</span><span>台灣女聲</span></div><div class="card-bottom"><button class="text-button" ${first?'id="card-read"':''} data-action="read" data-id="${book.id}">${saved.started?'繼續閱讀':'開始閱讀'} <span>→</span></button><span ${first?'id="reading-status"':''}>${status}</span></div><div class="saved-progress" aria-hidden="true"><i style="width:${saved.completed?100:saved.started?(saved.page+1)/n*100:0}%"></i></div></div></article>`;
+  return `<article class="book-card ${first?'featured-book':''}" ${first?'id="book-card"':''} data-book="${book.id}"><button class="thumbnail" ${first?'id="card-cover"':''} data-action="read" data-id="${book.id}" aria-label="閱讀${book.title}"><span class="mini-tag">${book.collection==='original'?'原創故事':'經典改寫'} · ${n} 個場景</span>${coverArt(book)}<span class="thumb-title" style="background:${book.color}">${book.title}<small>${book.english}</small></span></button><div class="card-content"><div class="card-top"><span class="availability"><i></i> 3D 立體有聲繪本</span><button class="favorite-button" ${first?'id="favorite"':''} data-action="favorite" data-id="${book.id}" aria-label="${saved.favorite?'取消收藏':'收藏'}${book.title}" aria-pressed="${saved.favorite}">${saved.favorite?'♥':'♡'}</button></div><h3>${book.title}</h3><p>${book.subtitle}</p><div class="book-meta"><span>${book.age}</span><span>${n} 個故事場景</span><span>台灣女聲</span></div><div class="card-bottom"><button class="text-button" ${first?'id="card-read"':''} data-action="read" data-id="${book.id}">${saved.started?'繼續閱讀':'開始閱讀'} <span>→</span></button><span ${first?'id="reading-status"':''}>${status}</span></div><div class="saved-progress" aria-hidden="true"><i style="width:${saved.completed?100:saved.started?(saved.page+1)/n*100:0}%"></i></div></div></article>`;
  }).join('');
  $('empty-state').hidden=visible.length>0;
  $('empty-title').textContent=query?'找不到這個故事':'還沒有收藏的故事';
@@ -127,6 +128,7 @@ function updateDialogue(time){
  if(idx!==activeLine){activeLine=idx;showLine(lines[idx]);}
 }
 function syncPlayback(){
+ soundscape.tick(timelines[current]?.time()||0,playing&&reader.open,voice&&!narration.paused&&!narration.ended);
  $('play-pause').textContent=playing?'Ⅱ':'▶';
  $('play-pause').setAttribute('aria-label',playing?'暫停動畫':'播放動畫');
  $('play-pause').disabled=reduced.matches;
@@ -135,7 +137,7 @@ function syncPlayback(){
  $('auto-toggle').disabled=reduced.matches;
 }
 function renderPage(){
- const c=chapters[current];
+ const c=chapters[current];soundscape.scene(c);
  $('story-copy').innerHTML=`<span class="chapter-number">Chapter ${String(current+1).padStart(2,'0')}</span><h3>${c.title}</h3>${c.text.split('\n\n').map(p=>`<p>${p}</p>`).join('')}${current===chapters.length-1?'<span class="end-message">— 故事說完了，想像還在繼續。 —</span>':''}`;
  $('chapter-tag').textContent=`${String(current+1).padStart(2,'0')} / ${String(chapters.length).padStart(2,'0')}`;$('chapter-name').textContent=c.label;
  world?.show(current);
@@ -153,20 +155,26 @@ function renderPage(){
 }
 function openReader(bookId='three-little-pigs'){
  const book=findBook(bookId);if(!book)return;
+ soundscape.unlock();if(!soundscape.inspect().available){$('sound-toggle').disabled=true;$('sound-toggle').textContent='環境音未支援';}
  lastFocus=document.activeElement;reader.showModal();document.body.style.overflow='hidden';prepareBook(book);
- current=state.page;$('reader-title').textContent=book.title;document.querySelector('.chapter-label>span:last-child').textContent=book.english;
+ current=state.page;$('reader-title').textContent=book.title;
+ $('reader-series').textContent=book.collection==='original'?'小葉原創故事':'小葉經典童話';
+ const source=$('story-provenance');source.replaceChildren();
+ if(book.provenance){source.append(`${book.provenance.author} · ${book.provenance.note}`);if(book.provenance.sourceUrl){const link=document.createElement('a');link.href=book.provenance.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';link.textContent=' 原作來源 ↗';source.append(link);}}
+document.querySelector('.chapter-label>span:last-child').textContent=book.english;
  $('story-canvas').setAttribute('aria-label',`${book.title}立體書：拖曳旋轉視角，點選立體角色聽對話`);
  world?.start();renderPage();$('close-reader').focus();
 }
 function closeReader(){
+ soundscape.stop();
  cancelAuto();stopGesture();transition?.kill();transition=null;turning=false;$('open-book').setAttribute('aria-busy','false');world?.cancelTurn();world?.stop();
  timelines.forEach(t=>t.pause());stopSpeech();playing=false;reader.close();document.body.style.overflow='';updateLibrary();if(lastFocus?.isConnected)lastFocus.focus();else document.querySelector(`[data-action="read"][data-id="${currentBook.id}"]`)?.focus();
 }
 function goTo(target){
  if(turning||!reader.open||target<0||target>=chapters.length||target===current)return;
- cancelAuto();stopGesture();stopSpeech();timelines[current].pause();playing=false;
+ cancelAuto();stopGesture();stopSpeech();soundscape.stop();timelines[current].pause();playing=false;
  if(reduced.matches||!world){current=target;renderPage();return;}
- turning=true;syncPlayback();$('open-book').setAttribute('aria-busy','true');
+ turning=true;syncPlayback();soundscape.turn();$('open-book').setAttribute('aria-busy','true');
  const old=world.scenes[current];const forward=target>current;const progress={value:forward?0:1};
  transition=gsap.timeline({onComplete:()=>{world.endTurn();$('open-book').setAttribute('aria-busy','false');turning=false;transition=null;current=target;renderPage();}});
  transition.to(old.root.scale,{y:.025,duration:.25,ease:'power2.in'});
@@ -200,6 +208,7 @@ $('previous').addEventListener('click',()=>goTo(nextPage(current,-1,chapters.len
 $('next').addEventListener('click',()=>{if(turning)return;if(current===chapters.length-1){state.completed=true;persist();closeReader();notify('故事讀完了，下一次再一起冒險！');}else goTo(current+1);});
 $('replay').addEventListener('click',replay);$('play-pause').addEventListener('click',togglePlayback);
 $('auto-toggle').addEventListener('click',()=>{auto=!auto;cancelAuto();syncPlayback();if(auto&&timelines[current].progress()===1)scheduleAuto();});
+$('sound-toggle').addEventListener('click',()=>{sound=!sound;soundscape.setEnabled(sound);$('sound-toggle').setAttribute('aria-pressed',String(sound));$('sound-toggle').textContent=`環境音：${sound?'開':'關'}`;syncPlayback();});
 $('voice-toggle').addEventListener('click',()=>{voice=!voice;$('voice-toggle').setAttribute('aria-pressed',String(voice));$('voice-toggle').innerHTML=`♫ <span>台灣女聲：${voice?'開':'關'}</span>`;if(voice){const line=chapters[current].lines[Math.max(0,activeLine)];speak(line[1],line[0]);}else{stopSpeech();$('voice-status').textContent='';}});
 $('chapter-dots').addEventListener('click',event=>{const button=event.target.closest('[data-page]');if(button)goTo(Number(button.dataset.page));});
 $('actor-controls').addEventListener('click',event=>{const button=event.target.closest('[data-character]');if(button){const names=[...new Set(chapters[current].lines.map(l=>l[0]))];interact(names[Number(button.dataset.character)]);}});
@@ -208,7 +217,8 @@ $('all-filter').addEventListener('click',()=>setFilter('all'));
 $('favorite-filter').addEventListener('click',()=>setFilter('favorite'));
 $('nav-favorite').addEventListener('click',()=>{setFilter('favorite');$('library').scrollIntoView({behavior:reduced.matches?'instant':'smooth'});});
 $('search').addEventListener('input',updateLibrary);
-$('reset-filter').addEventListener('click',()=>{$('search').value='';setFilter('all');});
+$('collection-filter').addEventListener('change',updateLibrary);
+$('reset-filter').addEventListener('click',()=>{$('search').value='';$('collection-filter').value='all';setFilter('all');});
 document.addEventListener('keydown',event=>{if(!reader.open)return;if(['INPUT','SELECT','TEXTAREA'].includes(event.target.tagName))return;if(event.key==='ArrowRight'){event.preventDefault();goTo(nextPage(current,1,chapters.length));}if(event.key==='ArrowLeft'){event.preventDefault();goTo(nextPage(current,-1,chapters.length));}if(event.code==='KeyK'){event.preventDefault();togglePlayback();}});
 let touchX=null,touchY=null;
 $('open-book').addEventListener('touchstart',event=>{if(event.target.closest('button,canvas'))return;touchX=event.changedTouches[0].clientX;touchY=event.changedTouches[0].clientY;},{passive:true});

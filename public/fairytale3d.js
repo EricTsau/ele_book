@@ -1,3 +1,6 @@
+import {addStoryDetails} from './story-events.js';
+import { buildStoryProp } from './story-props.js';
+import { choreographStory } from './story-motion.js';
 // Shared papercraft vocabulary; each book combines its own cast, props and choreography.
 export function buildFairytaleScene(book,c,H){
  const {THREE,box,ball,cone,mesh,mat,leafTree,house}=H;
@@ -12,12 +15,13 @@ export function buildFairytaleScene(book,c,H){
    const tree=new THREE.Group();tree.position.set(x,0,z);popup.add(tree);box(.1,h*.7,.1,'#8e7551',tree,0,h*.35,0);ball(h*.42,.2,h*.28,'#8f995f',tree,0,h*.72,0);trees.push(tree);
   }else trees.push(leafTree(popup,x,z,c.setting==='palace'?h*.65:h,c.setting==='snow'?'#b9cbb4':c.setting==='candy'?'#b3ae91':'#879b69'));
  }
- const actors=c.characters.map((ch,i)=>makeActor(popup,ch,(i-(c.characters.length-1)/2)*1.03,1.45,H));
+ const actors=c.characters.map((ch,i)=>makeActor(popup,c.storyId==='emperors-new-clothes'&&c.storyIndex>=3&&ch.type==='king'?{...ch,color:'#eee4cc'}:ch,(i-(c.characters.length-1)/2)*1.03,1.45,H));
  let cottage=null;
- const littleFlower=(x,z,color='#d6a0a0')=>{for(let n=0;n<5;n++){const angle=n*Math.PI*2/5;ball(.064,.021,.064,color,popup,x+Math.cos(angle)*.05,.065,z+Math.sin(angle)*.05);}ball(.037,.03,.037,'#e3c55d',popup,x,.075,z);};
+ const littleFlower=(x,z,color='#d6a0a0',parent=popup)=>{for(let n=0;n<5;n++){const angle=n*Math.PI*2/5;ball(.064,.021,.064,color,parent,x+Math.cos(angle)*.05,.065,z+Math.sin(angle)*.05);}ball(.037,.03,.037,'#e3c55d',parent,x,.075,z);};
  for(let i=0;i<8;i++)littleFlower(Math.sin(i*2.4)*2.14,Math.cos(i*2.4)*2.12,c.setting==='savanna'?'#dac581':'#d7a69a');
  for(const kind of [...new Set(c.props)]){
   const prop=new THREE.Group();props.add(prop);prop.userData.prop=kind;
+  if(buildStoryProp(kind,prop,effects,H))continue;
   if(kind==='cottage'||kind==='candy-house'){
    cottage=house(prop,kind==='cottage'?'wood':'straw');cottage.position.set(.2,0,-.85);cottage.scale.setScalar(.92);
    if(kind==='candy-house'){
@@ -83,23 +87,23 @@ export function buildFairytaleScene(book,c,H){
   }else if(kind==='stones'){
    for(let n=0;n<8;n++)ball(.06,.03,.055,'#eae3cc',prop,Math.sin(n)*.2-.8,.058,-1.8+n*.4);
   }else if(kind==='flowers'){
-   for(let n=0;n<9;n++)littleFlower(-1.5+n*.36,-.8+Math.sin(n)*.3,'#d69fa7');
+   for(let n=0;n<9;n++)littleFlower(-1.5+n*.36,-.8+Math.sin(n)*.3,'#d69fa7',prop);
   }
  }
  if(c.setting==='cloud')for(let n=0;n<4;n++){const cloud=new THREE.Group();cloud.position.set(-1.7+n*1.1,1.9+(n%2)*.4,-2.2);popup.add(cloud);for(let j=0;j<3;j++)ball(.25,.14,.13,'#ececdc',cloud,j*.22,Math.sin(j)*.05,0);}
  const extras=new THREE.Group();popup.add(extras);for(let n=0;n<6;n++){const spark=ball(.035,.06,.035,'#e6c577',extras,Math.sin(n*2.1)*1.8,.7+(n%3)*.6,Math.cos(n)*1.3);spark.rotation.z=n;}
- return {root,popup,pigs:actors,wolf:null,house:cottage,trees,effects,props,extras};
+ return addStoryDetails({root,popup,pigs:actors,wolf:null,house:cottage,trees,effects,props,extras},c,H);
 }
 function makeActor(parent,ch,x,z,H){
  const {THREE,box,ball,cone,mesh,mat}=H;const root=new THREE.Group();root.position.set(x,0,z);root.userData.character=ch.name;parent.add(root);
  const arms=[],legs=[];let mouth;let head;const color=ch.color||'#be9369',type=ch.type;
- const humans=['girl','boy','grandma','ranger','king','prince','fairy','witch','giant','tiny-girl'];
+ const humans=['girl','boy','grandma','grandpa','ranger','king','prince','fairy','witch','giant','tiny-girl'];
  function eyes(y,front,spacing=.115){for(const s of [-1,1])ball(.026,.033,.018,'#303d32',root,s*spacing,y,front);}
  function limbs(tint,bodyY=.61){for(const side of [-1,1]){const arm=new THREE.Group();arm.position.set(side*.25,bodyY,0);root.add(arm);ball(.066,.17,.07,tint,arm,side*.018,-.12,0);arm.rotation.z=side*.22;arms.push(arm);const leg=new THREE.Group();leg.position.set(side*.115,.22,0);root.add(leg);box(.1,.2,.1,tint,leg,0,-.065,0);ball(.079,.045,.11,'#66583f',leg,0,-.17,.035);legs.push(leg);}}
  if(humans.includes(type)){
   const skin=type==='giant'?'#bba18a':'#e9c3a4';
   if(['girl','fairy','witch','tiny-girl','grandma'].includes(type))cone(.3,.58,color,root,0,.46,0);else box(.42,.5,.3,color,root,0,.49,0);
-  ball(.27,.29,.245,type==='grandma'?'#c7c9b8':ch.name==='金髮女孩'?'#d3b768':'#776248',root,0,.99,-.055);
+  ball(.27,.29,.245,['grandma','grandpa'].includes(type)?'#c7c9b8':ch.name==='金髮女孩'?'#d3b768':'#776248',root,0,.99,-.055);
   head=ball(.23,.25,.23,skin,root,0,.965,.043);eyes(1.004,.259,.088);
   mouth=ball(.048,.017,.011,'#a97461',root,0,.859,.254);limbs(skin);
   if(ch.name==='小紅帽'){const hood=mesh(new THREE.TorusGeometry(.259,.085,8,24,Math.PI*1.6),'#b94e43',root,0,.975,-.01);hood.rotation.z=-Math.PI*.3;const cape=cone(.32,.6,'#b94e43',root,0,.53,-.13);cape.scale.z=.5;}
@@ -109,24 +113,32 @@ function makeActor(parent,ch,x,z,H){
   if(type==='witch'){cone(.31,.66,'#77687f',root,0,1.47,-.035);mesh(new THREE.CylinderGeometry(.37,.37,.035,16),'#77687f',root,0,1.16,-.035);}
   if(type==='ranger'){mesh(new THREE.CylinderGeometry(.32,.32,.035,16),'#73875a',root,0,1.2,0);cone(.24,.23,'#73875a',root,0,1.315,0);}
   if(type==='fairy'){for(const s of [-1,1]){const wing=ball(.26,.39,.035,'#d5c8d7',root,s*.32,.66,-.2);wing.rotation.z=-s*.4;}box(.025,.47,.025,'#c4ad66',root,.36,.79,.05);ball(.075,.09,.06,'#e6d392',root,.36,1.07,.05);}
- }else if(type==='duck'||type==='swan'||type==='swallow'){
-  const tint=ch.color||(type==='swallow'?'#5d747d':type==='swan'?'#eee9d9':'#dfc77d');
+ }else if(['duck','swan','swallow','crow','dove','rooster'].includes(type)){
+  const tint=ch.color||({swallow:'#5d747d',crow:'#52636a',dove:'#e7e7d9',swan:'#eee9d9',rooster:'#bd9367'}[type]||'#dfc77d');
   ball(.3,.25,.4,tint,root,0,.35,0);
   if(type==='swan'){ball(.083,.32,.095,tint,root,0,.68,.21);head=ball(.15,.17,.17,tint,root,0,.99,.25);eyes(1.01,.398,.06);mouth=cone(.063,.21,'#c58a4e',root,0,.94,.48);mouth.rotation.x=Math.PI/2;}
   else{head=ball(.22,.23,.22,tint,root,0,.64,.19);eyes(.694,.382,.089);mouth=box(.19,.065,.2,type==='swallow'?'#b79769':'#d29b4f',root,0,.596,.419);}
+  if(type==='rooster'){for(let n=0;n<3;n++)ball(.07,.12,.07,'#b86d5e',root,-.08+n*.08,.9,.18);cone(.1,.3,'#75927d',root,0,.46,-.42);}
   for(const s of [-1,1]){const wing=new THREE.Group();wing.position.set(s*.23,.43,-.03);root.add(wing);const w=ball(type==='swallow'?.35:.12,.07,.28,tint,wing,s*.12,0,0);w.rotation.z=s*.3;arms.push(wing);const foot=new THREE.Group();foot.position.set(s*.13,.07,.09);root.add(foot);box(.16,.03,.2,'#bf9458',foot);legs.push(foot);}
+ }else if(type==='ant'){
+  for(let n=0;n<3;n++)ball(.14,.15,.18,'#937359',root,0,.29+n*.12,-.21+n*.19);
+  head=ball(.17,.17,.17,'#937359',root,0,.65,.23);eyes(.69,.375,.07);mouth=box(.05,.013,.015,'#4f463d',root,0,.595,.388);
+  for(const side of [-1,1])for(let n=0;n<3;n++){const leg=new THREE.Group();leg.position.set(side*.1,.31,-.25+n*.2);root.add(leg);const limb=box(.3,.025,.025,'#796149',leg,side*.13,-.08,0);limb.rotation.z=-side*.45;legs.push(leg);if(n===2)arms.push(leg);}
+  for(const side of [-1,1]){const antenna=box(.015,.25,.015,'#796149',root,side*.09,.88,.22);antenna.rotation.z=-side*.4;}
  }else if(type==='turtle'){
   ball(.37,.26,.47,'#759267',root,0,.33,0);const shell=ball(.36,.245,.45,'#7d8755',root,0,.39,-.015);for(let j=0;j<3;j++){const stripe=mesh(new THREE.TorusGeometry(.28-j*.06,.012,4,18),'#a0aa77',root,0,.5+j*.04,-.02);stripe.rotation.x=-Math.PI/2;stripe.scale.y=1.3;}
   head=ball(.19,.18,.22,'#a4b48a',root,0,.29,.47);eyes(.335,.663,.082);mouth=box(.07,.014,.035,'#667353',root,0,.231,.678);limbs('#a1ae7d',.23);
  }else{
-  const tint=ch.color||({rabbit:'#ece7d8',bear:'#ab8058',cat:'#c59465',lion:'#cba361',mouse:'#a79c88',frog:'#90ae75',wolf:'#7c8d7e'}[type]||color);
+  const tint=ch.color||({rabbit:'#ece7d8',bear:'#ab8058',cat:'#c59465',lion:'#cba361',mouse:'#a79c88',fox:'#c58b59',dog:'#a8896c',donkey:'#a8a28f',frog:'#90ae75',wolf:'#7c8d7e'}[type]||color);
   ball(.29,.36,.25,tint,root,0,.47,0);
   if(type==='lion')ball(.43,.44,.21,'#a87743',root,0,1,-.025);
   head=ball(.285,.28,.25,tint,root,0,.97,.03);eyes(1.02,.255);
-  if(type==='rabbit'){for(const side of [-1,1]){const ear=ball(.085,.34,.069,tint,root,side*.13,1.42,-.02);ear.rotation.z=-side*.12;ball(.042,.25,.073,'#d8b6ac',root,side*.13,1.43,-.012);}ball(.065,.045,.04,'#c79a8d',root,0,.943,.292);}
-  else if(type==='cat'||type==='wolf'){for(const s of [-1,1]){const ear=cone(.112,.27,tint,root,s*.21,1.247,0);ear.rotation.z=-s*.18;}ball(.13,.072,type==='wolf'?.21:.085,type==='wolf'?'#bcc2a6':'#e1c49b',root,0,.923,type==='wolf'?.3:.253);ball(.043,.032,.024,'#5a5547',root,0,.96,type==='wolf'?.502:.325);}
+  if(type==='rabbit'||type==='donkey'){for(const side of [-1,1]){const ear=ball(.085,.34,.069,tint,root,side*.13,1.42,-.02);ear.rotation.z=-side*.12;ball(.042,.25,.073,'#d8b6ac',root,side*.13,1.43,-.012);}ball(.065,.045,.04,'#c79a8d',root,0,.943,.292);}
+  else if(['cat','wolf','fox','dog'].includes(type)){for(const s of [-1,1]){const ear=cone(.112,.27,tint,root,s*.21,1.247,0);ear.rotation.z=-s*.18;}ball(.13,.072,['wolf','fox','dog'].includes(type)?.21:.085,['wolf','fox','dog'].includes(type)?'#bcc2a6':'#e1c49b',root,0,.923,['wolf','fox','dog'].includes(type)?.3:.253);ball(.043,.032,.024,'#5a5547',root,0,.96,['wolf','fox','dog'].includes(type)?.502:.325);}
   else if(type==='frog'){for(const s of [-1,1]){ball(.13,.15,.13,tint,root,s*.18,1.19,.06);ball(.057,.07,.032,'#eee9cb',root,s*.18,1.2,.167);ball(.027,.039,.017,'#3d5040',root,s*.18,1.2,.196);}}
   else{for(const side of [-1,1])ball(type==='mouse'?.16:.11,type==='mouse'?.17:.12,.065,tint,root,side*.24,1.21,0);ball(.125,.076,.076,type==='lion'?'#e0bf86':'#d1b38e',root,0,.922,.265);ball(.04,.03,.025,'#5b5041',root,0,.949,.33);}
+  if(type==='fox'){const tail=cone(.18,.85,'#c58b59',root,.36,.42,-.18);tail.rotation.z=-.9;ball(.13,.15,.12,'#ece1c9',root,.66,.64,-.18);}
+  if(type==='dog')for(const side of [-1,1])ball(.075,.21,.09,tint,root,side*.25,1.03,-.02);
   mouth=ball(.055,.018,.015,'#685647',root,0,.84,.27);limbs(tint);
   if(type==='cat'){for(const side of [-1,1]){box(.14,.23,.16,'#785638',root,side*.12,.125,.005);for(const dy of [-.04,.035]){const whisker=box(.19,.012,.015,'#7e6b50',root,side*.22,.93+dy,.263);whisker.rotation.z=side*dy*2;}}const tail=mesh(new THREE.TorusGeometry(.18,.037,6,18,Math.PI*1.5),tint,root,.25,.39,-.19);tail.rotation.y=.6;}
  }
@@ -138,22 +150,7 @@ function makeActor(parent,ch,x,z,H){
 export function animateFairytale(tl,s,c){
  for(const [j,tree] of s.trees.entries()){tl.from(tree.rotation,{x:-Math.PI/2,duration:.8,ease:'back.out(1.1)'},j*.07);tl.to(tree.rotation,{z:.02,duration:2,repeat:7,yoyo:true,ease:'sine.inOut'},0);}
  tl.from(s.props.rotation,{x:-Math.PI/2,duration:1.1,ease:'back.out(1)'},.1);
- for(const [j,a] of s.pigs.entries()){tl.from(a.root.scale,{y:.01,duration:.75,ease:'back.out(1.4)'},.3+j*.13);tl.to(a.arms[1].rotation,{z:-.8,duration:.5,repeat:5,yoyo:true},1.3+j*.14);}
+ for(const [j,a] of s.pigs.entries())tl.from(a.root.scale,{y:.01,duration:.75,ease:'back.out(1.4)'},.3+j*.13);
  tl.to(s.extras.rotation,{y:.22,duration:16,ease:'sine.inOut'},0);
- const actors=s.pigs,find=type=>actors.find(a=>a.type===type);const action=c.action;
- if(action==='walk'||action==='steady'||action==='escape'){for(const [j,a] of actors.entries()){tl.to(a.root.position,{x:a.root.position.x+.55,z:a.root.position.z-.35,duration:action==='escape'?2:7,ease:'sine.inOut'},3+j*.1);for(const [k,leg]of a.legs.entries())tl.to(leg.rotation,{x:k?.5:-.5,duration:.16,repeat:action==='escape'?11:35,yoyo:true},3);}}
- if(action==='race'||action==='finish'){const r=find('rabbit'),t=find('turtle');if(r)tl.to(r.root.position,{x:1.7,z:.3,duration:action==='race'?1.3:3.5},action==='race'?2:9);if(t)tl.to(t.root.position,{x:1.4,z:action==='finish'?-1.1:.75,duration:11,ease:'none'},2);}
- if(action==='sleep'){const sleeper=find('rabbit')||find('lion')||actors[0];tl.to(sleeper.root.rotation,{z:-1.2,duration:1},3);tl.to(sleeper.root.position,{y:.15,duration:1},3);const turtle=find('turtle');if(turtle)tl.to(turtle.root.position,{x:1.4,z:.45,duration:11,ease:'none'},3);}
- if(action==='hatch'){if(s.effects.egg)tl.to(s.effects.egg.scale,{y:.08,x:1.3,duration:1},3);tl.from(actors[0].root.scale,{x:.01,z:.01,duration:1.1,ease:'back.out(1.4)'},3);}
- if(action==='grow'&&s.effects.plant)tl.from(s.effects.plant.scale,{y:.04,duration:5,ease:'power2.out'},1);
- if(action==='climb'){const boy=find('boy');if(boy)tl.to(boy.root.position,{x:.1,y:2.45,z:-.55,duration:7,ease:'sine.inOut'},3);}
- if(action==='descend'){tl.from(actors[0].root.position,{y:2.1,z:-.5,duration:6,ease:'sine.inOut'},1);}
- if(action==='fly'){const bird=find('swallow')||find('swan');if(bird){tl.to(bird.root.position,{y:1.3,x:.3,z:-.3,duration:6,ease:'sine.inOut'},3);for(const [j,wing]of bird.arms.entries())tl.to(wing.rotation,{z:j?-.7:.7,duration:.35,repeat:23,yoyo:true},3);}const tiny=find('tiny-girl');if(tiny)tl.to(tiny.root.position,{y:1.55,x:.25,z:-.3,duration:6,ease:'sine.inOut'},3);}
- if(action==='chair-break'&&s.effects.chair){tl.to(s.effects.chair.rotation,{z:.65,duration:.7},7);tl.to(s.effects.chair.scale,{y:.45,duration:.7},7);}
- if(action==='transform'){const giant=find('giant'),mouse=find('mouse');if(giant)tl.to(giant.root.scale,{x:.01,y:.01,z:.01,duration:1.2},7);if(mouse)tl.from(mouse.root.scale,{x:.01,y:.01,z:.01,duration:1.2,ease:'back.out(1.5)'},7.8);}
- if(action==='magic'&&s.effects.magic){tl.from(s.effects.magic.scale,{x:.04,y:.04,z:.04,duration:2,ease:'back.out(1.3)'},3);tl.to(s.extras.position,{y:.7,duration:2,yoyo:true,repeat:3},3);}
- if(action==='clock'&&s.effects.hand){tl.to(s.effects.hand.rotation,{z:-Math.PI*2,duration:5},1);tl.to(actors[0].root.position,{x:-1.8,z:2,duration:3},8);}
- if(action==='rescue-net'&&s.effects.net){const mouse=find('mouse');if(mouse)tl.to(mouse.root.position,{x:-.2,z:1.2,duration:1.5},2);tl.to(s.effects.net.scale,{y:.025,duration:3},6);tl.to(actors[0].root.position,{x:-.9,z:.6,duration:2},10);}
- if(action==='rescue'&&s.effects.cage)tl.to(s.effects.cage.rotation,{z:-1.3,duration:1.2},7);
- if(['dance','celebrate','reveal'].includes(action)){for(const [j,a]of actors.entries()){tl.to(a.root.position,{y:.15,duration:.45,repeat:9,yoyo:true,ease:'sine.inOut'},5+j*.16);tl.to(a.root.rotation,{y:.2,duration:.6,repeat:7,yoyo:true,ease:'sine.inOut'},5);}}
+ choreographStory(tl,s,c);
 }

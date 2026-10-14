@@ -60,7 +60,7 @@ function pageTexture(c,i){
  const canvas=document.createElement('canvas');canvas.width=1024;canvas.height=1200;const ctx=canvas.getContext('2d');
  ctx.fillStyle=C.paper;ctx.fillRect(0,0,1024,1200);
  ctx.strokeStyle='#d2c8a7';ctx.lineWidth=2;ctx.strokeRect(55,55,914,1090);
- ctx.fillStyle='#858d70';ctx.font='18px Georgia';ctx.fillText('LITTLE LEAF • POP-UP CLASSICS',100,125);
+ ctx.fillStyle='#858d70';ctx.font='18px Georgia';ctx.fillText('LITTLE LEAF • POP-UP STORIES',100,125);
  ctx.fillStyle='#a38251';ctx.font='italic 27px Georgia';ctx.fillText(`Chapter ${String(i+1).padStart(2,'0')}`,100,225);
  ctx.fillStyle=C.ink;ctx.font='bold 48px "Noto Serif CJK TC",serif';let y=310;
  for(const line of wrapText(ctx,c.title,824)){ctx.fillText(line,100,y);y+=72;}
@@ -105,7 +105,12 @@ export function createStoryWorld(canvas,chapters,{onActor,getSpeechState}={}){
   const wind=new THREE.Group();wind.position.set(-1.55,.9,1.5);popup.add(wind);
   const windMaterial=new THREE.MeshStandardMaterial({color:'#f7f2d5',transparent:true,opacity:0,roughness:.7});
   for(let j=0;j<3;j++){const curve=new THREE.QuadraticBezierCurve3(new THREE.Vector3(0,j*.12,0),new THREE.Vector3(.6,.13+j*.12,-.22),new THREE.Vector3(1.2,j*.12,-.1));wind.add(new THREE.Mesh(new THREE.TubeGeometry(curve,12,.017,5,false),windMaterial));}
-  return {root,popup,pigs,wolf:villain,house:cottage,trees,wind,windMaterial};
+  const materialsGroup=new THREE.Group();popup.add(materialsGroup);
+  const supplies=[];
+  if(!c.wolf&&c.house!=='none'&&c.actors===1){
+   for(let n=0;n<4;n++){const piece=box(c.house==='brick'?.28:.52,c.house==='brick'?.15:.12,.18,c.house==='brick'?'#b77556':c.house==='wood'?'#a7875e':'#d5b864',materialsGroup,-1.5,.1+n*.15,.4);supplies.push(piece);}
+  }
+  return {root,popup,pigs,wolf:villain,house:cottage,trees,wind,windMaterial,supplies};
  });
  const pageGeometry=new THREE.PlaneGeometry(5.42,6.15,40,10);pageGeometry.rotateX(-Math.PI/2);pageGeometry.translate(2.71,.11,0);
  const pageBase=Float32Array.from(pageGeometry.attributes.position.array);
@@ -124,7 +129,7 @@ export function createStoryWorld(canvas,chapters,{onActor,getSpeechState}={}){
  const ray=new THREE.Raycaster(),pointer=new THREE.Vector2();let down=null;
  canvas.addEventListener('pointerdown',e=>{down={x:e.clientX,y:e.clientY};});
  canvas.addEventListener('pointerup',e=>{if(!down||Math.hypot(e.clientX-down.x,e.clientY-down.y)>7)return;down=null;const r=canvas.getBoundingClientRect();pointer.set((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1);ray.setFromCamera(pointer,camera);const targets=[...scenes[active].pigs.map(p=>p.root),scenes[active].wolf?.root].filter(Boolean);const hits=ray.intersectObjects(targets,true);if(hits.length){let obj=hits[0].object;while(obj&&!obj.userData.character)obj=obj.parent;if(obj)onActor?.(obj.userData.character);}});
- function inspect(){let meshes=0;scene.traverse(o=>{if(o.isMesh)meshes++;});return{webgl:renderer.getContext()!==null,meshes,bookDepth:.4,camera:camera.position.toArray(),active,running,turning:turningPage.visible,houseScale:scenes[active].house?.scale.y??null,houseTilt:scenes[active].house?.rotation.z??null,drawCalls:renderer.info.render.calls};}
+ function inspect(){let meshes=0;scene.traverse(o=>{if(o.isMesh)meshes++;});return{webgl:renderer.getContext()!==null,meshes,bookDepth:.4,camera:camera.position.toArray(),active,running,actors:scenes[active].pigs.map(a=>({name:a.name,position:a.root.position.toArray(),rotation:a.root.rotation.toArray().slice(0,3)})),props:scenes[active].props?.children.map(p=>({kind:p.userData.prop,meshes:p.children.length,position:p.position.toArray(),scale:p.scale.toArray()}))||[],effects:Object.fromEntries(Object.entries(scenes[active].effects||{}).map(([k,v])=>[k,{position:v.position.toArray(),scale:v.scale.toArray()}])),turning:turningPage.visible,houseScale:scenes[active].house?.scale.y??null,houseTilt:scenes[active].house?.rotation.z??null,drawCalls:renderer.info.render.calls};}
  function cancelTurn(){turningPage.visible=false;scenes.forEach(s=>{s.root.scale.y=1;});}
  return {scenes,show,start,stop,resize,resetView,inspect,beginTurn(){turningPage.visible=true;},fold,endTurn:cancelTurn,cancelTurn,setSpeaker(name){const actor=[...scenes[active].pigs,scenes[active].wolf].filter(Boolean).find(a=>a.name===name);if(actor){const pos=new THREE.Vector3();actor.root.getWorldPosition(pos);pos.y+=1.65;pos.project(camera);return{x:(pos.x+1)/2,y:(1-pos.y)/2};}},dispose(){stop();observer.disconnect();controls.dispose();const disposed=new Set();scene.traverse(o=>{if(o.isMesh&&!disposed.has(o.geometry)){o.geometry.dispose();disposed.add(o.geometry);}if(o.isMesh&&!Array.from(materials.values()).includes(o.material))o.material.dispose();});textures.forEach(t=>t.dispose());renderer.dispose();renderer.forceContextLoss();}};
 }

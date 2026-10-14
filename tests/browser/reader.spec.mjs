@@ -61,10 +61,10 @@ test('blocked storage remains usable when system voices are unavailable',async({
 });
 test('automatic page turn advances once and stops after closing',async({page})=>{
  await page.goto('/');await page.locator('#hero-read').click();await page.locator('#auto-toggle').click();
- await page.evaluate(()=>window.__timelines['pigs-0'].progress(1));
+ await page.evaluate(()=>{window.__timelines['pigs-0'].progress(1);});
  await expect(page.locator('#chapter-tag')).toHaveText('02 / 08',{timeout:5000});
  await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');
- await page.evaluate(()=>window.__timelines['pigs-1'].progress(1));await page.locator('#close-reader').click();
+ await page.evaluate(()=>{window.__timelines['pigs-1'].progress(1);});await page.locator('#close-reader').click();
  await page.waitForTimeout(3200);
  expect(await page.evaluate(()=>Object.values(window.__timelines).every(t=>t.paused()))).toBe(true);
  await page.locator('#card-read').click();await expect(page.locator('#chapter-tag')).toHaveText('02 / 08');

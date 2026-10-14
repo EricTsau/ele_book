@@ -1,0 +1,79 @@
+{
+  "voice": "zh-TW-HsiaoChenNeural",
+  "locale": "zh-TW",
+  "description": "Taiwanese Mandarin female synthetic voice",
+  "lines": [
+    {
+      "file": "scene-0-line-0.mp3",
+      "speaker": "鄉下老鼠",
+      "text": "快坐下，這是新收的穀粒。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-line-1.mp3",
+      "speaker": "城市老鼠",
+      "text": "謝謝你，我也帶來了消息。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-0.mp3",
+      "speaker": "城市老鼠",
+      "text": "跟我來，看看城裡的晚餐。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-line-1.mp3",
+      "speaker": "鄉下老鼠",
+      "text": "好呀，我也想認識你的家。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-0.mp3",
+      "speaker": "鄉下老鼠",
+      "text": "這裡的麵包真的很香！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-line-1.mp3",
+      "speaker": "城市老鼠",
+      "text": "等等，我聽見腳步聲了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-0.mp3",
+      "speaker": "城市老鼠",
+      "text": "快進來，先別出聲。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-line-1.mp3",
+      "speaker": "鄉下老鼠",
+      "text": "我的心跳得好快！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-0.mp3",
+      "speaker": "鄉下老鼠",
+      "text": "謝謝你，可是我想回家了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-line-1.mp3",
+      "speaker": "城市老鼠",
+      "text": "我懂，我陪你走到巷口。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-0.mp3",
+      "speaker": "鄉下老鼠",
+      "text": "我的小桌子，真讓人安心。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-line-1.mp3",
+      "speaker": "鄉下老鼠",
+      "text": "下次請朋友來聽聽鳥叫。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    }
+  ]
+}

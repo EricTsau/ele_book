@@ -1,7 +1,8 @@
+import {coverEmblem} from './cover-emblems.js';
 import {sceneArt} from './art.js';
 export function coverArt(book){
  if(book.id==='three-little-pigs')return sceneArt({house:'brick',actors:3},'catalog-pigs');
- const color=book.color;let art='';
+ const color=book.color;let art=book.cover==='emblem'?coverEmblem(book.emblem,color):'';
  const face=(x,y,tint='#e6c6a6',hair='#d2b473')=>`<g transform="translate(${x} ${y})"><ellipse cy="27" rx="28" ry="35" fill="${color}"/><ellipse cy="-13" rx="32" ry="35" fill="${hair}"/><circle cy="-9" r="26" fill="${tint}"/><circle cx="-9" cy="-10" r="2.6" fill="#344737"/><circle cx="9" cy="-10" r="2.6" fill="#344737"/><path d="M-5 2q5 6 10 0" stroke="#a47964" stroke-width="2" fill="none"/></g>`;
  if(book.cover==='girl')art=`<path d="M233 262l-44 76h93z" fill="#b65647"/>${face(234,250,'#e6c6a6','#b65647')}<path d="M205 248q-1-47 31-47q33 0 31 47" fill="none" stroke="#b65647" stroke-width="14"/><rect x="275" y="286" width="38" height="29" rx="6" fill="#bd9667"/><path d="M282 286q12-34 24 0" stroke="#95744f" stroke-width="5" fill="none"/>`;
  if(book.cover==='rabbit')art=`<ellipse cx="230" cy="289" rx="32" ry="37" fill="#f0e8d5"/><ellipse cx="213" cy="206" rx="12" ry="38" fill="#f0e8d5"/><ellipse cx="243" cy="205" rx="12" ry="38" fill="#f0e8d5"/><circle cx="229" cy="250" r="31" fill="#f0e8d5"/><g fill="#42543d"><circle cx="218" cy="248" r="3"/><circle cx="240" cy="248" r="3"/></g><ellipse cx="324" cy="311" rx="37" ry="22" fill="#778d5b"/><circle cx="363" cy="313" r="14" fill="#a9b88b"/><circle cx="367" cy="310" r="2" fill="#42543d"/><path d="M344 128v96m-129-96v96" stroke="#9d8357" stroke-width="5"/><path d="M215 140h129" stroke="#f0e8ce" stroke-width="19" stroke-dasharray="15 12"/>`;
