@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "一朵花慢慢張開花瓣，花心裡坐著一個只有拇指大的小女孩。大家溫柔地叫她拇指姑娘。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她睡在核桃殼的小床裡，把花瓣當被子。雖然身體很小，對世界的好奇心卻一點也不小。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "拇指姑娘",
       "text": "我不想留在這裡，請尊重我的選擇。",
@@ -25,6 +37,42 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "青蛙",
       "text": "原來，我應該先問過妳的意思。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "一隻青蛙沒有問過拇指姑娘，就把她帶到池塘，希望她永遠留在那裡。醒來的她，發現自己坐在一片大荷葉上。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "拇指姑娘很害怕，卻清楚說出自己的想法。池塘裡的小魚聽見了，咬斷荷葉的莖，幫她離開了水中央。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-safe-shore-line-0.mp3",
+      "speaker": "拇指姑娘",
+      "text": "我先休息一下，感覺腳下的土地。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-safe-shore-line-1.mp3",
+      "speaker": "拇指姑娘",
+      "text": "下一步，我想找個能避風的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-safe-shore-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "荷葉靠近岸邊，拇指姑娘先停下來，看看腳下是否平穩。她坐在乾燥的葉子旁，讓急促的呼吸慢慢放輕，不必一上岸就急著開始下一場旅行。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-safe-shore-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "休息後，她才想下一步需要什麼：能避風的地方、喝的水，還有願意聽她說話的朋友。世界很大，她可以一件一件找，不用立刻把所有事情想好。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,6 +88,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "冬天快到了，拇指姑娘在田野裡找不到溫暖的地方。好心的田鼠邀請她到地下的小屋過冬。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她幫忙整理種子、說故事，田鼠則替她準備熱湯。再小的客人，也能帶來大大的陪伴。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "拇指姑娘",
       "text": "別怕，我會陪你等春天。",
@@ -49,6 +109,42 @@
       "file": "scene-3-line-1.mp3",
       "speaker": "燕子",
       "text": "妳的身體雖小，帶來的溫暖卻很多。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "在田鼠家的通道旁，拇指姑娘發現一隻受傷的燕子。牠的翅膀被寒風凍得發抖，飛不動了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她每天送來一點水，替燕子蓋上乾草，也陪牠說話。小小的照顧，讓一雙翅膀慢慢恢復了力量。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-wings-again-line-0.mp3",
+      "speaker": "燕子",
+      "text": "我先練習一小段，不急著飛。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-wings-again-line-1.mp3",
+      "speaker": "拇指姑娘",
+      "text": "我會想想看，再告訴你我的決定。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-wings-again-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "燕子覺得翅膀比較有力了，先在地上走一小段，再停下感受身體。拇指姑娘陪牠練習，沒有催牠立刻飛得很高，也沒有要牠勉強帶自己旅行。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-wings-again-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠們一次試一小段，累了就休息。燕子說，等自己準備好了，想邀她去看花海。拇指姑娘可以慢慢想，接受照顧或給過幫忙，都不等於一定要答應。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +160,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "春天來了，燕子終於能再次飛翔。牠邀請拇指姑娘坐上自己的背，一起去看看溫暖的花海。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "拇指姑娘謝謝田鼠的照顧，也為自己選擇了新的旅程。風吹過她的頭髮，世界在腳下慢慢展開。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "拇指姑娘",
       "text": "這裡好美，也剛好適合我。",
@@ -73,6 +181,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "燕子",
       "text": "不管妳住哪裡，我們都是好朋友。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "燕子降落在一片花海，這裡有許多和拇指姑娘一樣小的朋友。每一朵花，都是一扇歡迎她的門。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她找到可以自在生活的地方，也常常回去探望朋友。小不代表沒有力量，更不代表不能為自己做決定。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "拇指姑娘",
+      "text": "你想一起到葉子旁聊聊嗎？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "燕子",
+      "text": "好，謝謝妳先問我。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "青蛙曾經沒問就把拇指姑娘帶走，讓她很害怕。後來，燕子先問她願不願意同行，給她想一想的時間，她才感覺自己的心聲被尊重。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "現在她先問燕子，要不要一起到葉子旁聊聊天。燕子回答後，她才靠近，沒有急著拉朋友過來。邀請別人玩、借東西或幫忙，都可以先問；對方說不要，也值得被尊重。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

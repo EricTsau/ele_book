@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "湖邊有間雨滴郵局，下雨時窗前的小鈴才會響。雨米負責替怕水的信穿上防水外衣，郵鴿咕嚕再把它們送到各家屋簷。這天，她在信箱裡發現一封空白信。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "信封只有一片壓平的蘆葦，沒有名字，也沒有地址。咕嚕繞了郵局三圈都想不出目的地，雨米卻聞到信封裡蘆葦葉的氣味，決定先去湖邊問問。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "河伯伯",
       "text": "我不知道思念要怎麼寫。",
@@ -25,6 +37,18 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "雨米",
       "text": "你慢慢說，我幫你畫。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "蘆葦叢旁，河伯伯正望著對岸。原來信是牠放的，牠想問搬去上游的孫女過得好不好，可是不會寫字。牠以為把想念藏進信封，郵局就能聽見。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "雨米沒有笑，坐下來請牠說說孫女家的模樣。河伯伯說那裡有扁扁的白石、三棵柳樹，窗外還掛著一枚會響的貝殼。她把每個線索都畫在紙上。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,6 +64,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "咕嚕帶著圖畫飛向上游，卻發現河岸有好幾處三棵樹。牠不敢把信隨便投進其中一個信箱，便帶著圖畫返回。雨米原本有點失望，接著發現這次旅行帶回重要消息：只有靠近石橋的樹下有白石。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她請河伯伯再想一想，孫女搬家那天，接她的船先從哪座橋下穿過。河伯伯閉上眼睛，終於記起一座低低的橋。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "雨米",
       "text": "這些是你想告訴她的嗎？",
@@ -49,6 +85,42 @@
       "file": "scene-3-line-1.mp3",
       "speaker": "河伯伯",
       "text": "是呀，荷花替她留著座位。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "雨米把路線畫得更清楚，也請河伯伯說出孫女的名字。河伯伯補上一件最想告訴她的事：門前的荷花開了，留著一個舒服的位置等她回來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "雨米把這句話寫在荷花圖旁，讀給牠聽，確認沒有多寫或少寫。河伯伯在紙角印下自己的小腳印。這回，信封上有名字、有方向，裡面也真的裝進牠想說的話。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-mail-check-line-0.mp3",
+      "speaker": "雨米",
+      "text": "我們一起再看一次，好嗎？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-mail-check-line-1.mp3",
+      "speaker": "河伯伯",
+      "text": "名字和路都在這裡了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-mail-check-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "信封準備好了，雨米沒有立刻把信交出去。她和河伯伯把路分成三格，約好各代表石橋、白石和柳樹。小圓片先走到中間停一下，兩人一起說出這一段要找的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-mail-check-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "河伯伯說完，小圓片才移到最後一格。兩人確認路線，也把孫女的名字再說一次。這次他們沒有猜對方懂不懂，而是停下來核對，準備好再等咕嚕來拿信。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +136,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "咕嚕沿著橋、白石和柳樹一路尋找，終於在貝殼輕響的屋簷下送出信。幾天後，雨滴郵局收到回覆，紙上畫著一朵紫色荷花，旁邊寫著孫女的回話。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "孫女說新家很好，等雨停就回來探望，還附上完整地址。雨米把回信讀給河伯伯聽，牠高興得一直點頭，連背上的小雨珠也跟著輕輕搖晃，像一排透明的小鈴鐺。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-mail-answer-line-0.mp3",
+      "speaker": "河伯伯",
+      "text": "我也想告訴她，我很高興。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-mail-answer-line-1.mp3",
+      "speaker": "雨米",
+      "text": "好，我先聽你說完。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-mail-answer-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "聽完孫女的回信，河伯伯捨不得把紙放下。牠把想說的話告訴雨米，請她先幫忙記在另一封信裡。信準備好後，河伯伯把它放在自己面前，想好才慢慢送向雨米。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-mail-answer-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "雨米等牠說完，再接過信，答應先讀回給牠聽。這次河伯伯知道，不會寫很多字，也可以先說一句話，請朋友一起把心意送出去，不必把想念一直藏著。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "河伯伯",
       "text": "今天我想自己寫她的名字。",
@@ -73,6 +181,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "雨米",
       "text": "我陪你，一筆一筆來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "從那以後，雨滴郵局多了一張矮桌，擺著蠟筆和空白卡片。不會寫字的客人可以畫，也可以請雨米代筆；每封信都會讀回給寄信的人確認。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "河伯伯成了常客，慢慢學會寫孫女的名字。某個晴天，雨米第一次在沒有雨的時候搖響小鈴。她想，有人需要幫忙把話送出去，郵局就可以為那個人打開窗。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "河伯伯",
+      "text": "我想說：今天我很想你。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "雨米",
+      "text": "我讀一次，你聽聽對不對。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "河伯伯的第一封信沒有地址，雨米陪牠把想念變成圖和話。今天，河伯伯又拿起一張卡，先說一句最想告訴孫女的話，再把卡交給雨米，請她讀回來聽聽。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "想說的話不用一下子說很多。你可以畫，也可以請信任的大人幫忙寫。寫好後一起看一遍，確定那是你的意思，再決定要不要送給對方。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

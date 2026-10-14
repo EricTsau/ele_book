@@ -13,8 +13,20 @@ export function saveProgress(storage, state) {
 export const LIBRARY_KEY = 'little-leaf:library:v2';
 export function restoreLibrary(raw, books, legacyRaw=null) {
  let value;try {value=JSON.parse(raw);}catch{}
- const result={books:{}};
- for(const book of books){const saved=value?.books?.[book.id];result.books[book.id]=restoreProgress(saved?JSON.stringify(saved):book.id==='three-little-pigs'?legacyRaw:null,book.chapters.length);}
+ const result={version:3,books:{}};
+ for(const book of books){
+  let saved=value?.books?.[book.id];
+  if(!saved&&book.id==='three-little-pigs'){try{saved=JSON.parse(legacyRaw);}catch{}}
+  const state=restoreProgress(saved?JSON.stringify(saved):null,book.chapters.length);
+  if(saved?.pageId){const index=book.chapters.findIndex(c=>c.id===saved.pageId);state.page=index>=0?index:0;}
+  else if(value?.version!==3&&Number.isInteger(saved?.page)){
+   const index=book.chapters.findIndex(c=>c.kind==='story'&&c.storyIndex===saved.page);
+   if(index>=0)state.page=index;
+   if(book.chapters.some(c=>c.kind==='reflection'))state.completed=false;
+  }
+  state.pageId=book.chapters[state.page]?.id;
+  result.books[book.id]=state;
+ }
  return result;
 }
 export function saveLibrary(storage, state){try{storage.setItem(LIBRARY_KEY,JSON.stringify(state));return true;}catch{return false;}}

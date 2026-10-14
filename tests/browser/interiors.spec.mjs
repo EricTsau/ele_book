@@ -1,8 +1,10 @@
 import {test,expect} from '@playwright/test';
+import {originalIndex} from './helpers.mjs';
 
 test('wolf stays outside while every pig is visible inside each attacked house',async({page})=>{
  await page.goto('/');await page.locator('#hero-read').click();
- for(const index of [4,5,6]){
+ for(const sourceIndex of [4,5,6]){
+  const index=originalIndex('three-little-pigs',sourceIndex);
   const state=await page.evaluate(i=>{
    Object.values(window.__timelines).forEach(t=>t.pause());
    const world=window.__storybook3d,s=world.scenes[i];world.show(i);window.__timelines[`pigs-${i}`].pause(6,true);
@@ -19,13 +21,14 @@ test('indoor animation renders on desktop and mobile, and room changes with the 
  for(const size of [{width:1100,height:820},{width:390,height:844}]){
   await page.setViewportSize(size);await page.goto('/');
   await page.locator('[data-action="read"][data-id="cinderella"]').first().click();
-  await page.locator('[data-page="2"]').click();await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');
-  const result=await page.evaluate(()=>{const s=window.__storybook3d.scenes[2],tl=window.__timelines['cinderella-2'];tl.pause(4,true);const a=s.pigs[0].root.position.toArray();tl.pause(9,true);return {kind:s.interior?.spec.kind,a,b:s.pigs[0].root.position.toArray(),floor:s.interior?.floor.visible};});
+  const palace=originalIndex('cinderella',2),outside=originalIndex('cinderella',1);
+  await page.locator(`[data-page="${palace}"]`).click();await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');
+  const result=await page.evaluate(i=>{const s=window.__storybook3d.scenes[i],tl=window.__timelines[`cinderella-${i}`];tl.pause(4,true);const a=s.pigs[0].root.position.toArray();tl.pause(9,true);return {kind:s.interior?.spec.kind,a,b:s.pigs[0].root.position.toArray(),floor:s.interior?.floor.visible};},palace);
   expect(result.kind).toBe('palace');expect(result.floor).toBe(true);expect(result.a).not.toEqual(result.b);
   expect(await page.evaluate(()=>window.__storybook3d.inspect().pageTextSurfaces)).toBe(0);
   await page.locator('.story-transcript summary').click();await expect(page.locator('#story-copy')).toBeVisible();await expect(page.locator('#story-copy')).toContainText('音樂亮起的夜晚');
-  await page.locator('[data-page="1"]').click();await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');
-  expect(await page.evaluate(()=>!!window.__storybook3d.scenes[1].interior)).toBe(false);
+  await page.locator(`[data-page="${outside}"]`).click();await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');
+  expect(await page.evaluate(i=>!!window.__storybook3d.scenes[i].interior,outside)).toBe(false);
  }
  expect(errors).toEqual([]);
 });
@@ -33,7 +36,8 @@ test('indoor animation renders on desktop and mobile, and room changes with the 
 test('full spread camera retains tall actions on desktop and mobile',async({page})=>{
  for(const size of [{width:1100,height:820},{width:390,height:844}]){
   await page.setViewportSize(size);
-  for(const [id,index] of [['jack-and-beanstalk',2],['bremen-musicians',3]]){
+  for(const [id,sourceIndex] of [['jack-and-beanstalk',2],['bremen-musicians',3]]){
+   const index=originalIndex(id,sourceIndex);
    await page.goto('/');await page.locator(`[data-action="read"][data-id="${id}"]`).first().click();
    const bounds=await page.evaluate(async({id,index})=>{
     const T=await import('/vendor/three.module.js'),w=window.__storybook3d;

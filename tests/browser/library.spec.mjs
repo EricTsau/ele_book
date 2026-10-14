@@ -1,34 +1,56 @@
 import {test,expect} from '@playwright/test';
 import {books} from '../../public/books.js';
-for(const book of books.slice(1)){
- test(`${book.title}: all six 3D chapters render and automatically speak`,async({page})=>{
-  test.setTimeout(60000);
+import {tag,originalIndex,timelineKey,finishOpening,expectAudio,enableAudioSeeking} from './helpers.mjs';
+test.beforeEach(async({page})=>enableAudioSeeking(page));
+for(const book of books){
+ test(`${book.title}: all expanded 3D pages render and automatically speak`,async({page})=>{
+  test.setTimeout(Math.max(90000,book.chapters.length*15000));
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto('/');await page.locator(`[data-action="read"][data-id="${book.id}"]`).first().click();
   await expect(page.locator('#reader-title')).toHaveText(book.title);
   for(let i=0;i<book.chapters.length;i++){
    if(i){await page.locator('#next').click();await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');}
-   await expect(page.locator('#chapter-tag')).toHaveText(`${String(i+1).padStart(2,'0')} / 06`);
+   await expect(page.locator('#chapter-tag')).toHaveText(tag(book.id,i));
    await expect(page.locator('#story-copy')).toContainText(book.chapters[i].title);
    expect(await page.evaluate(()=>window.__storybook3d.inspect().webgl)).toBe(true);
    expect(await page.evaluate(()=>window.__storybook3d.inspect().active)).toBe(i);
    const props=await page.evaluate(()=>window.__storybook3d.inspect().props);
    for(const p of props)expect(p.meshes,`${book.id}/${i}: empty ${p.kind}`).toBeGreaterThan(0);
-   expect(await page.evaluate(({id,i})=>window.__timelines[`${id}-${i}`].duration(),{id:book.id,i})).toBe(16);
+   const key=timelineKey(book.id,i),duration=await page.evaluate(key=>window.__timelines[key].duration(),key);
+   if(book.chapters[i].kind!=='story')expect(duration).toBe(20);
+   else if(book.id==='three-little-pigs')expect(duration).toBeGreaterThan(0);
+   else expect(duration).toBe(16);
+   await finishOpening(page,book.id,i);
    // Advance close to the authored first cue; the running scene must trigger its own voice.
-   await page.evaluate(({id,i,cue})=>{const tl=window.__timelines[`${id}-${i}`];if(tl.time()<cue-.15)tl.seek(cue-.15,true);},{id:book.id,i,cue:book.chapters[i].cues?.[0]||0});
-   await expect.poll(()=>page.locator('#story-audio').evaluate(a=>!a.paused&&a.currentTime>0&&a.error===null),{timeout:15000}).toBe(true);
-   const motion=await page.evaluate(({id,i})=>{
-    const tl=window.__timelines[`${id}-${i}`];tl.pause();document.querySelector('#story-audio').pause();
+   await page.evaluate(({key,cue})=>{const tl=window.__timelines[key];if(tl.time()<cue-.15)tl.seek(cue-.15,true);},{key,cue:book.chapters[i].cues?.[0]||0});
+   await expectAudio(page,'line',`${book.chapters[i].audioKey}-line-0.mp3`);
+   const motion=await page.evaluate(key=>{
+    const tl=window.__timelines[key];tl.pause();document.querySelector('#story-audio').pause();
     const samples=[1.2,4,7,10,13.5].map(t=>{tl.seek(t,true);return window.__storybook3d.inspect().actors.map(a=>a.position);});
     tl.seek(1.2,true);const replay=window.__storybook3d.inspect().actors.map(a=>a.position);
     let distance=0;for(const sample of samples)sample.forEach((p,j)=>{distance=Math.max(distance,Math.hypot(...p.map((v,k)=>v-samples[0][j][k])));});
     return {distance,start:samples[0],replay};
-   },{id:book.id,i});
+   },key);
    // Narrative outcomes are covered by the per-book semantics tests. A sleeping
    // character should not be forced to walk just to satisfy a distance metric.
    expect(Number.isFinite(motion.distance)).toBe(true);
    motion.start.forEach((p,j)=>p.forEach((v,k)=>expect(motion.replay[j][k]).toBeCloseTo(v,4)));
+   await page.evaluate(key=>{window.__timelines[key].progress(1);},timelineKey(book.id,i));
+   // A final authored cue may start when the timeline reaches its endpoint.
+   // Let that real line end before checking the closing narration.
+   if(await page.locator('#story-audio').getAttribute('data-role')==='line'){
+    await expectAudio(page,'line',`${book.chapters[i].audioKey}-line-${book.chapters[i].lines.length-1}.mp3`);
+    await page.locator('#story-audio').evaluate(a=>{a.currentTime=a.duration-.03;});
+   }
+   await expectAudio(page,'closing',`${book.chapters[i].audioKey}-narration-1.mp3`);
+   if(i===book.chapters.length-1){
+    expect(book.chapters[i].kind).toBe('reflection');
+    await expect(page.locator('#reflection-panel')).toBeVisible();
+    await expect(page.locator('#reflection-question')).toHaveText(book.chapters[i].reflection.question);
+    await expect(page.locator('#reflection-action')).toHaveText(book.chapters[i].reflection.action);
+   }
+   await page.locator('#story-audio').evaluate(a=>{a.currentTime=a.duration-.03;});
+   await expect(page.locator('#play-pause')).toHaveAttribute('aria-label','播放動畫');
   }
   await page.locator('#next').click();await expect(page.locator('#reader')).not.toBeVisible();
   expect(errors).toEqual([]);
@@ -38,10 +60,11 @@ test('switching books preserves separate progress and favorites',async({page})=>
  await page.goto('/');await expect(page.locator('.book-card')).toHaveCount(31);
  await page.locator('[data-action="favorite"][data-id="ugly-duckling"]').click();
  await page.locator('[data-action="read"][data-id="red-riding-hood"]').first().click();
- await page.locator('[data-page="3"]').click();await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');await page.locator('#close-reader').click();
- await page.locator('[data-action="read"][data-id="ugly-duckling"]').first().click();await expect(page.locator('#chapter-tag')).toHaveText('01 / 06');
+ const remembered=originalIndex('red-riding-hood',3);
+ await page.locator(`[data-page="${remembered}"]`).click();await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');await page.locator('#close-reader').click();
+ await page.locator('[data-action="read"][data-id="ugly-duckling"]').first().click();await expect(page.locator('#chapter-tag')).toHaveText(tag('ugly-duckling',0));
  await page.locator('#next').click();await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');await page.locator('#close-reader').click();
- await page.reload();await page.locator('[data-action="read"][data-id="red-riding-hood"]').first().click();await expect(page.locator('#chapter-tag')).toHaveText('04 / 06');await page.locator('#close-reader').click();
+ await page.reload();await page.locator('[data-action="read"][data-id="red-riding-hood"]').first().click();await expect(page.locator('#chapter-tag')).toHaveText(tag('red-riding-hood',remembered));await page.locator('#close-reader').click();
  await page.locator('#favorite-filter').click();await expect(page.locator('.book-card')).toHaveCount(1);await expect(page.locator('.book-card h3')).toHaveText('醜小鴨');
 });
 

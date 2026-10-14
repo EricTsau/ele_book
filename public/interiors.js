@@ -38,7 +38,7 @@ export function interiorSpec(c){
 }
 
 export function addInterior(s,c,H){
- const spec=interiorSpec(c);if(!spec)return s;
+ const spec=c.learningScene?.inside?{kind:'cottage',left:-3.55,right:3.55,back:-2.05,front:1.95,height:2.05,mixed:false}:interiorSpec(c);if(!spec)return s;
  const {THREE,box,ball}=H,{kind,left:L,right:R,back:B,front:F,height:h}=spec;
  const width=R-L,depth=F-B,cx=(L+R)/2,cz=(B+F)/2;
  // Remove the exterior stage, not the independently animated actors/props.
@@ -106,7 +106,7 @@ export function addInterior(s,c,H){
  }
  // Extra openings identify scenes that show both sides of a window.
  let frontWindow,storageDoor;
- if(c.storyId==='bremen-musicians'&&c.storyIndex<=3){
+ if(c.storyId==='bremen-musicians'&&c.storyIndex>=2&&c.storyIndex<=3){
   frontWindow=new THREE.Group();root.add(frontWindow);frontWindow.position.set(.1,0,F);
   for(const x of [-.8,.8])box(.05,1.8,.06,trim,frontWindow,x,.9,0);
   box(1.65,.05,.06,trim,frontWindow,0,1.8,0);box(1.65,.045,.16,trim,frontWindow,0,.55,0);

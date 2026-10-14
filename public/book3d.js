@@ -1,3 +1,4 @@
+import {buildLearningScene} from './learning-scenes.js';
 import {arrangeSpread} from './stage-layout.js';
 import {updateInteriorVisibility,makeWallsTranslucent} from './interiors.js';
 import { buildFairytaleScene } from './fairytale3d.js';
@@ -70,7 +71,7 @@ function house(parent,kind,cutaway=false){
  const supports=[];for(const x of [-.72,.72]){const tab=box(.26,.45,.035,'#ede2c5',root,x,.18,-.93);tab.rotation.x=-.65;supports.push(tab);}
  return root;
 }
-export const sceneGeometry={THREE,box,ball,cone,mesh,mat,leafTree,house};
+export const sceneGeometry={THREE,box,ball,cone,mesh,mat,leafTree,house,pig};
 export function createStoryWorld(canvas,chapters,{onActor,getSpeechState}={}){
  const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true,powerPreference:'high-performance'});
  renderer.setPixelRatio(Math.min(devicePixelRatio,1.75));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1;
@@ -86,6 +87,7 @@ export function createStoryWorld(canvas,chapters,{onActor,getSpeechState}={}){
  const bookmark=box(.22,.012,1.25,'#b65e44',book,.28,-.21,3.47);bookmark.rotation.y=-.11;
  const floor=new THREE.Mesh(new THREE.PlaneGeometry(100,100),new THREE.ShadowMaterial({opacity:.24}));floor.rotation.x=-Math.PI/2;floor.position.y=-.36;floor.receiveShadow=true;scene.add(floor);
  const scenes=chapters.map((c,i)=>{
+  if(c.learningScene)return buildLearningScene(book,c,sceneGeometry);
   if(c.characters)return buildFairytaleScene(book,c,sceneGeometry);
   const root=new THREE.Group();root.position.set(2.72,.09,0);root.visible=false;book.add(root);
   const popup=new THREE.Group();root.add(popup);
@@ -110,7 +112,7 @@ export function createStoryWorld(canvas,chapters,{onActor,getSpeechState}={}){
   if(!c.wolf&&c.house!=='none'&&c.actors===1){
    for(let n=0;n<4;n++){const piece=box(c.house==='brick'?.28:.52,c.house==='brick'?.15:.12,.18,c.house==='brick'?'#b77556':c.house==='wood'?'#a7875e':'#d5b864',materialsGroup,-1.5,.1+n*.15,.4);supplies.push(piece);}
   }
-  if(i===7){
+  if((c.storyIndex??i)===7){
    const table=new THREE.Group();table.position.set(0,0,1.3);popup.add(table);
    box(2.35,.08,.7,'#a98b62',table,0,.58,0);
    for(const x of [-.95,.95])for(const z of [-.23,.23])box(.08,.56,.08,'#91744f',table,x,.28,z);

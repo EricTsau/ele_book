@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小麥的麵包店每天清晨開門，下午最後一盤賣完就休息。牠最喜歡看客人抱著紙袋離開，卻從不知道夜晚誰會經過櫥窗。有一天，牠忘了帶圍巾，晚上回店拿，聽見夜羽在門外嘆氣。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "夜羽負責替村民跑晚班配送，白天補眠，起床準備上工時店已經關了。牠不是想叫小麥立刻開工，只想知道有沒有辦法，偶爾也買到那種有麥香的晚餐。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "小麥",
       "text": "我想幫大家，卻快睜不開眼。",
@@ -25,6 +37,18 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "夜羽",
       "text": "你也需要好好睡覺呀。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小麥很想幫忙，決定從早烤到晚。牠準備許多麵團，到了夜裡卻累得把標籤放錯，自己也差點睡著。松叔叔經過時，想確認隔天早餐的取貨時間，看到小麥紅紅的眼睛，立刻勸牠休息。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "夜羽知道後很過意不去，說自己要的並不是讓朋友不睡覺。小麥這才停下來，把爐具交給清醒的大人確認關好，再記下還沒完成的訂單，準備重新想辦法。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,6 +64,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "休息過後，小麥邀請夜羽和松叔叔一起喝茶。他們把各自的工作和睡覺時間畫在紙上，發現傍晚有一小段大家都醒著的時候。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "小麥可以每週選一天晚點開店，也可以讓客人預訂，再約在那段時間取貨。夜羽願意提前告訴牠需要幾份，松叔叔則幫忙做一塊清楚的時間牌。紙上的線不再互相打架，而是找到一個舒服的交會點。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-bread-agreement-line-0.mp3",
+      "speaker": "小麥",
+      "text": "我們再看看，要幾份、什麼時候拿。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-bread-agreement-line-1.mp3",
+      "speaker": "夜羽",
+      "text": "我照約好的時間來，不讓你一直等。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-bread-agreement-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "時間牌做好了，小麥和夜羽又排出三格，分別代表準備、取貨和休息。小圓片走到取貨那格時先停下，兩個朋友再說一次，約好的時間和要留的麵包有幾份。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-bread-agreement-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "夜羽說完，小圓片才走到休息那格。原來交出麵包後，小麥還要有自己的時間。兩個朋友看著同一張計畫，發現說清楚比互相猜容易多了，便安心等待第一次約好的傍晚。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "小麥",
       "text": "這份是你的，剛好可以出發。",
@@ -49,6 +109,18 @@
       "file": "scene-3-line-1.mp3",
       "speaker": "夜羽",
       "text": "謝謝你記得我的晚餐。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "第一次晚間營業那天，小麥睡飽才起床準備，沒有照平常的清晨時間開始。牠依照預訂數量揉麵、等發酵，讓松叔叔協助搬動熱烤盤，自己等熱氣散去，再把三個麵包分別裝進紙袋。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "傍晚的窗子亮起暖光，時間牌上寫著清楚的取貨時段。夜羽早早到門口，看見一份標著自己名字的麵包，突然覺得這間熟悉的小店，也替牠的生活留出了一個位置。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +136,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "晚間麵包很受歡迎，有人希望以後天天都開。小麥差點答應，摸摸自己的記事本，還是決定先維持每週一次。牠把其他人的需求寫下來，說明能接的數量和時間，也提醒客人先預訂。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "夜羽幫忙把時間牌掛到容易看見的位置，沒有因為買得到麵包就催小麥做更多。那晚最後一份取走後，小麥準時收店，櫥窗裡留下明天休息的字樣。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "夜羽",
       "text": "對我來說，現在正是早安。",
@@ -73,6 +157,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "小麥",
       "text": "祝你順利，我要回家晚安了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "幾週後，小店有了白天與晚間兩種取貨安排，大家漸漸熟悉，也不再白跑一趟。夜羽出發送貨前會說早安，小麥準備回家時則說晚安，兩句話在門口碰面，一點也不奇怪。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "松叔叔替櫥窗畫了一個月亮和一個太陽，提醒路過的人每個人的一天可能不同。星光亮起，小麥帶著空籃子回家，知道朋友吃飽了，自己也能安心睡覺。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "小麥",
+      "text": "這一件做完，我想休息一下。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "夜羽",
+      "text": "好，我聽見了，我們不再加。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小麥曾經從早忙到晚，累得快睜不開眼。現在牠把籃子放好，走到椅子旁坐一會兒。夜羽留在旁邊，沒有催牠再做更多。休息後小麥才起身，兩人都記得這個約定。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "你很想幫忙，也可以告訴家人自己累了。先說能做哪一小件，做完後一起看看要不要休息。朋友的需要值得照顧，你的身體和感覺，也值得被聽見。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

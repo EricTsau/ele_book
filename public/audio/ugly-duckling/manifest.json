@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "池塘旁的草窩裡，蛋殼一顆顆裂開，鑽出毛茸茸的小鴨。最後一顆大蛋，過了好久才輕輕搖晃。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "喀嚓！一隻灰色的小鳥探出頭。牠的腳比較大，脖子比較長，和其他孩子很不一樣。鴨媽媽還是張開翅膀抱住牠。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "小灰鴨",
       "text": "我的羽毛，為什麼跟大家不同？",
@@ -25,6 +37,42 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "鴨媽媽",
       "text": "不同不代表不好，你值得被溫柔對待。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "大家一起在水面划呀划，小灰鴨游得很好，卻因為模樣不同，被其他小鳥取笑。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠低下頭，看著自己的倒影，心裡難過極了。鴨媽媽告訴牠，別人的笑聲不能決定牠的價值，但小灰鴨還需要一點時間相信。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-beside-you-line-0.mp3",
+      "speaker": "鴨媽媽",
+      "text": "你想安靜一下，還是要我陪你？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-beside-you-line-1.mp3",
+      "speaker": "小灰鴨",
+      "text": "我想要妳陪著我，聽我說。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-beside-you-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小灰鴨不想立刻回到熱鬧的水邊。鴨媽媽沒有叫牠別難過，而是走到牠旁邊，問牠想安靜待一會兒，還是一起慢慢游。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-beside-you-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "小灰鴨選了岸邊安靜的位置。媽媽和牠並肩停下，讓牠慢慢說出心裡的委屈。牠還是原來的灰色模樣，也已經有人願意靠近、認真聽牠說話。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,6 +88,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "秋天到了，小灰鴨沿著湖岸探索新的地方。天空飛過一群白色的大鳥，長長的脖子在陽光下閃閃發亮。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠看得忘了眨眼。白天鵝停在岸邊，溫柔地跟牠打招呼。小灰鴨心裡，悄悄升起一點希望。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "小灰鴨",
       "text": "再冷的冬天，也會過去吧？",
@@ -49,6 +109,42 @@
       "file": "scene-3-line-1.mp3",
       "speaker": "小灰鴨",
       "text": "我會吃飽、休息，等暖暖的春天。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "冬天的風很冷，湖邊結了一層薄冰。小灰鴨縮在蘆葦旁，想念溫暖的陽光。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "好心的人替牠準備了乾草與食物，陪牠度過寒冷的日子。牠一天天長大，羽毛也悄悄發生了變化，只是自己還沒發現。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-growing-wings-line-0.mp3",
+      "speaker": "小灰鴨",
+      "text": "今天先練習一小下就好。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-growing-wings-line-1.mp3",
+      "speaker": "小灰鴨",
+      "text": "我正在長大，不用急。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-growing-wings-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "天氣漸漸回暖，小灰鴨先在乾草旁站穩，再輕輕活動翅膀。牠試了幾下就停下休息，沒有因為還飛不起來而責怪自己。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-growing-wings-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "隔了幾天，牠又試著往前走一小段。身體正在慢慢長大，有些改變還看不清楚。牠開始注意自己的感覺，也記得吃飽、休息，不急著變成誰。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +160,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "春風把冰吹融了，小灰鴨走到湖邊。牠低頭一看，水面映出一隻潔白、優雅的天鵝。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠向左看，倒影也向左看；牠張開翅膀，倒影也張開翅膀。原來，自己一直是一隻小天鵝！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "小天鵝",
       "text": "謝謝妳，在我還沒長大時就愛我。",
@@ -73,6 +181,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "鴨媽媽",
       "text": "不論什麼模樣，你都是珍貴的孩子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小天鵝和新朋友們一起游水，也回去探望一直照顧牠的鴨媽媽。牠不再因為自己的不同而低頭。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠知道，還是灰色小鳥的時候，自己就值得被喜歡。牠展開翅膀，也把溫柔留給每一隻和別人不一樣的小鳥。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "小天鵝",
+      "text": "你想一起玩，還是先休息？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "鴨媽媽",
+      "text": "每一種模樣，都值得被好好對待。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小天鵝想起自己還是灰色小鳥時，最需要的不是別人稱讚牠好看，而是有人願意陪伴。鴨媽媽從來不需要牠先變成另一個模樣。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠們走到彼此身邊，留下舒服的距離，練習問一句：你想一起玩嗎？如果對方想休息，也可以安靜陪著。接納別人，不需要先替他打分數。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

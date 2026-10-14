@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "有一位皇帝非常喜歡新衣服，每天總要花很多時間挑選衣料和配件。有時大臣來報告城裡的事，他卻還在比較兩條腰帶哪一條更漂亮。一天，一個騙子來到城堡，聲稱能織出世上最奇妙的布。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "那布不但華麗，還有一個特別的本領：不稱職或愚笨的人都看不見。皇帝一聽，覺得既能穿新衣，又能試探大臣，立刻給了騙子錢和工作房。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "大臣",
       "text": "我怎麼一點花紋也看不到？",
@@ -25,6 +37,18 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "騙子",
       "text": "您看，這條金色線多漂亮！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "騙子坐在沒有線的織布機前，手忙個不停，還不時舉起空空的雙手欣賞。皇帝派一位大臣前去查看，大臣走進房裡，瞪大眼睛卻什麼也看不到。他心裡一驚，怕自己說出真相就會被當成不稱職的人。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "騙子問他花紋是不是很美，他只好跟著點頭，把對方描述的顏色一一記下。回到皇帝面前，他稱讚布料無比漂亮，卻沒有提起自己真正看到的情況。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,6 +64,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "另一位官員也看不見布，卻同樣不敢承認。皇帝聽到接連的讚美，親自到工作房查看，結果眼前只有空蕩蕩的織布機。他害怕大家以為自己愚笨，便裝出滿意的笑容。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "旁邊的大臣見皇帝點頭，也越誇越大聲。沒有人真的看見衣料，房裡卻塞滿對顏色與花紋的稱讚。騙子知道計畫成功了，宣布新衣即將完成，可以在慶典遊行時讓全城的人欣賞。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "騙子",
       "text": "衣服很輕，幾乎感覺不到。",
@@ -49,6 +85,18 @@
       "file": "scene-3-line-1.mp3",
       "speaker": "皇帝",
       "text": "準備好了，就出發遊行。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "遊行當天，騙子假裝捧著長袍、褲子和披風，請皇帝換衣服。騙子說布輕得像空氣，所以穿上也幾乎沒有感覺。皇帝只穿著貼身衣物，站到鏡子前，明明看見自己沒有外袍，卻仍轉身稱讚剪裁。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "侍從也假裝抬起不存在的長衣襬，生怕被別人發現自己看不見。每個人都在等待別人先說真話，結果整個房間裡，只有空氣被當成了最昂貴的衣裳。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +112,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "皇帝走上大街，百姓早就聽過神奇布料的傳聞。有人看不見衣服，卻怕被鄰居笑話，於是跟著大家鼓掌。就在一片讚美聲中，一個小孩拉住家人的手，說皇帝根本沒有穿那件新衣，只穿著貼身衣物。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "聲音不大，卻讓附近的人停了下來。有人把這句話傳給旁邊的人，接著又有人點頭。原來不是只有自己看不見，大家其實都看到了同一件事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-listen-to-observation-line-0.mp3",
+      "speaker": "小孩",
+      "text": "我看不到那件新外袍。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-listen-to-observation-line-1.mp3",
+      "speaker": "大臣",
+      "text": "我也沒看見，謝謝你說出來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-listen-to-observation-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "孩子說完，大臣停下來，沒有立刻拿「大家都說好看」來回答。他先聽孩子說自己看見什麼，再輪到自己開口，承認在織布機前，也沒有看見布。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-listen-to-observation-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "兩人輪流把話說清楚，沒有笑對方，更沒有評論皇帝的身體。大臣第一次發現，自己可以說不知道，也可以改口；孩子的疑問不需要被責罵，才有機會讓人重新想一想。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "小孩",
       "text": "說出看到的事，不是笨。",
@@ -73,6 +157,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "皇帝",
       "text": "我應該早一點誠實面對。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "真話在人群裡傳開，皇帝聽見了，心裡也知道小孩說得對。他仍挺直身體把遊行走完，侍從則尷尬地繼續抬著看不見的衣襬。故事到這裡，留下了一個讓人又想笑又想思考的畫面。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "沒有人能靠假裝看見，讓空氣變成衣服；也不該把合理的疑問當成愚笨。那個孩子沒有神奇的眼睛，只是願意說出自己看到的事，讓大家有機會重新相信事實。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "小孩",
+      "text": "我有個問題，可以跟你說嗎？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "大臣",
+      "text": "可以，我們一起慢慢看。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "大臣想起自己明明沒看見布，卻怕被笑而跟著稱讚。現在孩子停在他面前，先問可不可以說一個問題；大臣點頭後，孩子才靠近，把疑問慢慢說完。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "說真話不需要取笑誰，也不一定要站到人群中央。你可以找願意聽的可信任大人，說「我看見的好像不一樣」。還不明白，也能一起看看，不用給自己貼上笨的標籤。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

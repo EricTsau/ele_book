@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "狐狸沿著田邊的小路散步，肚子已經咕嚕叫了好幾次。走到一座老葡萄架旁，牠聞到淡淡的果香。葉子底下垂著一串紫色葡萄，每一顆都圓滾滾的，表皮上還覆著薄薄的果粉。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "狐狸抬起鼻子，看得眼睛都亮了。牠想像那一口清甜的滋味，覺得今天的午餐總算有著落，便在架子下選了一塊平坦的空地站好。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "狐狸",
       "text": "只差一點，我再試一次。",
@@ -25,6 +37,18 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "狐狸",
       "text": "站準位置，往上跳！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "狐狸蹲低身體，後腿一用力，朝著葡萄跳了起來。牠張開嘴，卻只咬到一小口空氣。落地後，牠抖抖尾巴，覺得一定是剛才站得不夠準。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠往左挪兩步，再往前挪一步，重新看好距離，又跳了一次。葡萄仍然掛在原來的地方，只有葉子被牠帶起的風吹得輕輕搖晃。狐狸有點喘，卻還相信下一次就能碰到。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,6 +64,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "狐狸退到稍遠的地方，打算先跑幾步再跳。牠跑得很快，卻跳得太早，落在葡萄架的另一側。第二次又跳得太晚，鼻尖擦到了葉子。幾次下來，牠的腳掌累了，心也越來越急。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠沒有停下來量量高度，只不停告訴自己，這一回一定可以。可是葡萄比牠能跳到的位置高得多，再大的決心也不會讓短短的距離憑空消失。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "狐狸",
       "text": "我很想吃，卻真的夠不到。",
@@ -49,6 +85,18 @@
       "file": "scene-3-line-1.mp3",
       "speaker": "狐狸",
       "text": "休息一下，我的腳好累。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "狐狸終於坐到樹蔭裡，把發熱的腳掌放在涼涼的泥地上。牠抬頭看著葡萄，心裡很不是滋味。原本以為輕鬆就能得到的午餐，現在仍然高高掛著。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠想找一個理由，讓自己看起來沒有那麼失敗。可是四周沒有別的動物，也沒有人笑牠。真正讓牠難受的，是期待很久卻沒有成功，而這種失望本來就可以被好好承認。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +112,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "狐狸站起來，故意把頭轉向另一邊，說那串葡萄一定酸得很，自己才不想吃。可是話一出口，牠又偷偷回頭望了一眼。那串葡萄從頭到尾都沒有變，狐狸也一顆都沒有嚐過。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠其實不知道葡萄酸不酸，只是想用一句不在乎，蓋住心裡的失望。葡萄葉仍在風中輕輕搖動，沒有替這個猜測作證，也沒有因為這句話變得比較酸。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-tired-paws-line-0.mp3",
+      "speaker": "狐狸",
+      "text": "我的腳累了，先歇一會兒。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-tired-paws-line-1.mp3",
+      "speaker": "狐狸",
+      "text": "我有點失望，也還需要午餐。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-tired-paws-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "說完那句酸葡萄，狐狸沒有立刻跑遠。牠放下手邊的葉子，在路旁長凳坐了一會兒，讓一直用力的腳掌鬆開，也讓急急的呼吸慢下來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-tired-paws-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠想起高高的葡萄，發現肚子餓和心裡失望是兩件可以說清楚的事。等腿不那麼酸了，牠站起身，準備離開這裡，找一條自己走得動的路。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "狐狸",
       "text": "夠不到，不代表它不好。",
@@ -73,6 +157,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "狐狸",
       "text": "我去找別的午餐吧。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "走出葡萄園後，狐狸的步子慢了下來。牠終於對自己承認，今天只是夠不到葡萄，不代表葡萄不好，也不代表自己什麼都做不好。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "肚子還餓著，牠可以去找伸手就能取得的食物，而不必把所有力氣耗在同一處。牠回頭向葡萄架點點頭，繼續沿著田邊前進。承認限制和失望雖然不容易，卻讓牠的心比剛才輕鬆了許多。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "狐狸",
+      "text": "我沒吃過，還不知道味道。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "狐狸",
+      "text": "我很想要，現在卻拿不到。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "狐狸沒有吃到葡萄，也就不知道它酸不酸。現在牠停在兩片葉子前，比較它們的大小，練習把看見的事和心裡的猜測分開。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠輕輕說：「我很想要，可是現在拿不到。」說完，葡萄沒有變低，牠卻不用再假裝不喜歡。你也可以說出失望，再和大人想想要休息、求助，還是換件事做。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

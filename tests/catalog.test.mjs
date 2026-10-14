@@ -8,8 +8,8 @@ test('thirty-one complete books have unique IDs, full chapters, and valid casts'
 });
 test('each book has independent progress and legacy pig bookmarks migrate',()=>{
  const state=restoreLibrary('{"books":{"red-riding-hood":{"page":3,"favorite":true},"ugly-duckling":{"page":999}}}',books,'{"page":4,"started":true}');
- assert.equal(state.books['three-little-pigs'].page,4);
- assert.equal(state.books['red-riding-hood'].page,3);
+ assert.equal(state.books['three-little-pigs'].page,books[0].chapters.findIndex(c=>c.kind==='story'&&c.storyIndex===4));
+ assert.equal(state.books['red-riding-hood'].page,books.find(b=>b.id==='red-riding-hood').chapters.findIndex(c=>c.kind==='story'&&c.storyIndex===3));
  assert.equal(state.books['red-riding-hood'].favorite,true);
  assert.equal(state.books['ugly-duckling'].page,0);
 });

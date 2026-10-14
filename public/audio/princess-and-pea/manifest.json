@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "很久以前，一位王子希望認識一位真正的公主，便到許多地方拜訪。他見過華麗的城堡、熱鬧的宴會，也和很多人說過話，卻總是不知道該用什麼方法確認對方的身分。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "走了很遠的路，他還是帶著疑問回到家。王后見他悶悶不樂，請他先好好休息。就在那天晚上，天空忽然下起大雨，風推著樹枝搖動，城堡的大門傳來一陣急促的敲門聲。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "公主",
       "text": "請問，我能借住一晚嗎？",
@@ -25,6 +37,42 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "王子",
       "text": "先進來暖和一下吧。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "門外站著一位渾身濕透的年輕姑娘，雨水從頭髮滴到鞋尖。她說自己是一位公主，因為路上遇到暴雨，才來請求借住一晚。王子先請她進屋，讓人拿來毛巾和乾衣服。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "王后仔細聽完，心裡仍然有些疑問，卻沒有讓客人繼續站在寒風裡。熱湯端上桌後，姑娘終於不再發抖，也向大家道謝。她看起來很疲倦，只希望能早點躺下，好好睡上一覺。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-ask-before-approaching-line-0.mp3",
+      "speaker": "王子",
+      "text": "我可以靠近，把乾布放這裡嗎？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-ask-before-approaching-line-1.mp3",
+      "speaker": "公主",
+      "text": "可以，謝謝你等我回答。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-ask-before-approaching-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "公主喝過熱湯，乾布放在旁邊，王子在她面前留了一點距離。他沒有直接拉著客人往前走，而是先問她願不願意再擦乾頭髮，等她回答。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-ask-before-approaching-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "公主抬手回答，說自己很累，想慢慢來。王子這才走近，在她身旁等她準備好。客人還沒有說出多少身世，他們也能先聽見眼前這個人的需要。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,6 +88,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "王后走進客房，想出一個古怪的試驗。她先移開所有被褥，在床板上放了一顆小小的豌豆，再疊上二十張床墊和二十層柔軟的羽絨褥。床越疊越高，看起來像一座蓬鬆的小山。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "王后相信真正的公主特別敏感，即使隔著這麼多層，也會感覺到底下的豌豆。這是童話裡奇妙又不可靠的規矩，現實中當然不能靠一個人的睡眠感受來判斷身分或價值。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "公主",
       "text": "床很軟，怎麼還是睡不舒服？",
@@ -49,6 +109,18 @@
       "file": "scene-3-line-1.mp3",
       "speaker": "公主",
       "text": "翻個身，再試著睡一下吧。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "公主走進房間，看見高高的床，驚訝地停了一下。她小心上床，躺進柔軟的被子裡，以為很快就能睡著，可是背後總覺得有個小地方不舒服。她換個方向，再把枕頭挪一挪，感覺仍然沒有消失。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "窗外的雨漸漸變小，鐘聲卻一下一下提醒她，夜已經過了很久。她不知道床底藏了什麼，只希望天亮後能向主人說明，好換一個舒服的休息地方。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +136,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "第二天早晨，王后問客人睡得如何。公主沒有因為不好意思就說一切都好，而是禮貌地回答，自己幾乎整夜沒睡，床上好像有個硬硬的小東西。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "王后聽完十分驚訝，立刻叫人搬開一層層床墊，取出最底下的豌豆。王子也看見那顆小小的豌豆，覺得這真是一件不可思議的事。在這個古老故事裡，大家便把她敏銳的感受，當成公主身分的證明。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-comfortable-rest-line-0.mp3",
+      "speaker": "公主",
+      "text": "我想在這裡留寬一點的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-comfortable-rest-line-1.mp3",
+      "speaker": "王子",
+      "text": "好，我們一起挪過去。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-comfortable-rest-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "豌豆已經拿出來，公主卻仍然很睏。王子沒有只顧著稱讚她感覺敏銳，便走到她身旁，和她一起把一份乾淨的被褥移到新的休息位置。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-comfortable-rest-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "公主說想把位置留寬一點，王子停下來聽，再一起挪好。這次不必藏任何東西，也不必等她證明身分；讓疲倦的客人好好歇一歇，就是現在可以做的事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "公主",
       "text": "謝謝你們願意聽我的感受。",
@@ -73,6 +181,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "王子",
       "text": "以後，先準備舒服的床。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "後來，王子和公主相處、認識彼此，故事說他們結了婚，那顆豌豆還被收進展櫃，讓人記得這場奇妙的相遇。童話把一件小事變成驚喜，讀到這裡，我們也可以保留自己的問題：真的需要這樣考驗客人嗎？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "睡得好不好，能代表一個人是誰嗎？每個人的感受都值得被聽見，而體貼的主人，最該做的是讓客人安心休息，不必等到一顆豌豆來提醒。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "公主",
+      "text": "我覺得不舒服，想請你聽一聽。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "王子",
+      "text": "我在聽，我們一起想辦法。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "公主記得那一夜，床看起來很軟，身體卻不舒服。她和王子站在一起，輪流說怎樣休息比較自在，一個人說話時，另一個人停下來聽。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "有人怕冷，有人怕吵，感覺不一樣並不奇怪。你不必像公主一樣忍到天亮，也不用證明自己特別敏感，才可以請人幫忙。把感覺告訴照顧你的大人，一起找舒服的辦法。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "在雲朵能穿衣服的天空，絮絮是一名小裁縫。她替雲縫柔軟的外套，雲便帶著雨水去田野。這天風仔說山後的菜園好久沒下雨，絮絮立刻想做一件有五個口袋的外套，每袋都裝滿雨水。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "棉奶奶拿出一小片雲布，請她先試試重量。絮絮卻覺得多一個口袋，就能多幫一片田，忍不住把所有布都攤在桌上。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "風仔",
       "text": "它太重了，我推不動。",
@@ -25,6 +37,18 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "絮絮",
       "text": "我的好意好像變成負擔了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "外套縫好了，前面排著五個口袋。絮絮把五個袋子裝滿，縫線被拉得又直又緊。雲朵一點一點往下沉，最後趴在屋頂邊動不了。風仔鼓起腮幫吹了好久，只吹動一角衣襬。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "絮絮以為風不夠大，還想再找幾位朋友幫忙，棉奶奶卻伸手摸摸雲背，發現每一道縫線都被拉得緊緊的。若繼續硬拖，外套可能會破，雨也送不到該去的地方。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,6 +64,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "絮絮讓口袋裡的水慢慢回到水盆，再拆下三個口袋，只留下兩個。她原本怕這樣會幫得太少，棉奶奶卻拿出地圖，指出沿途有三個可以補水的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "不一定要一次帶完整趟的水，也能分段往前走。絮絮只往留下的兩個口袋各裝半袋水，另外縫了一條容易鬆緊的帶子。雲朵重新站起來，輕輕跳了一下，這回連衣角都顯得舒服。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-cloud-half-test-line-0.mp3",
+      "speaker": "絮絮",
+      "text": "這次我先看一看，不再一直加。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-cloud-half-test-line-1.mp3",
+      "speaker": "棉奶奶",
+      "text": "留一點空間，再慢慢試。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-cloud-half-test-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "只剩兩個口袋時，絮絮還想再多裝一點。棉奶奶拿出一大一小兩片布，和她用放大鏡輪流看看。絮絮這才注意到，小一點的布也有自己的用處，不一定要選最大的。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-cloud-half-test-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她想起剛才被拉緊的縫線，這次願意先帶半袋水試試。兩人停下來，把各自看到的地方說清楚。能舒服出發，比把所有空處都塞滿更重要。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "絮絮",
       "text": "小苗需要的是輕輕的雨。",
@@ -49,6 +109,42 @@
       "file": "scene-3-line-1.mp3",
       "speaker": "風仔",
       "text": "我幫它在菜園上慢慢轉。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "風仔帶著穿好新外套的雲出發，絮絮在旁邊看著地圖。到了第一片菜園，她本來想把口袋全部打開，卻看見有些小苗剛種下，禁不起大水沖刷。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她改成只鬆開一個細口，讓雨慢慢落下。葉子不再垂頭，泥土也沒有被沖走。風仔繞了一圈確認邊緣都淋到，才把雲推向下一個補水點。絮絮在圖上畫下一顆小小的雨珠。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-cloud-stop-line-0.mp3",
+      "speaker": "絮絮",
+      "text": "先停好、休息一下，再準備下一段。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-cloud-stop-line-1.mp3",
+      "speaker": "風仔",
+      "text": "我準備好了，我們慢慢來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-cloud-stop-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "離開第一片菜園後，絮絮和風仔到了地圖上的補水點。絮絮先把杯子放穩，走到椅子旁坐一會兒。風仔留在旁邊，提醒她不用一邊趕路，一邊準備下一段。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-cloud-stop-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "絮絮的呼吸慢下來，也不再催著出發。休息一會兒，她才站起來，打算只帶下一段需要的水。原來分段前進，也要替停下來準備留一點時間，不能一直趕。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +160,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "最後一段路，雲朵的水用完了，補水的小湖卻還在遠方。絮絮正想道歉，發現下方採收的人熱得直擦汗。她請風仔放慢速度，讓雲的影子在田邊停一會兒，替大家留下一片涼快的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "原來雲還能遮陽，不是只有下雨才算幫忙。等休息的人精神恢復，他們揮手道謝，雲便繼續輕輕前進，沒有因為口袋空了而難過。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "絮絮",
       "text": "下次先問需要，再動針線。",
@@ -73,6 +181,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "棉奶奶",
       "text": "合適的心意最容易送到。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "回到裁縫屋，絮絮把原來拆下的布做成小補丁，收在工具盒裡，沒有重新縫回外套。她的設計簿多了一頁，先問要去哪裡、需要多少，再決定口袋的大小。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "棉奶奶在旁邊縫自己的衣服，風仔則靠著窗聽遠方的雨聲。絮絮看著雲輕鬆離開屋頂，終於明白留下一些空間，才能讓送出去的心意走得穩，也走得遠。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "絮絮",
+      "text": "你需要我幫哪一件小事？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "風仔",
+      "text": "請過來，我們一起看看這片布。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "絮絮曾經把五個口袋裝得太滿，雲反而走不了。今天風仔旁邊放著一小片布，她先停在一點距離外，問需要幫忙做什麼。風仔招手請她過來，她才靠近一起商量。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "想幫忙時，不必一下子做最多。可以先問對方需要什麼，再說自己能做哪一小件。如果覺得太重或太累，也可以請大人一起幫忙，不用自己硬撐。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

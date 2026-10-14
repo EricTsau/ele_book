@@ -1,3 +1,5 @@
+import {animateLearningScene} from './learning-scenes.js';
+import {chapterAudioFile,STORY_PLAYBACK_RATE} from './reading-edition.js';
 import {createSoundscape} from './soundscape.js';
 import {choreographPigs} from './story-motion.js';
 import { books, findBook } from './books.js';
@@ -19,7 +21,7 @@ let timelines = [];
 const reader = $('reader');
 const narration = $('story-audio');
 const soundscape=createSoundscape();window.__storySound=soundscape;let sound=true;
-let audioEpoch = 0, pendingLine = null;
+let audioEpoch = 0, pendingLine = null, narrativePhase = null, pendingPageEnd = false, interruptedNarration = null;
 const gsap = window.gsap;
 window.__timelines = {};
 $('cover-art').innerHTML = sceneArt({ house:'brick', actors:3 }, 'cover');
@@ -39,7 +41,7 @@ $('chapter-dots').innerHTML = chapters.map((c,i) => `<button aria-label="第 ${i
 chapters.forEach((c,i) => {
  const s=world?.scenes[i];
  const tl=gsap.timeline({paused:true});
- if(s&&c.characters){animateFairytale(tl,s,c);}else if(s){
+ if(s&&c.learningScene){animateLearningScene(tl,s,c);}else if(s&&c.characters){animateFairytale(tl,s,c);}else if(s){
   for(const [j,tree] of s.trees.entries()){
    tl.from(tree.rotation,{x:-Math.PI/2,duration:.8,ease:'back.out(1.1)'},j*.09);
    tl.to(tree.rotation,{z:.02,duration:2,repeat:7,yoyo:true,ease:'sine.inOut'},0);
@@ -48,7 +50,7 @@ chapters.forEach((c,i) => {
   for(const [j,p] of s.pigs.entries()){
    tl.from(p.root.scale,{y:.01,duration:.75,ease:'back.out(1.6)'},.3+j*.14);
   }
-  choreographPigs(tl,s,c,i);
+  choreographPigs(tl,s,c,c.storyIndex??i);
   if(s.wolf){
    tl.from(s.wolf.root.scale,{y:.01,duration:1,ease:'back.out(1)'},.5);
    tl.to(s.wolf.root.rotation,{z:-.18,duration:.8},6.7);
@@ -61,7 +63,7 @@ chapters.forEach((c,i) => {
     tl.to(s.house.rotation,{z:.55,x:-.4,duration:1,ease:'power2.in'},8.6);
     tl.to(s.house.scale,{y:.15,duration:1,ease:'power2.in'},8.6);
     for(const [j,p] of s.pigs.entries()){
-     const run=i===5?10.4:9.3;
+     const run=c.storyIndex===5?10.4:9.3;
      tl.to(p.root.position,{x:2.1-j*.35,z:1.8-j*.5,duration:1.4,delay:j*.15,ease:'power2.in'},run);
      tl.set(p.root,{visible:false},run+1.5);
      for(const [k,leg] of p.legs.entries())tl.to(leg.rotation,{x:k?-.7:.7,duration:.1,repeat:13,yoyo:true},run);
@@ -73,8 +75,9 @@ chapters.forEach((c,i) => {
    }
   }
  }else{tl.to({value:0},{value:1,duration:16});}
- tl.eventCallback('onUpdate',()=>{if(reader.open&&current===i&&!interacting){updateDialogue(tl.time());soundscape.tick(tl.time(),playing,voice&&!narration.paused&&!narration.ended);}});
- tl.eventCallback('onComplete',()=>{if(!reader.open||current!==i)return;playing=false;if(i===chapters.length-1){state.completed=true;persist();updateLibrary();}syncPlayback();scheduleAuto();});
+ tl.eventCallback('onUpdate',()=>{if(reader.open&&current===i&&!interacting&&!narrativePhase){updateDialogue(tl.time());soundscape.tick(tl.time(),playing,voice&&!narration.paused&&!narration.ended);}});
+ tl.timeScale(STORY_PLAYBACK_RATE);
+ tl.eventCallback('onComplete',()=>{if(!reader.open||current!==i||narrativePhase)return;if(voice&&!narration.paused&&!narration.ended&&!narration.error){pendingPageEnd=true;return;}completeAnimation();});
  timelines.push(tl);window.__timelines[`${currentBook.id==='three-little-pigs'?'pigs':currentBook.id}-${i}`]=tl;
 });
 loadedBook=book.id;
@@ -100,11 +103,11 @@ function updateLibrary(){
 function setFilter(value){filter=value;updateLibrary();}
 function cancelAuto(){clearTimeout(autoTimer);autoTimer=null;}
 function scheduleAuto(){
- cancelAuto();if(!auto||!reader.open||reduced.matches||current>=chapters.length-1)return;
+ cancelAuto();if(!auto||!reader.open||reduced.matches||current>=chapters.length-1||narrativePhase||pendingPageEnd||interruptedNarration||interacting)return;
  const advance=()=>{if(voice&&!narration.paused&&!narration.ended&&!narration.error){autoTimer=setTimeout(advance,200);return;}goTo(current+1);};
  autoTimer=setTimeout(advance,3000);
 }
-function stopSpeech(){pendingLine=null;audioEpoch++;narration.pause();narration.currentTime=0;}
+function stopSpeech(){interruptedNarration=null;pendingPageEnd=false;pendingLine=null;narrativePhase=null;audioEpoch++;narration.pause();narration.currentTime=0;}
 function stopGesture(){gesture?.kill();gesture=null;interacting=false;}
 function speak(text,who){
  if(!voice) return;
@@ -112,22 +115,52 @@ function speak(text,who){
  const index=chapters[current].lines.findIndex(line=>line[1]===text && line[0]===who);
  if(index<0)return;
  const epoch=audioEpoch;
- narration.src=`${currentBook.audioBase}/scene-${current}-line-${index}.mp3`;
+ narration.dataset.role='line';
+ narration.src=`${currentBook.audioBase}/${chapterAudioFile(chapters[current],index)}`;
  $('voice-status').textContent='';
  narration.play().catch(()=>{
   if(epoch===audioEpoch && voice && reader.open) $('voice-status').textContent='配音暫時無法播放，請重新開啟語音重試；仍可繼續閱讀字幕。';
  });
 }
 function showLine(line){
- currentSpeaker=line[0];
- $('dialogue').replaceChildren();
- const speaker=document.createElement('strong');speaker.textContent=line[0];
- const content=document.createElement('span');content.textContent=line[1];
- $('dialogue').append(speaker,content);$('scene-bubble').textContent=line[1];speak(line[1],line[0]);
+ showSpokenText(line[0],line[1]);speak(line[1],line[0]);
+}
+function showSpokenText(who,text){
+ currentSpeaker=who;$('dialogue').replaceChildren();
+ const speaker=document.createElement('strong');speaker.textContent=who;
+ const content=document.createElement('span');content.textContent=text;
+ $('dialogue').append(speaker,content);$('scene-bubble').textContent=who==='故事旁白'?'':text;
+}
+function startNarration(phase){
+ stopSpeech();narrativePhase=phase;
+ const index=phase==='opening'?0:1,epoch=audioEpoch;
+ if(!reduced.matches)showSpokenText('故事旁白',chapters[current].narration[index]);
+ narration.dataset.role=phase;narration.src=`${currentBook.audioBase}/${chapterAudioFile(chapters[current],index,'narration')}`;
+ $('voice-status').textContent='';
+ narration.play().catch(()=>{
+  if(epoch!==audioEpoch||!reader.open)return;
+  $('voice-status').textContent='旁白暫時無法播放，仍可閱讀字幕與觀看演出。';
+  finishNarration();
+ });
+ syncPlayback();
+}
+function finishNarration(){
+ if(!narrativePhase||!reader.open||!playing)return;
+ const phase=narrativePhase;narrativePhase=null;
+ if(phase==='opening'){if(reduced.matches)startNarration('closing');else{timelines[current].play();syncPlayback();}}
+ else finishPage();
+}
+function completeAnimation(){
+ pendingPageEnd=false;
+ if(voice&&chapters[current].narration){playing=true;startNarration('closing');}else finishPage();
+}
+function finishPage(){
+ playing=false;if(current===chapters.length-1){state.completed=true;persist();updateLibrary();}
+ syncPlayback();scheduleAuto();
 }
 function updateDialogue(time){
  const lines=chapters[current].lines;
- const cues=chapters[current].cues||(currentBook.id==='three-little-pigs'?(current===4?[0,4,7.6]:current===5?[0,7,10.4]:current===6?[0,7,12]:lines.length===2?[0,7]:[0,5,10]):lines.length===2?[0,7]:[0,5,10]);
+ const cues=chapters[current].cues||(currentBook.id==='three-little-pigs'?(chapters[current].storyIndex===4?[0,4,7.6]:chapters[current].storyIndex===5?[0,7,10.4]:chapters[current].storyIndex===6?[0,7,12]:lines.length===2?[0,7]:[0,5,10]):lines.length===2?[0,7]:[0,5,10]);
  const idx=cues.findLastIndex(cue=>time>=cue);
  if(idx<0)return;
  if(idx!==activeLine){
@@ -139,14 +172,15 @@ function releasePendingLine(){
  if(pendingLine===null||!reader.open||!playing)return;
  const index=pendingLine;pendingLine=null;activeLine=index;showLine(chapters[current].lines[index]);timelines[current].play();
 }
-narration.addEventListener('ended',releasePendingLine);
-narration.addEventListener('error',releasePendingLine);
+const onAudioFinished=()=>{if(narrativePhase)finishNarration();else if(pendingPageEnd&&playing)completeAnimation();else releasePendingLine();};
+narration.addEventListener('ended',onAudioFinished);
+narration.addEventListener('error',onAudioFinished);
 function syncPlayback(){
  soundscape.tick(timelines[current]?.time()||0,playing&&reader.open,voice&&!narration.paused&&!narration.ended);
  $('play-pause').textContent=playing?'Ⅱ':'▶';
  $('play-pause').setAttribute('aria-label',playing?'暫停動畫':'播放動畫');
  $('play-pause').disabled=reduced.matches;
- $('scene-status').textContent=reduced.matches?'靜態閱讀':playing?'故事演出中':timelines[current].progress()===1?'本頁演出結束':'已暫停';
+ $('scene-status').textContent=reduced.matches?'靜態閱讀':playing?(narrativePhase?'聽故事旁白':'故事演出中'):timelines[current].progress()===1?(chapters[current].kind==='reflection'?'留一點時間，一起聊聊':'本頁演出結束'):'已暫停';
  $('auto-toggle').setAttribute('aria-pressed',String(auto));$('auto-toggle').textContent=`自動翻頁：${auto?'開':'關'}`;
  $('auto-toggle').disabled=reduced.matches;
 }
@@ -159,13 +193,16 @@ function renderPage(){
  $('previous').disabled=current===0;
  $('next').setAttribute('aria-label',current===chapters.length-1?'讀完回書架':'下一頁');$('next').innerHTML=current===chapters.length-1?'<span>讀完回書架</span> ✓':'<span>下一頁</span> →';
  $('interaction-hint').textContent=c.prompt;
+ $('reflection-panel').hidden=c.kind!=='reflection';
+ $('reflection-question').textContent=c.reflection?.question||'';
+ $('reflection-action').textContent=c.reflection?.action||'';
  const names=[...new Set(c.lines.map(line=>line[0]))];
  $('actor-controls').innerHTML=names.map((name,i)=>`<button data-character="${i}">${name} <span aria-hidden="true">♬</span></button>`).join('');
  activeLine=-1;currentSpeaker=null;$('dialogue').textContent=c.title;$('scene-bubble').textContent='';const tl=timelines[current];
  tl.pause(0);
- if(reduced.matches){tl.progress(1,true).pause();showLine(c.lines[0]);$('dialogue').innerHTML=c.lines.map(l=>`<span><strong>${l[0]}</strong>${l[1]}</span>`).join('');playing=false;}
- else{updateDialogue(0);playing=true;tl.play(0);}
- state.page=current;state.started=true;persist();syncPlayback();updateLibrary();
+ if(reduced.matches){tl.progress(1,true).pause();$('dialogue').innerHTML=c.narration.map(p=>`<span>${p}</span>`).join('')+c.lines.map(l=>`<span><strong>${l[0]}</strong>${l[1]}</span>`).join('');playing=voice;if(voice)startNarration('opening');}
+ else{playing=true;if(voice&&c.narration){tl.pause(1.2,true);startNarration('opening');}else{updateDialogue(0);tl.play(0);}}
+ state.page=current;state.pageId=c.id;state.started=true;persist();syncPlayback();updateLibrary();
 }
 function openReader(bookId='three-little-pigs'){
  const book=findBook(bookId);if(!book)return;
@@ -200,11 +237,19 @@ function goTo(target){
 function togglePlayback(){
  if(turning||reduced.matches) return;
  cancelAuto();const wasPlaying=playing;stopGesture();const tl=timelines[current];
- if(wasPlaying){tl.pause();narration.pause();playing=false;}else{playing=true;if(tl.progress()===1){activeLine=-1;tl.restart();}else{tl.play();if(voice&&narration.src&&!narration.ended)narration.play().catch(()=>{});}}
+ if(wasPlaying){tl.pause();narration.pause();playing=false;}
+ else{playing=true;
+  if(interruptedNarration){const phase=interruptedNarration;startNarration(phase);}
+  else if(pendingPageEnd){if(narration.ended||narration.error)completeAnimation();else narration.play().catch(completeAnimation);}
+  else if(narrativePhase){if(narration.ended||narration.error)finishNarration();else narration.play().catch(finishNarration);}
+  else if(tl.progress()===1){renderPage();return;}
+  else{tl.play();if(voice&&narration.src&&!narration.ended)narration.play().catch(()=>{});}
+ }
  syncPlayback();
 }
 function replay(){if(turning)return;cancelAuto();stopGesture();stopSpeech();activeLine=-1;renderPage();}
 function interact(name){
+ const resumeNarration=narrativePhase||interruptedNarration;
  if(turning)return;cancelAuto();stopGesture();timelines[current].pause();playing=false;stopSpeech();
  const line=chapters[current].lines.find(l=>l[0]===name);if(line)showLine(line);
  if(!reduced.matches){
@@ -216,7 +261,7 @@ function interact(name){
   poses.forEach(({arm,z},i)=>gesture.fromTo(arm.rotation,{z},{z:z+(i?-.35:.35),duration:.3,repeat:3,yoyo:true},0));
   if(!poses.length)gesture.to({value:0},{value:1,duration:1.2});
  }
- syncPlayback();
+ interruptedNarration=resumeNarration;syncPlayback();
 }
 for(const id of ['hero-read','cover-read'])$(id).addEventListener('click',()=>openReader());
 $('book-grid').addEventListener('click',event=>{const button=event.target.closest('[data-action]');if(!button)return;const bookId=button.dataset.id;if(button.dataset.action==='read')openReader(bookId);else{const saved=libraryState.books[bookId];saved.favorite=!saved.favorite;persist();updateLibrary();notify(saved.favorite?'已放進你的收藏書架':'已取消收藏');document.querySelector(`[data-action="favorite"][data-id="${bookId}"]`)?.focus();}});
@@ -227,7 +272,7 @@ $('next').addEventListener('click',()=>{if(turning)return;if(current===chapters.
 $('replay').addEventListener('click',replay);$('play-pause').addEventListener('click',togglePlayback);
 $('auto-toggle').addEventListener('click',()=>{auto=!auto;cancelAuto();syncPlayback();if(auto&&timelines[current].progress()===1)scheduleAuto();});
 $('sound-toggle').addEventListener('click',()=>{sound=!sound;soundscape.setEnabled(sound);$('sound-toggle').setAttribute('aria-pressed',String(sound));$('sound-toggle').textContent=`環境音：${sound?'開':'關'}`;syncPlayback();});
-$('voice-toggle').addEventListener('click',()=>{voice=!voice;$('voice-toggle').setAttribute('aria-pressed',String(voice));$('voice-toggle').innerHTML=`♫ <span>台灣女聲：${voice?'開':'關'}</span>`;if(voice){const line=chapters[current].lines[Math.max(0,activeLine)];speak(line[1],line[0]);}else{const held=pendingLine!==null;stopSpeech();if(held&&playing)timelines[current].play();$('voice-status').textContent='';}});
+$('voice-toggle').addEventListener('click',()=>{voice=!voice;$('voice-toggle').setAttribute('aria-pressed',String(voice));$('voice-toggle').innerHTML=`♫ <span>台灣女聲：${voice?'開':'關'}</span>`;if(voice){const line=chapters[current].lines[Math.max(0,activeLine)];speak(line[1],line[0]);}else{const phase=narrativePhase,held=pendingLine!==null,ending=pendingPageEnd;stopSpeech();if(playing){if(phase==='closing'||ending)finishPage();else if(held||phase==='opening')timelines[current].play();}$('voice-status').textContent='';}});
 $('chapter-dots').addEventListener('click',event=>{const button=event.target.closest('[data-page]');if(button)goTo(Number(button.dataset.page));});
 $('actor-controls').addEventListener('click',event=>{const button=event.target.closest('[data-character]');if(button){const names=[...new Set(chapters[current].lines.map(l=>l[0]))];interact(names[Number(button.dataset.character)]);}});
 $('reset-camera').addEventListener('click',()=>world?.resetView());

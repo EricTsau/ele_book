@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "森林要辦黃昏音樂會，咚咚帶來大鼓，啾啾練好清亮的歌，叮叮則拿出兩片能輕輕碰響的小石頭。牠們約在樹下排練，咚咚想讓遠處的人也聽見，每一下都敲得很用力。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "啾啾跟著提高聲音，叮叮的石頭聲很快消失在鼓聲裡。排練結束，大家都說好熱鬧，卻沒有人知道叮叮今天到底有沒有加入演奏，連牠自己都不太確定。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "叮叮",
       "text": "我想加入，卻不想一直用力敲。",
@@ -25,6 +37,18 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "啾啾",
       "text": "那我們一起換一種練法。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "第二次排練，叮叮換了更大的石頭，努力敲出大聲一點的節奏。可是石頭太重，牠很快就手酸，原本清脆的聲音也變得笨笨的。啾啾唱完一段，發現叮叮把兩顆大石頭放回地上，抱著痠痛的手腕，準備離開。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "咚咚以為牠不喜歡音樂會，叮叮搖搖頭，說自己喜歡，只是不知道怎麼加入。樹下第一次安靜下來，三個朋友終於能聽清楚彼此說的話。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,6 +64,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "啾啾請大家把樂器放好，先安靜聽一分鐘。風穿過樹葉，遠處有水滴落進小窪，近處則有叮叮輕輕移動石頭的聲音。咚咚驚訝地發現，自己喜歡那個小小的叮聲。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠試著把鼓槌放輕，只敲一個穩定的低音，讓叮叮在兩次鼓聲之間回應。啾啾沒有急著開口，等小石頭說完，再用一小句旋律接上，像三個朋友輪流聊天。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "啾啾",
       "text": "空白也是我們的音樂。",
@@ -49,6 +85,42 @@
       "file": "scene-3-line-1.mp3",
       "speaker": "咚咚",
       "text": "看到你的手，我就放輕。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "他們在大紙上畫出新的樂譜：大圓是鼓，小點是石頭，彎線是歌，空白就是一起停一下。咚咚學著看叮叮的手勢，啾啾練習在最後一個音後安靜，不急著再唱。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "排練時偶爾有人提早進來，大家就笑一笑重來，沒有怪罪誰。叮叮也不是每段都要演奏，牠可以放心等待輪到自己的小點，知道那個位置真的有人替牠留著。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-music-turn-line-0.mp3",
+      "speaker": "咚咚",
+      "text": "這裡先停一下，我會等你。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-music-turn-line-1.mp3",
+      "speaker": "叮叮",
+      "text": "輪到小點，我再開始。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-music-turn-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "咚咚和叮叮把樂譜放好，先輪流說出自己的記號。咚咚說完大圓，便停下來看著叮叮。叮叮差點提早開口，又看見咚咚願意等，便慢慢說出自己的小點。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-music-turn-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "他們沒有急著從頭趕完，而是把這一小段再試一次。這回輪到小點時，叮叮才開口，咚咚留在旁邊聽。練會等待後，叮叮知道自己的位置不會被搶走。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +136,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "音樂會開始，咚咚照著練習敲出溫柔的低音。叮叮碰響小石頭，清脆的聲音從空白裡冒出來，連最後一排的觀眾都抬起頭。啾啾把旋律放進兩種節奏中，沒有蓋過任何一方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "中途一陣風吹過，把架上的單張樂譜掀了起來，牠們互相看了一眼，先停下來等紙放好，再接著演奏。觀眾沒有不耐煩，反而跟著那個停頓一起呼吸，樹下安靜又熱鬧。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "咚咚",
       "text": "下次也先聽大家的聲音。",
@@ -73,6 +157,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "叮叮",
       "text": "我帶小石頭，你們帶耳朵。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "演出結束，大家最記得的不是誰最大聲，而是鼓、石頭和歌如何輪流出現。咚咚把鼓搬回家前，特別請叮叮再敲一次最輕的那個音。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "啾啾提議下次邀請更多朋友，先聽每個人的聲音，再決定怎麼合奏。叮叮把原來的小石頭收進袋子，沒有再去找更大的。黃昏的風掠過樹梢，三個朋友走得很慢，讓耳朵繼續收集路上的小小音樂。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "咚咚",
+      "text": "我說完了，現在換你。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "叮叮",
+      "text": "謝謝你等我，我也想說一句。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "叮叮的小聲音曾經被大鼓蓋住。今天咚咚先說一小句，就把手放下，停下來看著叮叮。等叮叮說完，牠才接著回答，兩個朋友都不必提高聲音搶位置。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "聊天也像合奏，需要輪流。你可以先聽對方把一句話說完，再說自己的想法。如果你也想說，可以輕輕表示，不用大聲蓋過別人。一起留下空位，每個人都比較容易被聽見。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

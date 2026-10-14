@@ -99,7 +99,7 @@ export function buildFairytaleScene(book,c,H){
  const extras=new THREE.Group();popup.add(extras);for(let n=0;n<6;n++){const spark=ball(.035,.06,.035,'#e6c577',extras,Math.sin(n*2.1)*1.8,.7+(n%3)*.6,Math.cos(n)*1.3);spark.rotation.z=n;}
  return arrangeSpread(addInterior(addClassicDetails(addOriginalDetails(addLegacyDetails(addStoryDetails({root,popup,pigs:actors,wolf:null,house:cottage,trees,effects,props,extras},c,H),c,H),c,H),c,H),c,H));
 }
-function makeActor(parent,ch,x,z,H){
+export function makeActor(parent,ch,x,z,H){
  const {THREE,box,ball,cone,mesh,mat}=H;const root=new THREE.Group();root.position.set(x,0,z);root.userData.character=ch.name;parent.add(root);
  const arms=[],legs=[];let mouth;let head;const color=ch.color||'#be9369',type=ch.type;
  const humans=['girl','boy','grandma','grandpa','ranger','king','prince','fairy','witch','giant','tiny-girl'];

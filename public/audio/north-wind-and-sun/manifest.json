@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "山路上，一位旅人披著厚外套，準備走到山另一邊的村莊。天空中的北風看見他，忍不住向太陽誇耀自己的力氣。北風能吹彎小樹、捲起落葉，還能把雲推到很遠的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "太陽聽完，沒有急著回答，只把光輕輕灑在田野。北風覺得這樣太安靜了，便提出比一比，看誰能讓旅人脫下外套。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "旅人",
       "text": "好冷，我得把鈕扣扣上。",
@@ -25,6 +37,18 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "旅人",
       "text": "抓緊外套，別讓風吹走。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "太陽答應先躲到雲後，讓北風試試自己的辦法。北風鼓起力氣，呼地吹過山口，路旁的草全彎了腰。旅人被冷風吹得縮起脖子，立刻把外套領口拉高。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "他原本只扣了一顆鈕扣，現在一顆接著一顆扣好。北風沒有想到，自己越想吹走那件外套，旅人反而越想把它留在身上，連衣角也抓得緊緊的。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,6 +64,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "北風覺得自己還不夠努力，又叫來更大的陣風。塵土在路面上轉圈，枯葉擦過旅人的靴子。旅人停在大石頭後面，用身體護住背包，兩隻手交叉抱緊外套。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "北風吹得呼呼喘氣，卻始終沒有成功。旅人並不是想和誰比賽，他只是需要暖和一點。北風終於停下來，發現自己忘了想想對方真正的感受。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "旅人",
       "text": "風停了，陽光真舒服。",
@@ -49,6 +85,18 @@
       "file": "scene-3-line-1.mp3",
       "speaker": "旅人",
       "text": "領口不用拉得這麼高了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "輪到太陽了。它沒有一下子把光變得很熱，而是先從雲邊露出一小圈金色。山路重新亮起來，樹葉也不再亂飛。旅人探出頭，覺得臉頰上暖暖的，便離開大石頭繼續走路。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "走了一段，他鬆開交叉的手，又把領口往下翻。太陽一直安靜地照著，讓整條路慢慢回暖，也讓旅人的腳步重新輕快起來。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +112,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "太陽升得更高，旅人走過一片開花的草坡，額頭開始冒出細汗。他先解開鈕扣，最後停在一棵樹下，自己把外套脫了下來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "他把外套摺好放在身旁的石頭上，喝一口水，欣賞路旁搖動的小花。天空中的北風看見這一幕，驚訝得安靜了。太陽沒有拉扯那件衣服，只是給了旅人一個可以放心脫下外套的理由。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "旅人",
       "text": "這陣小風，剛剛好。",
@@ -73,6 +133,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "旅人",
       "text": "我到村莊了，今天真順利。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "北風承認太陽贏了，也終於明白，用力推動別人並不一定有用。它把聲音放輕，變成替草地送涼的小風。旅人重新背起行李，走到村口時，正好聞到麵包的香味。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "他不知道天空中發生了一場比賽，只覺得今天的路後來變得很好走。太陽和微風一起陪著他，也一起照顧路上每一個需要溫暖或清涼的人。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "旅人",
+      "text": "我先感覺一下，現在冷不冷。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "旅人",
+      "text": "我的需要，可以好好說出來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "旅人記得，冷的時候自己想扣好外套，暖了才願意脫下。現在，他停在兩塊大小不同的布前，先看看這一塊，再看看另一塊，想想自己的需要。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "布有大有小，人也有不同的感覺，不必照別人的決定做。你可以留意自己的冷、熱和累，把感覺告訴陪你的大人；需要外套或休息時，都可以好好說出來。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

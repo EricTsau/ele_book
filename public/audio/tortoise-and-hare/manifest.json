@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "草地上，兔子總是跑得飛快。牠看見烏龜慢慢走，就忍不住炫耀自己的長腿。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "烏龜沒有生氣，只是平靜地提出一個邀請：一起從大樹出發，跑到山坡上的小旗子那裡吧！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "兔子",
       "text": "看吧！我一下子就跑到前面了。",
@@ -25,6 +37,18 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "烏龜",
       "text": "一步，再一步，朝著旗子前進。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "比賽開始了。兔子像一陣風，咻地衝了出去，很快就把烏龜甩在後面。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "烏龜看著遠方的旗子，把目標記在心裡。牠沒有急著追上兔子，而是照著自己的速度，穩穩踏出下一步。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,15 +64,63 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "跑到半路，兔子回頭看，早已看不見烏龜。牠想，既然領先這麼多，睡個小覺也沒關係。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "樹蔭很涼，風也很輕。兔子閉上眼睛，不一會兒就睡著了。烏龜卻還在小路上，一步一步往前走。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-water-break-line-0.mp3",
+      "speaker": "烏龜",
+      "text": "我先休息一下，看看身體的感覺。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-water-break-line-1.mp3",
+      "speaker": "烏龜",
+      "text": "現在舒服多了，我可以繼續走。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-water-break-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "走了一段路，烏龜覺得有點累。牠在平坦的地方停下，放好水杯，坐著讓呼吸慢慢平穩。旗子還在前方，短短的休息沒有讓目標不見。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-water-break-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "烏龜看看自己的腳，覺得舒服些了，才重新往前走。牠不需要跟兔子一樣快，也不需要把疲倦藏起來；照顧好自己，才能繼續下一步。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "烏龜",
-      "text": "慢沒有關係，停下來才不會前進。",
+      "text": "累了可以休息，準備好再走下一步。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
       "file": "scene-3-line-1.mp3",
       "speaker": "烏龜",
       "text": "那面小旗子，已經越來越近了！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小路上有石頭，也有上坡。烏龜累了就深呼吸，跨過石頭，繼續往前。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠經過睡著的兔子，沒有吵鬧，也沒有停下來嘲笑。每一小步都讓旗子更近一點，而這些小步終於連成了長長的路。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +136,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "兔子醒來時，太陽已經移到另一邊。牠抬頭一看，烏龜竟然就要抵達終點了！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "兔子拼命往前跑。可是，烏龜已經踏過了旗子旁的白線。牠把最後一步走得和第一步一樣認真。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "兔子",
       "text": "我不該太得意，也不該笑你。",
@@ -73,6 +157,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "烏龜",
       "text": "下次，我們一起努力到最後。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "兔子低下頭，向烏龜道歉。牠明白，跑得快是本領，認真完成事情也同樣重要。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "烏龜邀請兔子一起散步回家。從此牠們不再拿速度取笑別人，而是互相提醒：開始之後，就好好走到最後。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "兔子",
+      "text": "我們先走一小段，再看看要不要休息。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "烏龜",
+      "text": "每個人的步子，可以不一樣。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "兔子跑得快，烏龜走得慢，牠們都完成了自己的路。兔子學會不取笑別人，烏龜也知道，累了可以休息，想辦法比硬撐更有用。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠們看看排好的小路，先走到第一個記號，停一停，再走下一段。今天想完成的事，也可以先選一個做得到的小步，不必急著跟別人比。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

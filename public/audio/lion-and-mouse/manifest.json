@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "陽光暖暖地照在草原上，獅子躺在大樹下睡午覺。小老鼠忙著找種子，沒有注意腳下的路。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠一不小心，跑到獅子的鼻子旁，鬍鬚搔到了獅子！獅子打了個大噴嚏，睜開眼睛，看見一隻嚇得發抖的小老鼠。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "小老鼠",
       "text": "請讓我回家，有一天我也會幫助你。",
@@ -25,6 +37,18 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "獅子",
       "text": "這麼小的你，也能幫得上忙嗎？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "獅子用大爪子擋住小老鼠。小老鼠誠懇地道歉，請獅子讓牠回家，還答應有一天會幫忙。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "獅子覺得很好笑：這麼小的老鼠，能幫上什麼忙呢？但看見牠認真的模樣，獅子慢慢鬆開了爪子。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,6 +64,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "獅子讓出一條路，小老鼠趕緊跑回草叢，回頭大聲說了謝謝。獅子伸個懶腰，繼續享受午後的風。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠沒有把小老鼠的承諾放在心上，也沒有期待回報。有時候，一次溫柔的選擇，就已經讓世界變得不一樣。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "獅子",
       "text": "有人能幫幫忙嗎？我被網子困住了！",
@@ -49,6 +85,42 @@
       "file": "scene-3-line-1.mp3",
       "speaker": "小老鼠",
       "text": "我聽見了！先別亂動，我來想辦法。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "幾天後，獅子走過草原，不小心踩進一張遺留的大網。牠越用力掙扎，繩子就纏得越緊。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "獅子停下來大聲求助。正在附近找種子的小老鼠聽見熟悉的聲音，立刻沿著草叢跑了過來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-look-at-knot-line-0.mp3",
+      "speaker": "小老鼠",
+      "text": "先停一下，我想看看繩結在哪裡。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-look-at-knot-line-1.mp3",
+      "speaker": "小老鼠",
+      "text": "先找到交會的地方，再想辦法。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-look-at-knot-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小老鼠沒有馬上亂咬一通，而是繞著網子看一看。牠發現獅子一拉扯，繩結就更緊，便請獅子先停下來，讓自己看清楚繩子交會的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-look-at-knot-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "獅子試著放鬆身體，聽小老鼠把方法說完。這一次牠沒有笑朋友太小，而是相信朋友看見了自己沒注意的細節。他們先一起觀察，再開始行動。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +136,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小老鼠找到網子的繩結，用尖尖的牙齒，一口一口把繩子咬斷。牠沒有獅子的力氣，卻有自己的本領。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "一條斷了，又一條斷了。網子終於鬆開，獅子小心地站起身，重新呼吸到自由的空氣。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "獅子",
       "text": "原來，每個人都有能幫上忙的地方。",
@@ -73,6 +157,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "小老鼠",
       "text": "朋友不分大小，我們互相照顧！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "獅子低下頭，和小老鼠輕輕碰了碰鼻子。牠終於明白，身體大小不能決定一個人的價值。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "從那天起，草原上多了一對特別的朋友。一個看得遠，一個鑽得巧；遇到困難時，他們總能找到彼此的力量。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "獅子",
+      "text": "請你幫我看看，要往哪邊移。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "小老鼠",
+      "text": "好，我們一起慢慢來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小老鼠救了獅子，但牠不必先救誰，才值得被溫柔對待。獅子也學會，自己力氣大，仍然可以停下來聽別人的想法，請朋友幫忙。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠們一起移動一個輕輕的小籃子，一個看方向，一個扶住旁邊。現實遇到動物受困或危險物品，要先找大人；我們可以從安全的小合作開始練習。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

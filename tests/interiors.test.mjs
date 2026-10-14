@@ -40,7 +40,7 @@ test('walls in front of character faces remain faint from either supported side 
  const camera=new H.THREE.PerspectiveCamera(),ray=new H.THREE.Raycaster();
  for(const book of books)for(const [index,c]of book.chapters.entries()){
   if(!interiorSpec(c))continue;
-  const f=sceneFixture(book.id,index);
+  const f=sceneFixture(book.id,c.storyIndex);
   for(const t of [3,8,13]){
    const s=f.seek(t),room=s.interior;
    for(const position of [[-5,7,9],[7,7,9]]){

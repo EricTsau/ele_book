@@ -1,13 +1,16 @@
 import {test,expect} from '@playwright/test';
+import {tag,expectAudio} from './helpers.mjs';
 test('reader renders a real 3D book with depth and autoplay on page entry',async({page})=>{
  await page.goto('/');await page.locator('#hero-read').click();
  await expect(page.locator('#story-canvas')).toBeVisible();
  const info=await page.evaluate(()=>window.__storybook3d.inspect());
  expect(info.webgl).toBe(true);expect(info.meshes).toBeGreaterThan(30);expect(info.bookDepth).toBeGreaterThan(0);
  await page.locator('#play-pause').click();
- await page.locator('#next').click();await expect(page.locator('#chapter-tag')).toHaveText('02 / 08');
+ await page.locator('#next').click();await expect(page.locator('#chapter-tag')).toHaveText(tag('three-little-pigs',1));
  await expect(page.locator('#play-pause')).toHaveAttribute('aria-label','暫停動畫');
  await expect.poll(()=>page.locator('#story-audio').evaluate(a=>!a.paused&&a.currentTime>0)).toBe(true);
+ await expectAudio(page,'opening');
+ await page.locator('#voice-toggle').click();
  const time=await page.evaluate(()=>window.__timelines['pigs-1'].time());await page.waitForTimeout(200);
  expect(await page.evaluate(()=>window.__timelines['pigs-1'].time())).toBeGreaterThan(time);
 });

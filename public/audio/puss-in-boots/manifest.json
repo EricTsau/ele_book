@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "磨坊裡的青年，只得到一隻貓當作家人留下的禮物。他摸摸空口袋，不知道往後的日子該怎麼過。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "貓抖抖鬍鬚，開口說話了。牠想要一雙結實的靴子，和一個能裝東西的小袋子。青年決定相信這位特別的朋友。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "靴子貓",
       "text": "每幫一個忙，就多認識一位朋友。",
@@ -25,6 +37,18 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "青年",
       "text": "我也一起來，不能只讓你辛苦。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "穿好靴子的貓，走起路來神氣極了。牠沿著小溪，幫農夫送信、替市場裡的人搬運東西。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠把賺來的食物帶回家，也學會了很多地方的消息。青年發現，朋友的本領不只是會說話，更是願意動手去做。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,6 +64,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "有一天，靴子貓帶著農夫們分享的新鮮蔬果，到城堡探望國王。牠坦白說明，這是大家一起努力的成果。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "國王對這隻有禮貌又會辦事的貓很感興趣，邀請青年來幫忙照顧王國的菜園。新的機會，就這樣打開了門。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-listen-first-line-0.mp3",
+      "speaker": "靴子貓",
+      "text": "我先聽清楚，大家需要什麼。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-listen-first-line-1.mp3",
+      "speaker": "國王",
+      "text": "那是村民共用的地方，不是獎品。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-listen-first-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "國王請靴子貓先停一停，聽聽村民帶來的消息。原來附近的舊城堡一直是大家共用的地方，巨魔住進去後，卻不讓原來使用的人進門。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-listen-first-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "靴子貓沒有把城堡當成給自己的禮物。牠再問一次，大家希望得到什麼幫助。國王說，重要的是讓村民取回共同的地方，不是替誰增加一座房子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "巨魔",
       "text": "不管多大、多小，我都變得出來！",
@@ -49,6 +109,18 @@
       "file": "scene-3-line-1.mp3",
       "speaker": "靴子貓",
       "text": "那麼，小老鼠也難不倒你囉？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "附近有一位巨魔，霸佔了一座舊城堡，總愛炫耀自己會變身。靴子貓來到門前，聽牠講了好多厲害的本領。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "貓沒有硬碰硬，而是好奇地問：既然能變成大動物，能不能變成一隻小小的老鼠呢？巨魔立刻答應要證明，還誇口說自己的變身能維持一刻鐘，時間到了才會恢復原樣。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +136,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "一陣魔法閃過，巨魔已經變成了小老鼠。靴子貓用袋子輕輕罩住牠，請牠答應把霸佔的城堡還給村民。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "巨魔明白，光靠力量和炫耀不能贏得尊重。牠答應離開城堡，不再欺負別人，貓也把牠安全放了出來。小老鼠先離開村民的城堡，等一刻鐘過去，才在森林裡恢復原樣。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-shared-place-line-0.mp3",
+      "speaker": "青年",
+      "text": "我搬這一邊，你幫忙看路好嗎？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-shared-place-line-1.mp3",
+      "speaker": "靴子貓",
+      "text": "好，這個地方要交還給大家。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-shared-place-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "巨魔離開後，靴子貓找青年一起整理入口。牠們先把散落的木塊移到旁邊，留出大家能走過的路，再商量哪些工作還需要其他人幫忙。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-shared-place-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "青年沒有急著把自己的名字掛上門。這個地方要交還原本使用它的人，往後怎樣共用，也應該一起討論。整理完一小部分，他們便請大家接著商量。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "青年",
       "text": "謝謝你，讓我看見自己的機會。",
@@ -73,6 +181,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "靴子貓",
       "text": "朋友就是要一起，把日子過得更好。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "舊城堡變成了村民共享的地方。青年負責菜園，靴子貓繼續穿著那雙靴子，忙著替大家跑腿。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠們沒有忘記一開始的困難，也沒有把好運當成理所當然。朋友的信任、誠實和機智，讓平凡的生活有了新的可能。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "青年",
+      "text": "請幫我扶住這邊，好嗎？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "靴子貓",
+      "text": "好，我們一起慢慢移。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "靴子貓和青年曾經不知道怎樣開始生活，後來靠著合作，做成一件件小事。他們也記得，幫忙之前要問清楚，不能替別人決定一切。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "青年指著需要移動的籃子，說出自己需要哪一邊的幫助。靴子貓聽完才靠近，兩人一起慢慢移動。小小的合作，就從說清楚、聽仔細開始。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

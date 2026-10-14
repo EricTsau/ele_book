@@ -1,4 +1,5 @@
-"""Generate bundled zh-TW female dialogue; skip existing clips with matching metadata."""
+"""Generate bundled zh-TW dialogue and narration; skip clips with matching metadata."""
+import argparse
 import asyncio
 import json
 import subprocess
@@ -13,11 +14,18 @@ async def main():
         'node', '--input-type=module', '-e',
         "import {books} from './public/books.js'; console.log(JSON.stringify(books));"
     ], cwd=ROOT, text=True))
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--book', action='append', help='Generate only this book id; repeat to select several.')
+    args = parser.parse_args()
+    if args.book:
+        unknown = set(args.book) - {b['id'] for b in books}
+        if unknown: parser.error(f'Unknown books: {sorted(unknown)}')
+        books = [b for b in books if b['id'] in args.book]
     semaphore = asyncio.Semaphore(3)
-    async def render(book, chapter, index, line, existing):
+    async def render(book, chapter, index, line, existing, kind='line'):
         output = ROOT / 'public' / book['audioBase']
         output.mkdir(exist_ok=True, parents=True)
-        name = f'scene-{chapter}-line-{index}.mp3'
+        name = f'{chapter}-{kind}-{index}.mp3'
         record = {'file': name, 'speaker': line[0], 'text': line[1], 'voice': VOICE}
         if existing.get(name) == record and (output/name).exists() and (output/name).stat().st_size > 1000:
             return record
@@ -40,7 +48,12 @@ async def main():
         output = ROOT / 'public' / book['audioBase']
         manifest = output / 'manifest.json'
         existing = {r['file']:r for r in json.loads(manifest.read_text())['lines']} if manifest.exists() else {}
-        records = await asyncio.gather(*(render(book,i,j,line,existing) for i,c in enumerate(book['chapters']) for j,line in enumerate(c['lines'])))
+        jobs = []
+        for chapter in book['chapters']:
+            key = chapter['audioKey']
+            jobs.extend(render(book,key,j,line,existing) for j,line in enumerate(chapter['lines']))
+            jobs.extend(render(book,key,j,['故事旁白',text],existing,'narration') for j,text in enumerate(chapter['narration']))
+        records = await asyncio.gather(*jobs)
         manifest.write_text(json.dumps({'voice':VOICE,'locale':'zh-TW','description':'Taiwanese Mandarin female synthetic voice','lines':records},ensure_ascii=False,indent=2)+'\n')
     await asyncio.gather(*(render_book(book) for book in books))
 

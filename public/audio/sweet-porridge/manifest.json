@@ -16,6 +16,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小女孩和媽媽住在村邊，家裡的米快吃完了，她便到森林裡找能帶回家的野果。走到一棵大樹下，她遇見一位提著小鍋子的老婆婆。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "老婆婆問她為什麼發愁，小女孩便說出家裡的困難，還分了一半剛找到的果子給對方。老婆婆聽完，把小鍋子交到她手裡，說這是一份可以幫忙的禮物，但使用之前，有兩句話一定要牢牢記住。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "老婆婆",
       "text": "小鍋小鍋，煮粥吧！",
@@ -25,6 +37,18 @@
       "file": "scene-1-line-1.mp3",
       "speaker": "小女孩",
       "text": "小鍋小鍋，停下吧！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "老婆婆把小鍋放在地上，說出開始的話，小鍋裡便冒出暖暖的甜粥。接著她說出停止的話，鍋子立刻安靜下來。小女孩看得目瞪口呆，先跟著念一遍，再自己試一次。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "老婆婆提醒她，會叫鍋子煮粥還不夠，也必須會讓它停下。小女孩把兩句話牢牢記住，謝過老婆婆，雙手捧好鍋子往家裡走，想著媽媽終於可以吃一頓暖暖的晚餐。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -40,6 +64,18 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "回到家，小女孩在媽媽面前示範小鍋的本領。香甜的粥慢慢冒出來，很快裝滿兩只飯碗。媽媽高興極了，聽見女兒念了停止的話，卻忙著準備湯匙，沒有仔細記下內容。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "從此她們不必挨餓，也常常分一碗給需要幫忙的鄰居。小女孩每次煮粥，都等碗裝好了才叫鍋子停止，把桌子擦乾淨後，再把這份珍貴的禮物收回架子上。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "媽媽",
       "text": "小鍋小鍋，煮粥吧！",
@@ -49,6 +85,18 @@
       "file": "scene-3-line-1.mp3",
       "speaker": "媽媽",
       "text": "糟了，停下的話是什麼？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "有一天，小女孩出門辦事，媽媽肚子餓了，便對小鍋說出煮粥的話。甜粥很快裝滿飯碗，又慢慢升到鍋沿。媽媽想叫它停止，卻怎麼也想不起正確的句子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她換了好幾種說法，小鍋仍然不停煮。甜粥流過桌面，淌到地板，媽媽趕快退到門外求助。她這才明白，剛才應該先確定自己記得兩句話，再請小鍋開始工作。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -64,6 +112,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "甜粥越煮越多，從門口慢慢流到街上，像一條香香的米色小河。鄰居們先把孩子帶到安全的台階上，再拿碗接粥，可是接的速度遠遠趕不上煮的速度。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "小女孩回到村口，看到大家站在高處揮手，立刻明白發生了什麼事。她沿著還乾燥的小路繞到家門前，站穩後清楚念出停止的話。小鍋終於不再冒粥，街上的小河也停住了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-tidy-together-line-0.mp3",
+      "speaker": "媽媽",
+      "text": "先把這裡整理好，我也一起做。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-tidy-together-line-1.mp3",
+      "speaker": "小女孩",
+      "text": "我們一起搬到空的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-tidy-together-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小鍋終於停下，大家等到可以安全收拾時，媽媽才準備移動空籃子。小女孩走過來，兩人一起把籃子搬到空地，騰出整理東西的位置。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "bridge-tidy-together-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "媽媽沒有只說一句抱歉就離開，小女孩也不用獨自完成全部工作。她們先做眼前這一小步，再請其他大人協助收拾，讓原本慌亂的屋子慢慢恢復秩序。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "媽媽",
       "text": "這次，我把兩句都記住了。",
@@ -73,6 +157,42 @@
       "file": "scene-5-line-1.mp3",
       "speaker": "小女孩",
       "text": "需要多少，就煮多少。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "村裡的人忙了好一陣子，才把街道清理乾淨。童話裡這條甜粥路，也成了大家說了很久的趣事。媽媽向鄰居道謝，並和女兒一起把開始、停止兩句話練熟，還放了一張提醒卡在鍋旁。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "往後每次使用，她們都先確認需要多少，再請小鍋幫忙。神奇的禮物依然帶來溫暖，但家裡多了一個重要習慣：開始以前，先想好怎麼收拾和結束。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-0.mp3",
+      "speaker": "媽媽",
+      "text": "先說好，做完要怎麼收拾。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-line-1.mp3",
+      "speaker": "小女孩",
+      "text": "忘記了，我可以再問一次。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-0.mp3",
+      "speaker": "故事旁白",
+      "text": "媽媽和小女孩記得，會讓小鍋開始，還不等於知道怎樣結束。她們在桌旁看著提醒本，先商量需要多少、誰來幫忙，再一起指指收拾的位置。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-narration-1.mp3",
+      "speaker": "故事旁白",
+      "text": "今天換成玩積木，也可以先和家人說好玩完放在哪裡。忘記了就再問一次，不用裝作全都知道。遇到熱鍋或不熟悉的工具，更要先請大人幫忙，讓開始和結束都有人照顧。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]
