@@ -3,9 +3,10 @@
 function score(chapter){
  const action=chapter.action||'walk',props=chapter.props||[],cues=[];
  const add=(type,times)=>times.forEach(time=>cues.push({time,type}));
- if(chapter.storyId==='thirsty-crow'&&action==='pour')add('drop',[4.35,8.35,12.35]);
+ if(chapter.soundCues)cues.push(...chapter.soundCues);
+ else if(chapter.storyId==='thirsty-crow'&&action==='pour')add('drop',[4.35,8.35,12.35]);
  else if(chapter.wolf)add('wind',[7.6,8.5]);
- else if(chapter.house&&chapter.actors===1&&!chapter.wolf)add('knock',[4,5.4,6.5,7.6,8.7,9.8]);
+ else if(chapter.house&&chapter.actors===1&&!chapter.wolf)add('knock',[3.2,5.9,8.6,11.3]);
  else if(['build','chair-break'].includes(action))add('knock',action==='chair-break'?[7]:[4.7,5.7,6.7,7.7,8.7]);
  else if(['pour','row'].includes(action)||props.includes('boat'))add('drop',[4.5,6.5,8.5,10.5]);
  else if(['magic','transform','shine','grow','reveal'].includes(action))add('sparkle',[5,7.5,11]);
@@ -13,7 +14,7 @@ function score(chapter){
  else if(action==='sway')add('wind',[3,6,9]);
  else if(['dance','celebrate'].includes(action))add('chime',[5,8,11]);
  else add('step',[2,2.55,3.1,5.5,6.05,6.6,10.7,11.25]);
- if(props.includes('drum'))add('drum',[4,4.7,5.4,6.1,8.5,9.2]);
+ if(!chapter.soundCues&&props.includes('drum'))add('drum',[4,4.7,5.4,6.1,8.5,9.2]);
  if(chapter.collapse)add('crumble',[8.7]);
  add('music',[.6,4.4,8.2,12]);
  const watery=['lake','snow'].includes(chapter.setting)||props.includes('pond');

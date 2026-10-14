@@ -19,7 +19,7 @@ let timelines = [];
 const reader = $('reader');
 const narration = $('story-audio');
 const soundscape=createSoundscape();window.__storySound=soundscape;let sound=true;
-let audioEpoch = 0;
+let audioEpoch = 0, pendingLine = null;
 const gsap = window.gsap;
 window.__timelines = {};
 $('cover-art').innerHTML = sceneArt({ house:'brick', actors:3 }, 'cover');
@@ -62,14 +62,14 @@ chapters.forEach((c,i) => {
     tl.to(s.house.scale,{y:.15,duration:1,ease:'power2.in'},8.6);
     for(const [j,p] of s.pigs.entries()){
      const run=i===5?10.4:9.3;
-     tl.to(p.root.position,{x:2.1,z:2.1,duration:1.4,delay:j*.15,ease:'power2.in'},run);
-     tl.to(p.root.scale,{y:.01,duration:.45},run+1.5);
+     tl.to(p.root.position,{x:2.1-j*.35,z:1.8-j*.5,duration:1.4,delay:j*.15,ease:'power2.in'},run);
+     tl.set(p.root,{visible:false},run+1.5);
      for(const [k,leg] of p.legs.entries())tl.to(leg.rotation,{x:k?-.7:.7,duration:.1,repeat:13,yoyo:true},run);
     }
    }else{
     tl.to(s.wolf.root.rotation,{y:-1.2,duration:.5},11);
     tl.to(s.wolf.root.position,{x:-2.3,z:-.6,duration:1.8},11.2);
-    tl.to(s.wolf.root.scale,{y:.01,duration:.5},13);
+    tl.set(s.wolf.root,{visible:false},13.1);
    }
   }
  }else{tl.to({value:0},{value:1,duration:16});}
@@ -99,8 +99,12 @@ function updateLibrary(){
 }
 function setFilter(value){filter=value;updateLibrary();}
 function cancelAuto(){clearTimeout(autoTimer);autoTimer=null;}
-function scheduleAuto(){cancelAuto();if(auto&&reader.open&&!reduced.matches&&current<chapters.length-1) autoTimer=setTimeout(()=>goTo(current+1),3000);}
-function stopSpeech(){audioEpoch++;narration.pause();narration.currentTime=0;}
+function scheduleAuto(){
+ cancelAuto();if(!auto||!reader.open||reduced.matches||current>=chapters.length-1)return;
+ const advance=()=>{if(voice&&!narration.paused&&!narration.ended&&!narration.error){autoTimer=setTimeout(advance,200);return;}goTo(current+1);};
+ autoTimer=setTimeout(advance,3000);
+}
+function stopSpeech(){pendingLine=null;audioEpoch++;narration.pause();narration.currentTime=0;}
 function stopGesture(){gesture?.kill();gesture=null;interacting=false;}
 function speak(text,who){
  if(!voice) return;
@@ -123,10 +127,20 @@ function showLine(line){
 }
 function updateDialogue(time){
  const lines=chapters[current].lines;
- const cues=currentBook.id==='three-little-pigs'?(current===4?[0,4,7.6]:current===5?[0,7,10.4]:current===6?[0,7,12]:lines.length===2?[0,7]:[0,5,10]):lines.length===2?[0,7]:[0,5,10];
- const idx=Math.max(0,cues.findLastIndex(cue=>time>=cue));
- if(idx!==activeLine){activeLine=idx;showLine(lines[idx]);}
+ const cues=chapters[current].cues||(currentBook.id==='three-little-pigs'?(current===4?[0,4,7.6]:current===5?[0,7,10.4]:current===6?[0,7,12]:lines.length===2?[0,7]:[0,5,10]):lines.length===2?[0,7]:[0,5,10]);
+ const idx=cues.findLastIndex(cue=>time>=cue);
+ if(idx<0)return;
+ if(idx!==activeLine){
+  if(voice&&activeLine>=0&&!narration.paused&&!narration.ended&&!narration.error){pendingLine=idx;timelines[current].pause();return;}
+  pendingLine=null;activeLine=idx;showLine(lines[idx]);
+ }
 }
+function releasePendingLine(){
+ if(pendingLine===null||!reader.open||!playing)return;
+ const index=pendingLine;pendingLine=null;activeLine=index;showLine(chapters[current].lines[index]);timelines[current].play();
+}
+narration.addEventListener('ended',releasePendingLine);
+narration.addEventListener('error',releasePendingLine);
 function syncPlayback(){
  soundscape.tick(timelines[current]?.time()||0,playing&&reader.open,voice&&!narration.paused&&!narration.ended);
  $('play-pause').textContent=playing?'Ⅱ':'▶';
@@ -147,7 +161,7 @@ function renderPage(){
  $('interaction-hint').textContent=c.prompt;
  const names=[...new Set(c.lines.map(line=>line[0]))];
  $('actor-controls').innerHTML=names.map((name,i)=>`<button data-character="${i}">${name} <span aria-hidden="true">♬</span></button>`).join('');
- activeLine=-1;const tl=timelines[current];
+ activeLine=-1;currentSpeaker=null;$('dialogue').textContent=c.title;$('scene-bubble').textContent='';const tl=timelines[current];
  tl.pause(0);
  if(reduced.matches){tl.progress(1,true).pause();showLine(c.lines[0]);$('dialogue').innerHTML=c.lines.map(l=>`<span><strong>${l[0]}</strong>${l[1]}</span>`).join('');playing=false;}
  else{updateDialogue(0);playing=true;tl.play(0);}
@@ -185,8 +199,8 @@ function goTo(target){
 }
 function togglePlayback(){
  if(turning||reduced.matches) return;
- cancelAuto();stopGesture();const tl=timelines[current];
- if(playing){tl.pause();narration.pause();playing=false;}else{playing=true;if(tl.progress()===1){activeLine=-1;tl.restart();}else{tl.play();if(voice&&narration.src&&!narration.ended)narration.play().catch(()=>{});}}
+ cancelAuto();const wasPlaying=playing;stopGesture();const tl=timelines[current];
+ if(wasPlaying){tl.pause();narration.pause();playing=false;}else{playing=true;if(tl.progress()===1){activeLine=-1;tl.restart();}else{tl.play();if(voice&&narration.src&&!narration.ended)narration.play().catch(()=>{});}}
  syncPlayback();
 }
 function replay(){if(turning)return;cancelAuto();stopGesture();stopSpeech();activeLine=-1;renderPage();}
@@ -195,8 +209,12 @@ function interact(name){
  const line=chapters[current].lines.find(l=>l[0]===name);if(line)showLine(line);
  if(!reduced.matches){
   interacting=true;playing=true;
-  const start=name==='大野狼'?6.7:1.2;
-  gesture=timelines[current].tweenFromTo(start,start+2,{onComplete:()=>{interacting=false;gesture=null;playing=false;syncPlayback();}});
+  const actor=[...(world?.scenes[current].pigs||[]),world?.scenes[current].wolf].find(a=>a?.name===name);
+  const poses=(actor?.arms||[]).map(arm=>({arm,z:arm.rotation.z}));
+  const restore=()=>{poses.forEach(({arm,z})=>{arm.rotation.z=z;});interacting=false;gesture=null;playing=false;};
+  gesture=gsap.timeline({onComplete:()=>{restore();syncPlayback();},onInterrupt:restore});
+  poses.forEach(({arm,z},i)=>gesture.fromTo(arm.rotation,{z},{z:z+(i?-.35:.35),duration:.3,repeat:3,yoyo:true},0));
+  if(!poses.length)gesture.to({value:0},{value:1,duration:1.2});
  }
  syncPlayback();
 }
@@ -209,7 +227,7 @@ $('next').addEventListener('click',()=>{if(turning)return;if(current===chapters.
 $('replay').addEventListener('click',replay);$('play-pause').addEventListener('click',togglePlayback);
 $('auto-toggle').addEventListener('click',()=>{auto=!auto;cancelAuto();syncPlayback();if(auto&&timelines[current].progress()===1)scheduleAuto();});
 $('sound-toggle').addEventListener('click',()=>{sound=!sound;soundscape.setEnabled(sound);$('sound-toggle').setAttribute('aria-pressed',String(sound));$('sound-toggle').textContent=`環境音：${sound?'開':'關'}`;syncPlayback();});
-$('voice-toggle').addEventListener('click',()=>{voice=!voice;$('voice-toggle').setAttribute('aria-pressed',String(voice));$('voice-toggle').innerHTML=`♫ <span>台灣女聲：${voice?'開':'關'}</span>`;if(voice){const line=chapters[current].lines[Math.max(0,activeLine)];speak(line[1],line[0]);}else{stopSpeech();$('voice-status').textContent='';}});
+$('voice-toggle').addEventListener('click',()=>{voice=!voice;$('voice-toggle').setAttribute('aria-pressed',String(voice));$('voice-toggle').innerHTML=`♫ <span>台灣女聲：${voice?'開':'關'}</span>`;if(voice){const line=chapters[current].lines[Math.max(0,activeLine)];speak(line[1],line[0]);}else{const held=pendingLine!==null;stopSpeech();if(held&&playing)timelines[current].play();$('voice-status').textContent='';}});
 $('chapter-dots').addEventListener('click',event=>{const button=event.target.closest('[data-page]');if(button)goTo(Number(button.dataset.page));});
 $('actor-controls').addEventListener('click',event=>{const button=event.target.closest('[data-character]');if(button){const names=[...new Set(chapters[current].lines.map(l=>l[0]))];interact(names[Number(button.dataset.character)]);}});
 $('reset-camera').addEventListener('click',()=>world?.resetView());

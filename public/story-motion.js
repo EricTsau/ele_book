@@ -1,15 +1,20 @@
 import {storyEvent} from './story-events.js';
 // Finite story blocking: actors travel, face their partners, and affect the set.
 // All motion is scheduled on the owning GSAP timeline so seek, replay, and pause agree.
-function walk(tl,a,x,z,at=2,duration=3,{run=false,face=0}={}){
+const routes=new WeakMap();
+export function walk(tl,a,x,z,at=2,duration=3,{run=false,face=0,height=a?.root.position.y||0}={}){
  if(!a)return;
- const stride=run?.12:.23,cycles=Math.max(2,Math.floor(duration/stride));
- tl.to(a.root.rotation,{y:Math.atan2(x-a.root.position.x,z-a.root.position.z),duration:.22},at);
+ const stride=run?.12:.23,cycles=Math.max(2,Math.floor(duration/stride/2)*2);
+ if(!routes.has(tl))routes.set(tl,new Map());
+ const route=routes.get(tl);if(!route.has(a))route.set(a,[]);
+ const steps=route.get(a),previous=steps.filter(p=>p.at<at).sort((a,b)=>b.at-a.at)[0]||a.root.position;
+ const heading=Math.atan2(x-previous.x,z-previous.z);steps.push({at,x,z});
+ tl.to(a.root.rotation,{y:heading,duration:.22},at);
  tl.to(a.root.position,{x,z,duration,ease:'sine.inOut'},at);
  for(const [i,leg]of a.legs.entries())tl.fromTo(leg.rotation,{x:i%2?-.38:.38},{x:i%2?.38:-.38,duration:stride,repeat:cycles-1,yoyo:true,ease:'sine.inOut',immediateRender:false},at);
  for(const [i,arm]of a.arms.entries())tl.fromTo(arm.rotation,{x:i%2?.3:-.3},{x:i%2?-.3:.3,duration:stride,repeat:cycles-1,yoyo:true,ease:'sine.inOut',immediateRender:false},at);
- tl.to(a.root.position,{y:run?.12:.055,duration:stride,repeat:cycles-1,yoyo:true,ease:'sine.inOut'},at);
- tl.to(a.root.position,{y:0,duration:.12},at+duration);
+ tl.fromTo(a.root.position,{y:height},{y:height+(run?.12:.055),duration:duration/cycles,repeat:cycles-1,yoyo:true,ease:'sine.inOut',immediateRender:false},at);
+ tl.to(a.root.position,{y:height,duration:.12},at+duration);
  for(const part of [...a.legs,...a.arms])tl.to(part.rotation,{x:0,duration:.15},at+duration);
  tl.to(a.root.rotation,{y:face,duration:.25},at+duration);
 }
@@ -131,23 +136,27 @@ export function choreographStory(tl,s,c){
 }
 
 export function choreographPigs(tl,s,c,index){
- if(index===0){for(const [i,p]of s.pigs.entries()){walk(tl,p,-1.5+i*.7,.2,1.3+i*.3,3);walk(tl,p,1.4-i*.8,.8,6+i*.2,4);hop(tl,p,12+i*.2);}}
+ if(index===0){for(const [i,p]of s.pigs.entries()){walk(tl,p,-1.5+i*.7,.2,1.3+i*.3,3);walk(tl,p,-.8+i*.7,.8,6+i*.2,4);hop(tl,p,12+i*.2);}}
  else if(index>=1&&index<=3){
-  const pig=s.pigs[0];walk(tl,pig,-1.35,.65,1.2,1.7);reach(tl,pig,3,{repeat:1});
+  const pig=s.pigs[0];
+  tl.set(s.house.scale,{y:.025},0);
   for(const [n,piece]of s.supplies.entries()){
-   const at=3.2+n*2.2;
-   tl.to(piece.position,{x:-.7,y:.68,z:.6,duration:.5},at);
-   tl.to(piece.position,{x:.3,y:.3+n*.23,z:.2,duration:1},at+.5);
-   tl.to(piece.scale,{x:.01,y:.01,z:.01,duration:.3},at+1.5);
+   const at=1.4+n*2.7;
+   walk(tl,pig,-1.35,.65,at,.5,{face:Math.PI});reach(tl,pig,at+.5,{repeat:1});
+   tl.to(piece.position,{x:-1.25,y:.62,z:.5,duration:.35},at+.55);
+   walk(tl,pig,-.35,.4,at+1,.65,{face:Math.PI});
+   tl.to(piece.position,{x:-.35,y:.62,z:.22,duration:.65},at+1);
+   tl.to(piece.position,{x:.05,y:.25+n*.26,z:-.1,duration:.35},at+1.7);
+   tl.to(piece.scale,{x:.01,y:.01,z:.01,duration:.15},at+2.05);
+   tl.to(s.house.scale,{y:(n+1)/s.supplies.length,duration:.45},at+1.75);
   }
-  walk(tl,pig,-.25,.6,3.6,1.7,{face:.4});reach(tl,pig,5.4,{repeat:4});
-  if(s.house)tl.fromTo(s.house.scale,{y:.08},{y:1,duration:7.7,immediateRender:false,ease:'none'},3.2);
-  walk(tl,pig,-1.1,1.1,11.3,1.8);hop(tl,pig,13.3);
+  walk(tl,pig,-1.1,1.1,12.4,1.2);hop(tl,pig,14);
  }else if(c.wolf){
   tl.fromTo(s.wolf.root.position,{x:-2.4,z:1.8},{x:-1.65,z:.85,duration:2.6,immediateRender:false},1.1);
   for(const arm of s.wolf.arms)tl.to(arm.rotation,{x:-.75,duration:.3,repeat:5,yoyo:true},4);
-  for(const [i,p]of s.pigs.entries())walk(tl,p,-.15+i*.47,.65,1.3+i*.15,2.7,{face:-.4});
+  tl.to(s.wolf.root.rotation,{y:2.2,duration:.4},3.7);
+  for(const [i,p]of s.pigs.entries())walk(tl,p,.55+(i-(s.pigs.length-1)/2)*.5,-.52,1.3+i*.15,2.7,{face:0});
  }else{
-  for(const [i,p]of s.pigs.entries()){walk(tl,p,(i-1)*.65,.7,1.4+i*.25,3);reach(tl,p,5+i*.3,{bend:.12,repeat:2});walk(tl,p,(i-1)*.85,1.2,10+i*.1,2);hop(tl,p,13+i*.1);}
+  for(const [i,p]of s.pigs.entries()){walk(tl,p,(i-1)*.7,.55,1.4+i*.25,3,{face:0});reach(tl,p,5+i*.3,{bend:.12,repeat:2});reach(tl,p,10+i*.3,{bend:.12,repeat:2});}
  }
 }

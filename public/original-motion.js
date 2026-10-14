@@ -1,31 +1,119 @@
 // Chapter-specific blocking for the ten original books. All state belongs to the
 // finite GSAP timeline: no timers, reparenting, callbacks, or random destinations.
 export function originalEvent(tl,s,c,M){
- const {walk,reach,hop,look}=M,a=s.pigs,e=s.effects,i=c.storyIndex;
+ const {walk,reach:gesture,hop,look}=M,a=s.pigs,e=s.effects,i=c.storyIndex;
  const ids=['lantern-with-many-windows','rain-post-office','bridge-that-listened','shadow-takes-a-day-off','seed-library-notebook','clock-with-a-breath','paper-boat-map','cloud-tailor-pockets','bakery-under-the-stars','orchestra-of-small-sounds'];
  if(!ids.includes(c.storyId)||i<0||i>5)return false;
- const p=k=>s.props.children.find(o=>o.userData.prop===k),first=a[0],second=a[1];
- const move=(o,v,t,d=1)=>{if(o)tl.to(o.position,{...v,duration:d,ease:'sine.inOut'},t);};
+ const p=k=>s.props.children.find(o=>o.userData.prop===k),first=a[0],second=a[1],o=e.original||{};
+ const tracks=new Map(a.map(actor=>[actor.root,[{at:0,x:actor.root.position.x,z:actor.root.position.z}]]));
+ const pose=(actor,time)=>{let result=tracks.get(actor?.root)?.[0]||{x:0,z:0};for(const point of tracks.get(actor?.root)||[])if(point.at<=time)result=point;return result;};
+ const move=(obj,v,t,d=1)=>{if(obj){tl.to(obj.position,{...v,duration:d,ease:'sine.inOut',...(t===0&&d===0?{immediateRender:true}:{})},t);if(tracks.has(obj)){const last=tracks.get(obj).at(-1);tracks.get(obj).push({at:t+d,x:v.x??last.x,z:v.z??last.z});}}};
  const rotate=(o,v,t,d=1)=>{if(o)tl.to(o.rotation,{...v,duration:d,ease:'sine.inOut'},t);};
  const scale=(o,v,t,d=1)=>{if(o)tl.to(o.scale,{...v,duration:d,ease:'sine.inOut',...(t===0&&d===0?{immediateRender:true}:{})},t);};
  const arm=(actor,x,t,d=.3,repeat=1)=>{if(actor)for(const limb of actor.arms)tl.to(limb.rotation,{x,duration:d,repeat,yoyo:true},t);};
  const nod=(actor,t)=>{if(actor)tl.to(actor.root.rotation,{x:.13,duration:.3,repeat:3,yoyo:true},t);};
- const crouch=(actor,t)=>{if(actor){rotate(actor.root,{x:.38},t,.6);move(actor.root,{y:-.09},t,.6);}};
+ const crouch=(actor,t)=>{if(actor)rotate(actor.root,{x:.28},t,.6);};
  const stand=(actor,t)=>{if(actor){rotate(actor.root,{x:0,z:0},t,.6);move(actor.root,{y:0},t,.6);}};
- const write=(actor,t,cycles=4)=>{if(actor){rotate(actor.root,{x:.22},t,.3);for(const [j,limb]of actor.arms.entries())tl.to(limb.rotation,{x:j?-.55:-1.02,z:j?0:.2,duration:.24,repeat:cycles*2-1,yoyo:true},t);rotate(actor.root,{x:0},t+cycles*.48,.3);}};
- const openBook=(t)=>{const book=p('books')?.children.at(-1);if(book){move(book,{y:1,z:.5},t,.8);rotate(book,{x:-.48,y:.35},t+.7,1);}};
+ const write=(actor,t,cycles=4)=>{if(!actor)return;const index=a.indexOf(actor),duration=cycles*.48,wall=actor.name==='影影'&&[2,4].includes(i);
+  if(wall)focus(actor,{x:.85,z:-.7},t-.3);
+  if(!wall)scale(o.heldNotes?.[index],{x:1,y:1,z:1},t,.15);scale(o.pencils?.[index],{x:1,y:1,z:1},t,.15);
+  rotate(actor.root,{x:.12},t,.3);
+  for(const [j,limb]of actor.arms.entries())tl.to(limb.rotation,{x:j?-.65:-1.02,z:j?0:.18,duration:.24,repeat:cycles*2-1,yoyo:true},t);
+  rotate(actor.root,{x:0},t+duration,.3);scale(o.heldNotes?.[index],{x:.001,y:.001,z:.001},t+duration+.3,.15);scale(o.pencils?.[index],{x:.001,y:.001,z:.001},t+duration+.3,.15);
+ };
+ const openBook=t=>{scale(o.heldNotes?.[0],{x:1,y:1,z:1},t,.2);arm(first,-.65,t,.3,0);};
+ const focus=(actor,target,t)=>{if(!actor||!target)return;const pos=pose(actor,t);rotate(actor.root,{y:Math.atan2(target.x-pos.x,target.z-pos.z)},t,.25);};
+ const reach=(timeline,actor,t,options={})=>{
+  const target=c.storyId==='orchestra-of-small-sounds'?{x:-.35,z:.15}:c.storyId==='rain-post-office'||c.storyId==='bakery-under-the-stars'?{x:0,z:.43}:c.storyId==='seed-library-notebook'?{x:0,z:.15}:c.storyId==='clock-with-a-breath'?{x:.3,z:.1}:c.storyId==='shadow-takes-a-day-off'?{x:.85,z:-.7}:c.storyId==='bridge-that-listened'?{x:0,z:-.75}:c.storyId==='paper-boat-map'?{x:.25,z:-.2}:{x:0,z:.05};
+  focus(actor,target,Math.max(0,t-.3));gesture(timeline,actor,t,options);
+ };
  const flap=(bird,t,duration=3)=>{if(bird)for(const [j,w]of bird.arms.entries())tl.to(w.rotation,{z:j?-.82:.82,duration:.25,repeat:Math.max(1,Math.floor(duration/.25)-1),yoyo:true},t);};
  const face=(actor,y,t)=>{if(actor)rotate(actor.root,{y},t,.4);};
- const settle=(actor,x,z,t=1.2,d=2)=>{
+ const settle=(actor,x,z,t=1.2,d=2,options={})=>{
   // Explicit first stride also fixes exact-start seeking after a replay: GSAP's
   // deferred fromTo otherwise leaves the reset pose at the same timestamp.
   if(actor){
    actor.legs.forEach((limb,j)=>tl.set(limb.rotation,{x:j%2?-.38:.38},t));
    actor.arms.forEach((limb,j)=>tl.set(limb.rotation,{x:j%2?.3:-.3},t));
   }
-  walk(tl,actor,x,z,t,d);
+  if(['rain-post-office','bakery-under-the-stars'].includes(c.storyId)&&z>=0&&z<.75)z=.82;
+  if(c.storyId==='clock-with-a-breath'&&z<.75)z=.82;
+  if(actor)tracks.get(actor.root).push({at:t+d,x,z});
+  walk(tl,actor,x,z,t,d,options);
  };
- const glow=(t)=>{const light=p('lantern')?.children[0];if(light?.material?.color)tl.to(light.material.color,{r:1,g:.83,b:.42,duration:1.4},t);};
+ const glow=(t)=>{const light=o.lampBulb;if(light?.material?.color)tl.to(light.material.color,{r:1,g:.83,b:.42,duration:1.4},t);};
+ const rest=obj=>obj?.userData?.restScale||{x:1,y:1,z:1};
+ const show=(obj,t)=>scale(obj,{x:rest(obj).x,y:rest(obj).y,z:rest(obj).z},t,.12);
+ const hide=(obj,t)=>scale(obj,{x:.001,y:.001,z:.001},t,.12);
+ const atStart=(obj,visible)=>{if(obj)tl.set(obj.scale,{x:visible?rest(obj).x:.001,y:visible?rest(obj).y:.001,z:visible?rest(obj).z:.001,immediateRender:true},0);};
+ const deckPath=(actor,xs,t,d,z=-.75,heightScale=1)=>{
+  if(!actor)return;
+  const deckY=x=>{const u=Math.max(0,Math.min(11,(x+1.45)/.26)),lo=Math.floor(u),hi=Math.min(11,lo+1),mix=u-lo;return (.255+.38*((1-mix)*Math.sin(lo/11*Math.PI)+mix*Math.sin(hi/11*Math.PI)))*heightScale;};
+  tl.set(actor.root.position,{x:xs[0],y:deckY(xs[0]),z},t);
+  face(actor,xs.at(-1)>xs[0]?Math.PI/2:-Math.PI/2,t);
+  for(let n=1;n<xs.length;n++)move(actor.root,{x:xs[n],y:deckY(xs[n]),z},t+(n-1)*d/(xs.length-1),d/(xs.length-1));
+  const cycles=Math.max(2,Math.floor(d/.46)*2);
+  for(const [n,leg]of actor.legs.entries())tl.fromTo(leg.rotation,{x:n%2?-.28:.28},{x:n%2?.28:-.28,duration:d/cycles,repeat:cycles-1,yoyo:true,immediateRender:false},t);
+  actor.legs.forEach(leg=>tl.to(leg.rotation,{x:0,duration:.1},t+d));
+ };
+ function applyDetails(){
+  if(c.storyId==='lantern-with-many-windows'){
+   if(i===0){o.patches?.forEach((v,n)=>{rotate(v,{z:(n-1)*.2},1.6,.4);hide(v,2+n*.15);});move(o.brokenBranch,{y:.2},2,.8);}
+   if(i===1){o.patches?.forEach(v=>{atStart(v,false);if(v.material?.color)tl.set(v.material.color,{r:.31,g:.26,b:.22,immediateRender:true},0);});o.patches?.forEach((v,n)=>show(v,4.4+n*2));}
+   if(i===2){o.patches?.forEach(v=>atStart(v,false));o.patches?.forEach((v,n)=>show(v,4.4+n*1.8));}
+   if(i===3){rotate(o.lantern,{x:.15},5,1);move(o.testSteps,{z:.15},0,0);}
+   if(i===5)show(o.extraPatch,6.3);
+  }else if(c.storyId==='rain-post-office'){
+   const held=o.heldLetters||[];
+   // Pickup/hand-off is a visibility swap between fixed-parent copies.
+   if(i===0){hide(e.letter,3.9);show(held[0],3.9);rotate(held[0],{y:Math.PI},5,1.5);rotate(held[0],{y:Math.PI*2},9,1.3);}
+   if(i===1){atStart(o.letterInk,false);show(o.letterInk,9);hide(e.letter,11.5);show(held[0],11.5);}
+   if(i===2){hide(e.letter,2.9);show(held[1],2.9);hide(held[1],11.6);show(held[0],11.6);}
+   if(i===3){atStart(o.letterInk,false);show(o.letterInk,6.8);hide(e.letter,7);show(held[0],7);hide(held[0],10);show(e.letter,10);move(e.letter,{x:.45,y:.18,z:.7},10,.1);}
+   if(i===4){atStart(e.letter,false);show(held[1],1.2);hide(held[1],4.5);show(held[0],4.5);}
+   if(i===5){atStart(o.letterInk,false);show(o.letterInk,9);hide(e.letter,10.5);show(held[1],10.5);}
+  }else if(c.storyId==='bridge-that-listened'){
+   if(i===2)scale(o.planInk,{y:.5},8.5,1);
+   if(i===5)show(o.bridgeSign,4.8);
+  }else if(c.storyId==='shadow-takes-a-day-off'){
+   if(i===2||i===4)scale(o.artInk,{x:1,y:1,z:1},4,6);
+   if(i===4)for(let n=0;n<3;n++){move(o.leafBall,{x:n%2?-1.15:-.35,z:.72},5+n*2.3,.75);rotate(o.leafBall,{z:(n+1)*Math.PI*2},5+n*2.3,.75);}
+   if(i===5)atStart(o.artInk,true);
+  }else if(c.storyId==='seed-library-notebook'){
+   if(i===0){hide(o.seedPacket,8.8);show(o.seedHands?.[0],8.8);}
+   if(i===1){atStart(o.wetSoil,false);show(o.wetSoil,4);hide(o.seedPacket,0);}
+   if(i===2){show(o.wetSoil,0);hide(o.seedPacket,0);}
+   if(i===3){show(o.drainDrops,4);move(o.drainDrops,{y:.035},4.2,.6);hide(o.drainDrops,5);}
+   if(i===4){hide(o.seedPacket,0);scale(o.flower,{x:.15,y:.15,z:.15},6,1);show(o.seedPacket,7.5);show(o.seedHands?.[0],11.4);hide(o.seedPacket,11.4);}
+   if(i===5){atStart(o.seedling,false);show(o.seedHands?.[0],1.2);hide(o.seedHands?.[0],4.8);move(o.seedPacket,{x:0,y:.45,z:.45},4.8,.1);show(o.seedPacket,4.8);}
+  }else if(c.storyId==='clock-with-a-breath'){
+   if(i===1){scale(o.clockButton,{y:.024},4.4,.15);scale(o.clockButton,{y:.045},4.65,.15);}
+   if(i>=3)o.scheduleTasks?.slice(2).forEach((task,n)=>hide(task,i===3?4.7+n*.35:0));
+  }else if(c.storyId==='paper-boat-map'){
+   if(i===0)rotate(o.boatLeaf,{y:.1},7.4,.4);
+   if(i===1){hide(e.boat,11.1);show(o.boatHands?.[0],11.1);hide(o.boatHands?.[0],13.3);}
+   if(i===2){atStart(e.boat,false);atStart(o.mapRoute,false);show(o.mapRoute,11.3);}
+   if(i===4){move(o.boatLeaf,{x:1.7,z:-.8},6,1);hide(e.boat,12.1);show(o.boatHands?.[0],12.1);}
+   if(i===5){move(e.boat,{y:.05,z:-.2},0,0);hide(e.boat,3.7);show(o.boatHands?.[0],3.7);hide(o.boatHands?.[0],7.2);show(e.boat,7.2);move(e.boat,{x:.65,y:.65,z:.5},7.2,.1);}
+  }else if(c.storyId==='cloud-tailor-pockets'){
+   if(i===0)o.pockets?.forEach((v,n)=>{atStart(v,false);show(v,4+n*1.1);});
+   if(i===1)o.pockets?.forEach(v=>scale(v,{x:1.1,y:1.3,z:1.2},2,2));
+   if(i===2)o.pockets?.slice(2).forEach((v,n)=>hide(v,7.5+n*.6));
+   if(i>=3)o.pockets?.slice(2).forEach(v=>atStart(v,false));
+   if(i===4){show(o.cloudShade,8.5);move(o.cloudShade,{x:-1.25,z:-.6},13,2);}
+   if(i===5){atStart(o.cloth,true);move(o.cloth,{x:-1.15,y:.25,z:.3},5,1.5);}
+  }else if(c.storyId==='bakery-under-the-stars'){
+   if(i===0||i===1||i===2)atStart(e.bread,false);
+   if(i===1)scale(o.dough,{y:.65,x:1.1},4,2);
+   if(i===3){hide(e.bread,12.2);show(o.breadHands?.[1],12.2);}
+   if(i===4){hide(e.bread,7.6);show(o.breadHands?.[1],7.6);show(o.closedBar,13);}
+   if(i===5){atStart(e.bread,false);show(o.breadHands?.[1],3.7);}
+  }else if(c.storyId==='orchestra-of-small-sounds'){
+   if(i===1){o.musicStones?.forEach(v=>atStart(v,false));move(o.heavyStones,{y:.46},3.8,.7);move(o.heavyStones,{y:.09},6.3,.7);}
+   if(i===2)o.musicStones?.forEach(v=>atStart(v,true));
+   if(i===3){atStart(o.scoreInk,false);show(o.scoreInk,6.5);}
+  }
+ }
  if(c.storyId==='lantern-with-many-windows'){
   const lamp=p('lantern');
   switch(i){
@@ -37,12 +125,12 @@ export function originalEvent(tl,s,c,M){
    case 2: // Different windows are inspected from both sides before relighting.
     settle(first,-.65,-.05);settle(second,.62,-.08,1.6,2);reach(tl,second,3.9,{bend:.14});rotate(lamp,{y:.85},4.5,1.5);reach(tl,first,6.2,{bend:.15});rotate(lamp,{y:-.6},7,1.5);glow(8.6);settle(first,-1,1.05,10,1.5);settle(second,.9,1.05,10.3,1.5);nod(first,12);hop(tl,second,13,.13);break;
    case 3: // The mouse tests the lowest step while the child redirects the light.
-    settle(first,-.45,-.1);settle(second,.7,-.2,1.5,2);settle(a[2],-.95,.95,2,2);reach(tl,first,4,{repeat:2});rotate(lamp,{x:.13,y:-.25},5,1.2);settle(a[2],.2,1.1,6,3);crouch(a[2],9.3);reach(tl,second,9.5,{bend:.12});glow(10);stand(a[2],11);settle(a[2],1.1,.65,11.8,2);break;
+    settle(first,-.45,-.1);settle(second,.7,-.2,1.5,2);settle(a[2],-.95,.95,2,2);reach(tl,first,4,{repeat:2});rotate(lamp,{x:.13,y:-.25},5,1.2);settle(a[2],0,1.15,6,3,{height:.14});crouch(a[2],9.3);reach(tl,second,9.5,{bend:.12});glow(10);settle(a[2],1.15,.65,11.8,2,{height:0});break;
    case 4: // Both carry the lamp beneath the porch, then check the path below.
-    settle(first,-.5,-.05);settle(second,.5,-.05,1.5,2);arm(first,-.9,3.8,.4,0);arm(second,-.9,3.8,.4,0);move(lamp,{y:.35,x:.5,z:-1.2},4.2,2.3);rotate(lamp,{y:.35},6.6,1);settle(first,-.9,1.1,8,2);look(tl,first,10,.7);settle(second,.8,.8,9,2);glow(11.2);arm(first,0,12,.4,0);arm(second,0,12,.4,0);break;
+    settle(first,-.5,-.05);settle(second,.5,-.05,1.5,2);arm(first,-.9,3.8,.4,0);arm(second,-.9,3.8,.4,0);move(lamp,{y:.25,x:-.55,z:.12},4.2,2.3);rotate(lamp,{y:.35},6.6,1);settle(first,-.9,1.1,8,2);look(tl,first,10,.7);settle(second,.8,.8,9,2);glow(11.2);arm(first,0,12,.4,0);arm(second,0,12,.4,0);break;
    case 5: // Mouse offers the new panel; child fixes it and records the repair.
     settle(second,.4,.35);reach(tl,second,3.4,{bend:.1});settle(first,-.45,.1,2.8,1.7);reach(tl,first,4.8,{repeat:2});rotate(lamp,{y:Math.PI*.6},6.7,1.3);write(first,8,4);rotate(lamp,{y:0},10.5,1.3);glow(11.3);settle(first,-.9,1.1,12,1.5);hop(tl,second,13.5,.12);break;
-  }return true;
+  }applyDetails();return true;
  }
  if(c.storyId==='rain-post-office'){
   const letter=e.letter,bird=a.find(v=>v.type==='dove');
@@ -54,12 +142,12 @@ export function originalEvent(tl,s,c,M){
    case 2: // Bird takes the letter upriver but returns instead of guessing a house.
     move(letter,{x:.55,y:.62,z:.65},2,1);settle(bird,.55,.35,1.3,1.5);move(bird?.root,{x:1.5,y:1.35,z:-1},3.3,2.8);move(letter,{x:1.5,y:1.95,z:-.7},3.3,2.8);flap(bird,3.3,8);rotate(bird?.root,{y:-1},6.3,.5);look(tl,bird,7,-.7);move(bird?.root,{x:.55,y:0,z:.45},9,2.5);move(letter,{x:.55,y:.6,z:.7},9,2.5);reach(tl,first,12,{bend:.15});nod(a[2],13);break;
    case 3: // Write the precise address, read it back, invite the turtle's print.
-    settle(first,-.5,.35);settle(second,.6,.4,1.5,2);move(letter,{x:0,y:.28,z:.6},3.5,.6);rotate(letter,{x:-1},3.5,.6);write(first,4.2,5);move(letter,{y:.82},7,.8);rotate(letter,{x:0,y:.5},7,.8);nod(second,9);move(letter,{y:.15,x:.45},10,.7);reach(tl,second,11,{bend:.35});rotate(letter,{x:0,y:0},12.5,.6);move(letter,{y:1,x:0},12.5,1);break;
+    settle(first,-.5,.35);settle(second,.6,.4,1.5,2);move(letter,{x:0,y:.28,z:.6},3.5,.6);rotate(letter,{x:-1},3.5,.6);write(first,4.2,5);move(letter,{y:.82},7,.8);rotate(letter,{x:0,y:.5},7,.8);nod(second,9);move(letter,{y:.15,x:.45},10,.7);reach(tl,second,11,{bend:.35});rotate(letter,{x:0,y:0},12.5,.6);hide(letter,12.5);show(o.heldLetters?.[0],12.5);break;
    case 4: // Deliver the reply, read together, turtle celebrates the news.
     move(bird?.root,{x:1,y:1.2,z:-.4},1.2,1);move(letter,{x:1,y:1.8,z:-.15},1.2,1);flap(bird,1.2,3);move(bird?.root,{x:.65,y:0,z:.4},3,1.5);move(letter,{x:-.3,y:.85,z:.55},3,1.8);reach(tl,first,4.5,{bend:.12});settle(a[2],.1,.9,5.2,2.5);rotate(letter,{y:.45},7.7,.7);nod(first,9);nod(a[2],10);hop(tl,a[2],12,.09);break;
    case 5: // Lower the writing surface for a new writer and let him try himself.
     settle(first,-.6,.45);settle(second,.6,.45,1.4,2);openBook(3.8);move(letter,{x:.4,y:.2,z:.7},4,.8);rotate(letter,{x:-1.25},4,.8);reach(tl,first,5,{bend:.18});write(second,6.3,7);look(tl,first,8,.65);move(letter,{y:.8},10.5,.9);rotate(letter,{x:0,y:-.3},10.5,.9);nod(first,12);hop(tl,second,13,.09);break;
-  }return true;
+  }applyDetails();return true;
  }
  if(c.storyId==='bridge-that-listened'){
   const bridge=p('bridge');
@@ -67,16 +155,16 @@ export function originalEvent(tl,s,c,M){
    case 0: // Lay out a model and look from the top down to the turtle's approach.
     scale(bridge,{x:.65,y:.65,z:.65},1.2,.8);settle(first,-.55,.1);reach(tl,first,3.5,{repeat:2});settle(second,.85,.3,4.2,2);look(tl,second,6.5,-.5);settle(a[2],-1.15,.6,5,2.5);crouch(first,8);face(first,-.8,9);look(tl,a[2],10,.35);stand(first,12);break;
    case 1: // Turtle attempts the slope, slips back; builder lowers to investigate.
-    settle(first,.8,.6);settle(second,-1.35,-.75,1.5,2.5);move(second?.root,{x:-.7,y:.42,z:-.75},4.3,2);rotate(second?.root,{z:.12},5.5,.7);move(second?.root,{x:-1.25,y:0,z:-.75},6.6,1);settle(first,-.5,.05,8,2);crouch(first,10.2);reach(tl,first,11,{bend:.55});stand(first,13.3);break;
+    settle(first,.8,.6);settle(second,-1.35,-.75,1.5,2.5);move(second?.root,{x:-.7,y:.42,z:-.75},4.3,2);rotate(second?.root,{z:.12},5.5,.7);move(second?.root,{x:-1.2,y:0,z:.1},6.6,1);settle(first,-.15,.4,8,2);crouch(first,10.2);reach(tl,first,11,{bend:.55});stand(first,13.3);break;
    case 2: // A listening circle, then flatten and lengthen the proposed span.
     settle(first,-.85,.65);settle(second,.8,.65,1.4,2);settle(a[2],0,1.1,1.6,2);face(first,1,4);nod(second,4.8);face(first,0,6);nod(a[2],6.8);reach(tl,first,8,{bend:.12});scale(bridge,{x:1.12,y:.68,z:1.1},9,2);a.forEach((v,j)=>look(tl,v,11.5+j*.3,j?-.45:.45));break;
    case 3: // Adjust sections, then let the turtle traverse the gentler model.
-    scale(bridge,{y:.7,z:1.15},1.2,.8);settle(first,.6,.25);reach(tl,first,3.6,{repeat:3});bridge?.children.filter((_,j)=>j<12&&j%3===0).forEach((part,j)=>tl.from(part.position,{y:1.7,duration:.6,immediateRender:false},3.5+j*.7));settle(second,-1.35,-.75,5,2);move(second?.root,{x:0,y:.38,z:-.75},7.3,2.7);move(second?.root,{x:1.3,y:0,z:-.75},10,2.8);nod(first,13);break;
+    scale(bridge,{y:.7,z:1.15},1.2,.8);settle(first,.6,.25);reach(tl,first,3.6,{repeat:3});bridge?.children.filter((_,j)=>j<12&&j%3===0).forEach((part,j)=>tl.from(part.position,{y:1.7,duration:.6,immediateRender:false},3.5+j*.7));settle(second,-1.7,-.75,5,2);deckPath(second,[-1.45,-.93,-.41,.11,.63,1.15,1.41],7.3,5.2,-.75,.7);move(second?.root,{x:1.75,y:0},12.7,.7);nod(first,13.5);break;
    case 4: // Yield on the platform rather than colliding in the center.
-    settle(first,-1.45,-.75,1.2,2);settle(second,1.45,-.75,1.4,2);settle(a[2],-1.8,.2,1.8,2);move(first.root,{x:0,y:.58,z:-.75},3.5,2);move(first.root,{z:-1},5.5,.5);move(second?.root,{x:0,y:.58,z:-.55},6.2,2);move(second?.root,{x:-1.45,y:0,z:-.75},8.2,2);move(first.root,{x:1.45,y:0,z:-.75},8.8,2);move(a[2]?.root,{x:0,y:.58,z:-.75},10.4,2);move(a[2]?.root,{x:1.45,y:0,z:-.75},12.5,2.4);break;
+    settle(first,-1.7,-.75,1.2,1);settle(second,1.7,-.75,1.4,1);settle(a[2],-1.8,.2,1.8,2);deckPath(first,[-1.45,-.93,-.41,.11],2.6,2.3);move(first.root,{z:-1.08},5,.35);deckPath(second,[1.41,.89,.37,-.15,-.67,-1.19,-1.45],5.7,4.3,-.45);move(second?.root,{x:-1.8,y:0},10.1,.5);deckPath(first,[.11,.63,1.15,1.41],8.3,2,-1.02);move(first.root,{x:1.8,y:0},10.4,.5);deckPath(a[2],[-1.45,-.93,-.41,.11,.63,1.15,1.41],10.5,4);move(a[2]?.root,{x:1.8,y:0},14.6,.5);break;
    case 5: // Inspect the bridge, clear the path, record the next improvement.
-    settle(first,-1,-.1);reach(tl,first,3.6,{repeat:2});settle(second,-1.2,-.75,4,2);move(second?.root,{x:0,y:.58,z:-.75},6.3,2.7);crouch(first,7.5);reach(tl,first,8,{bend:.5,repeat:2});stand(first,10);openBook(10.4);write(first,11.2,4);nod(second,13.5);break;
-  }return true;
+    settle(first,-1,-.1);reach(tl,first,3.6,{repeat:2});settle(second,-1.7,-.75,4,2);deckPath(second,[-1.45,-.93,-.41,.11,.63,1.15,1.41],6.3,6.3);move(second?.root,{x:1.8,y:0},12.8,.6);crouch(first,7.5);reach(tl,first,8,{bend:.5,repeat:2});stand(first,10);openBook(10.4);write(first,11.2,4);nod(second,13.5);break;
+  }applyDetails();return true;
  }
  if(c.storyId==='shadow-takes-a-day-off'){
   switch(i){
@@ -85,14 +173,14 @@ export function originalEvent(tl,s,c,M){
    case 1: // Dance for the absent shadow, then sit with the gardener's question.
     settle(first,-.6,.7);rotate(first.root,{y:Math.PI*2},3.5,2);hop(tl,first,4,.17);look(tl,first,6.2,.9);settle(second,.6,.8,6.5,1.8);crouch(first,8.8);face(first,.6,10);nod(second,11);stand(first,13);break;
    case 2: // Shadow draws slowly; the child approaches then stops to watch.
-    settle(second,.65,-.1);write(second,3.5,7);settle(first,-.8,.7,3.7,2.5);arm(first,-.7,6.5,.4,0);arm(first,0,7.5,.4,0);crouch(first,8.2);face(first,.55,9);write(second,10,5);stand(first,13);break;
+    settle(second,.65,-.3);write(second,3.5,7);settle(first,-.8,.7,3.7,2.5);arm(first,-.7,6.5,.4,0);arm(first,0,7.5,.4,0);crouch(first,8.2);face(first,.55,9);write(second,10,5);stand(first,13);break;
    case 3: // Two separate wish lists, then point to their shared walking time.
     settle(first,-.85,.4);settle(second,.85,.4,1.4,2);write(first,3.7,5);write(second,4.6,5);face(first,.7,7.8);face(second,-.7,7.8);reach(tl,first,8.5,{bend:.1});reach(tl,second,9.5,{bend:.1});settle(first,-.5,1.1,11,1.8);settle(second,.5,1.1,11,1.8);nod(first,13.2);break;
    case 4: // Child practices footwork independently while the shadow sketches.
-    settle(first,-1,.7);settle(second,1,-.05,1.4,2);for(let n=0;n<3;n++){settle(first,n%2?-1.2:-.65,.8,3.8+n*2.3,1.2);if(first.legs[0])tl.to(first.legs[0].rotation,{x:-.8,duration:.3,repeat:1,yoyo:true},5+n*2.3);}write(second,4,7);write(second,9,5);look(tl,first,12.6,.4);break;
+    settle(first,-1,.7);settle(second,1,-.3,1.4,2);for(let n=0;n<3;n++){settle(first,n%2?-1.2:-.65,.8,3.8+n*2.3,1.2);if(first.legs[0])tl.to(first.legs[0].rotation,{x:-.8,duration:.3,repeat:1,yoyo:true},5+n*2.3);}write(second,4,7);write(second,9,5);look(tl,first,12.6,.4);break;
    case 5: // Exchange discoveries and walk side by side without identical steps.
     settle(first,-.8,.7);settle(second,.8,.7,1.6,2);reach(tl,second,4,{bend:.1});nod(first,5.2);reach(tl,first,6.5,{bend:.1});nod(second,7.5);settle(first,-.4,-.25,9,3.2);settle(second,.55,-.25,9.4,3.2);face(first,.35,13);face(second,-.35,13);break;
-  }return true;
+  }applyDetails();return true;
  }
  if(c.storyId==='seed-library-notebook'){
   const pot=p('pot');
@@ -104,12 +192,12 @@ export function originalEvent(tl,s,c,M){
    case 2: // Bring the failed pot, inspect its base, document what happened.
     move(pot,{x:-.7,z:.5},1.3,1);settle(first,-.8,.8);settle(second,.65,.5,1.7,2);reach(tl,second,4,{bend:.5});rotate(pot,{z:.22},4.4,1);nod(first,6);rotate(pot,{z:0},7,.8);openBook(8);write(first,9,7);nod(second,12.8);break;
    case 3: // Seedling leans toward light, then the pot moves and stem straightens.
-    settle(first,-.75,.3);settle(second,.8,.35,1.5,2);scale(e.plant,{y:.35},1.2,.1);scale(e.plant,{y:1},3,3);rotate(e.plant,{z:-.35},5.8,1);crouch(second,6.5);reach(tl,first,7.5,{bend:.25});move(pot,{x:.65},8,2);move(e.plant,{x:.65},8,2);rotate(e.plant,{z:0},10,1.4);write(first,11.5,4);stand(second,12.5);break;
+    settle(first,-.75,.7);settle(second,1.15,.7,1.5,2);scale(e.plant,{y:.35},1.2,.1);scale(e.plant,{y:1},3,3);rotate(e.plant,{z:-.35},5.8,1);crouch(second,6.5);reach(tl,first,7.5,{bend:.25});move(pot,{x:.65},8,2);rotate(e.plant,{z:0},10,1.4);write(first,11.5,4);stand(second,12.5);break;
    case 4: // Inspect bloom, carefully harvest, label the small packet.
     settle(first,-.55,.15);crouch(first,3.5);look(tl,first,4.5,.35);stand(first,6);reach(tl,first,6.8,{bend:.15,repeat:2});openBook(8.8);write(first,9.5,5);settle(second,.65,.55,9.8,2);face(first,.5,12);nod(second,13);break;
    case 5: // Return seeds, open the shared record and add the drainage drawing.
     settle(first,-.6,.35);settle(second,.6,.4,1.5,2);openBook(3.8);reach(tl,first,4.5,{bend:.2});write(second,6,6);look(tl,first,7.5,.55);reach(tl,first,9.5,{bend:.1});nod(second,11);settle(first,-1.1,1.15,12,1.7);settle(second,.85,1.15,12.2,1.7);break;
-  }return true;
+  }applyDetails();return true;
  }
  if(c.storyId==='clock-with-a-breath'){
   const hand=e.hand;
@@ -123,15 +211,14 @@ export function originalEvent(tl,s,c,M){
    case 3: // Edit the schedule in two deliberate bursts, leaving a real pause.
     settle(first,-.6,.4);settle(second,.65,.55,1.6,2);openBook(3.8);write(first,4.6,3);rotate(hand,{z:-Math.PI*.6},4.6,1.4);look(tl,first,7,.55);nod(second,8.1);write(first,10,3);reach(tl,first,12,{bend:.08});face(first,.55,13.2);break;
    case 4: // Watch the rain from shelter, then approach the flowers together.
-    settle(first,-.45,.85);settle(second,.45,.85,1.5,2);face(first,.25,4);face(second,-.25,4);crouch(first,5);nod(second,6);stand(first,7.5);settle(first,-.7,-.05,8.5,2.8);settle(second,.7,.05,8.9,2.8);crouch(first,11.6);crouch(second,12.2);stand(first,14);stand(second,14.2);break;
+    settle(first,-.45,.85);settle(second,.45,.85,1.5,2);face(first,.25,4);face(second,-.25,4);crouch(first,5);nod(second,6);stand(first,7.5);settle(first,-.7,1.8,8.5,2.8);settle(second,.7,1.8,8.9,2.8);crouch(first,11.6);crouch(second,12.2);stand(first,14);stand(second,14.2);break;
    case 5: // Return the borrowed clock, show the new plan and leave unhurriedly.
-    settle(first,-.6,.3);settle(second,.65,.3,1.4,2);reach(tl,first,3.7,{bend:.1});move(p('clocktower'),{x:.45},4.3,1.4);reach(tl,second,5.9,{bend:.1});nod(first,7);settle(first,-1.15,.9,8.5,2.5);look(tl,first,11,-.6);crouch(first,12);stand(first,13.7);break;
-  }return true;
+    settle(first,-.6,.3);settle(second,.65,.3,1.4,2);reach(tl,first,3.7,{bend:.1});move(p('clocktower'),{x:.45},4.3,1.4);reach(tl,second,5.9,{bend:.1});nod(first,7);settle(first,-1.15,1.8,8.5,2.5);look(tl,first,11,-.6);crouch(first,12);stand(first,13.7);break;
+  }applyDetails();return true;
  }
  if(c.storyId==='paper-boat-map'){
   const boat=e.boat;
   // A paper boat remains small enough for the child to launch and retrieve.
-  if(boat)tl.set(boat.scale,{x:.55,y:.55,z:.55,immediateRender:true},0);
   switch(i){
    case 0: // Launch straight, current redirects it, stop visibly at an obstruction.
     settle(first,-1,.55);reach(tl,first,3.5,{bend:.5});move(boat,{x:-.8,z:-.2},3.7,.7);move(boat,{x:.35,z:-.65},4.6,2.5);rotate(boat,{y:.9},6.5,.9);move(boat,{x:.95,z:-.2},7.4,1.4);look(tl,first,9.3,.8);settle(second,.95,.7,10,2);crouch(first,12);break;
@@ -140,12 +227,12 @@ export function originalEvent(tl,s,c,M){
    case 2: // Follow the bends on foot, inspect the eddy, sketch a curved map.
     settle(first,-1.1,.3);settle(second,-.3,-.35,1.6,2);settle(second,.7,-.55,4,2);settle(first,.45,.4,4.3,2);rotate(second?.root,{y:Math.PI*2},6.4,1.5);crouch(first,7);look(tl,first,8.2,.6);stand(first,9.5);write(first,10.3,6);break;
    case 3: // The second boat circles in an eddy and leaves without being pushed.
-    settle(first,-1,.55);settle(second,1.25,.55,1.4,2);reach(tl,first,3.7,{bend:.35});move(boat,{x:-.85,z:-.2},3.9,.7);move(boat,{x:.25,z:-.45},4.7,2);rotate(boat,{y:Math.PI*4},6.7,3.2);move(boat,{x:.5,z:-.3},6.7,1.4);move(boat,{x:.25,z:-.45},8.1,1.8);move(boat,{x:1.05,z:.15},10.2,2.5);nod(first,12.8);reach(tl,second,13.3,{bend:.3});break;
+    settle(first,-1,.55);settle(second,1.25,.55,1.4,2);reach(tl,first,3.7,{bend:.35});move(boat,{x:-.85,z:-.2},3.9,.7);move(boat,{x:.25,z:-.45},4.7,2);for(let n=0;n<8;n++){const angle=(n+1)*Math.PI/2;move(boat,{x:.25+Math.sin(angle)*.23,z:-.45+Math.cos(angle)*.16},6.7+n*.4,.4);rotate(boat,{y:angle},6.7+n*.4,.4);}move(boat,{x:1.05,z:.15},10.2,2.5);nod(first,12.8);reach(tl,second,13.3,{bend:.3});break;
    case 4: // Wait at the blocked inlet, then duck steers the boat toward the bank.
     move(boat,{x:.15,z:-.35},1.3,2);settle(first,-.9,.7);settle(second,1,.1,1.6,2);rotate(boat,{z:.06},3.4,.6);rotate(boat,{z:-.06},4.2,.6);look(tl,first,5,-.8);nod(first,6.5);move(boat,{x:.8,z:.15},7,2);reach(tl,second,9.2,{bend:.3});move(boat,{x:-.6,z:.55},9.6,1.8);reach(tl,first,11.5,{bend:.5});move(boat,{x:-.65,y:.65,z:.65},12.1,1);break;
    case 5: // Dry and place the boat beside the map, then compare new conditions.
     settle(first,-.65,.45);settle(second,.75,.4,1.5,2);move(boat,{x:-.4,y:.65,z:.65},3.7,1);rotate(boat,{y:.6},4.8,1);openBook(6);move(boat,{x:.65,y:.65,z:.5},7.2,1);write(first,8.6,5);look(tl,second,9.5,-.55);nod(first,11.8);nod(second,13);break;
-  }return true;
+  }applyDetails();return true;
  }
  if(c.storyId==='cloud-tailor-pockets'){
   const cloud=e.pocketCloud,rain=e.rain;
@@ -164,7 +251,7 @@ export function originalEvent(tl,s,c,M){
     settle(first,-.85,.8);settle(second,.8,.8,1.4,2);move(cloud,{x:1.1,y:1.8,z:-.8},2.5,2);look(tl,first,4.8,.65);reach(tl,second,5.8,{bend:.1});move(cloud,{x:0,y:1.6,z:-.1},6.7,2.5);settle(first,-.45,.25,9.5,1.8);settle(second,.45,.25,9.8,1.8);nod(first,12);move(cloud,{x:-1.25,y:1.9,z:-.8},13,2);break;
    case 5: // Save the spare cloth, record a revised design, release the fitted cloud.
     settle(first,-.65,.25);settle(second,.75,.3,1.5,2);reach(tl,first,3.7,{repeat:2});openBook(5.8);write(first,6.6,6);nod(second,8.5);move(cloud,{x:.8,y:2,z:-1.1},10.3,2.6);look(tl,first,11.4,.6);reach(tl,first,13,{bend:.08});break;
-  }return true;
+  }applyDetails();return true;
  }
  if(c.storyId==='bakery-under-the-stars'){
   const bread=e.bread;
@@ -172,34 +259,34 @@ export function originalEvent(tl,s,c,M){
    case 0: // Baker returns for a forgotten item and finds the night worker waiting.
     scale(bread,{x:.001,y:.001,z:.001},0,0);settle(first,-.55,-.1,1.2,2);reach(tl,first,3.5,{bend:.35});settle(second,1.2,.85,2,3);look(tl,first,5.5,.9);settle(first,-.1,.8,7,1.5);face(first,1,9);face(second,-1,9);nod(first,11);nod(second,12.5);break;
    case 1: // Exhausted kneading stops; friends intervene and the baker rests.
-    settle(first,-.55,.35);reach(tl,first,3.5,{repeat:3});rotate(first.root,{x:.45,z:-.1},6.4,1);move(first.root,{y:-.12},6.4,1);settle(second,.5,.65,5.5,2);settle(a[2],1.2,.25,6,2);reach(tl,a[2],8.3,{bend:.1});arm(first,0,9,.5,0);face(second,-.8,10);nod(second,11);stand(first,12.5);break;
+    settle(first,-.55,.35);reach(tl,first,3.5,{repeat:3});rotate(first.root,{x:.45,z:-.1},6.4,1);settle(second,.5,.65,5.5,2);settle(a[2],1.2,.25,6,2);reach(tl,a[2],8.3,{bend:.1});arm(first,0,9,.5,0);face(second,-.8,10);nod(second,11);stand(first,12.5);break;
    case 2: // Compare three schedules, select their shared window, write orders.
     scale(bread,{x:.001,y:.001,z:.001},0,0);settle(first,-.75,.55);settle(second,0,1,1.4,2);settle(a[2],.8,.55,1.6,2);openBook(3.8);write(first,4.6,4);nod(second,6.8);reach(tl,a[2],8,{bend:.1});rotate(e.hand,{z:-Math.PI*.7},8.5,1.4);write(first,10.4,5);nod(a[2],13);break;
    case 3: // Knead, let the dough rise, label the batch, then hand over the order.
-    settle(first,-.55,.4);scale(bread,{x:.7,y:.5,z:.7},1.2,.1);reach(tl,first,3.5,{repeat:3});scale(bread,{x:1,y:1.35,z:1},5.5,2.2);scale(bread,{x:1,y:1,z:1},8,.6);write(first,8.7,3);settle(second,.7,.65,8.8,2);move(bread,{x:.5,y:.6,z:.75},10.8,1.3);reach(tl,second,12.3,{bend:.12});nod(first,13.5);break;
+    settle(first,-.55,.4);scale(bread,{x:.001,y:.001,z:.001},0,0);reach(tl,first,3.5,{repeat:3});scale(o.dough,{x:1.25,y:1.4,z:1.25},5.5,2.2);scale(o.dough,{x:.001,y:.001,z:.001},8,.1);scale(bread,{x:.72,y:.72,z:.72},8.15,.6);write(first,8.7,3);settle(second,.7,.65,8.8,2);move(bread,{x:.5,y:.6,z:.75},10.8,1.3);reach(tl,second,12.3,{bend:.12});nod(first,13.5);break;
    case 4: // Take an order, update the posted hours, close after final collection.
     settle(first,-.55,.4);settle(second,.65,.6,1.5,2);write(first,3.8,4);reach(tl,first,6,{bend:.1});move(bread,{x:.6,y:.6,z:.85},6.5,1);reach(tl,second,7.7,{bend:.15});settle(second,.55,-.05,9,1.5);reach(tl,second,10.8,{bend:.08});settle(first,-.8,1.05,11.7,1.8);move(bread,{x:.7,y:.6,z:1.3},12.3,1.4);nod(first,14);break;
    case 5: // Two different workdays diverge: delivery bird departs, baker goes home.
     settle(first,-.5,.7);settle(second,.6,.7,1.5,2);move(bread,{x:.6,y:.55,z:1},3.7,.8);reach(tl,second,4.6,{bend:.15});nod(first,6);nod(second,7);move(second?.root,{x:1.5,y:1.3,z:-1.1},8.5,3.4);move(bread,{x:1.5,y:1.85,z:-.8},8.5,3.4);flap(second,8.5,3.5);settle(first,-1.4,1.05,9,3);look(tl,first,12.5,.7);break;
-  }return true;
+  }applyDetails();return true;
  }
  if(c.storyId==='orchestra-of-small-sounds'){
   const drum=e.drum,mouse=a.find(v=>v.type==='mouse'),bird=a.find(v=>v.type==='rooster');
-  const beat=(actor,t,count=4,loud=false)=>{arm(actor,loud?-1.4:-.72,t,loud?.16:.28,count*2-1);if(actor===first&&drum)tl.to(drum.scale,{y:loud?.86:.97,duration:loud?.16:.28,repeat:count*2-1,yoyo:true},t);};
+  const beat=(actor,t,count=4,loud=false)=>{if(actor===first)focus(actor,{x:-.35,z:.15},t-.3);arm(actor,loud?-1.4:-.72,t,loud?.16:.28,count*2-1);if(actor===first&&drum){tl.to(drum.scale,{y:loud?.56:.63,duration:loud?.16:.28,repeat:count*2-1,yoyo:true},t);for(const stick of drum.children.slice(-2))tl.to(stick.rotation,{x:.55,duration:loud?.16:.28,repeat:count*2-1,yoyo:true},t);}};
   switch(i){
    case 0: // Loud drum overwhelms the smaller stones; mouse stops participating.
-    settle(first,-.6,.2);settle(mouse,.5,.7,1.5,2);settle(bird,1.15,.3,1.7,2);beat(first,3.9,10,true);arm(bird,-.8,4.2,.24,13);beat(mouse,4.8,3);arm(mouse,0,7,.3,0);crouch(mouse,8.3);look(tl,first,10,.7);face(bird,-.5,11);stand(mouse,13);break;
+    settle(first,-.85,.55);settle(mouse,.5,.7,1.5,2);settle(bird,1.15,.3,1.7,2);beat(first,3.9,10,true);arm(bird,-.8,4.2,.24,13);beat(mouse,4.8,3);arm(mouse,0,7,.3,0);crouch(mouse,8.3);look(tl,first,10,.7);face(bird,-.5,11);stand(mouse,13);break;
    case 1: // Heavy stones tire the mouse; the group notices when it starts leaving.
-    settle(first,-.65,.25);settle(mouse,.5,.65,1.4,2);settle(bird,1.2,.3,1.6,2);beat(mouse,3.8,5,true);rotate(mouse?.root,{x:.3},5.8,.8);arm(mouse,0,6.5,.4,0);settle(mouse,1.55,1.15,7.5,2.4);face(first,.8,9.5);face(bird,.8,9.5);reach(tl,bird,10.3,{bend:.1});face(mouse,-.9,11.5);nod(mouse,12.5);break;
+    settle(first,-.85,.55);settle(mouse,.5,.65,1.4,2);settle(bird,1.2,.3,1.6,2);beat(mouse,3.8,5,true);rotate(mouse?.root,{x:.3},5.8,.8);arm(mouse,0,6.5,.4,0);settle(mouse,1.55,1.15,7.5,2.4);face(first,.8,9.5);face(bird,.8,9.5);reach(tl,bird,10.3,{bend:.1});face(mouse,-.9,11.5);nod(mouse,12.5);break;
    case 2: // Listen first, then introduce drum, stones and voice one at a time.
-    settle(first,-.65,.2);settle(mouse,.45,.7,1.4,2);settle(bird,1.15,.2,1.6,2);a.forEach(v=>arm(v,0,3.8,.3,0));look(tl,first,4.8,-.5);look(tl,mouse,5.3,.4);beat(mouse,6.5,2);nod(first,7.8);beat(first,8.5,2);beat(mouse,10,2);arm(bird,-.55,11.5,.3,3);break;
+    settle(first,-.85,.55);settle(mouse,.45,.7,1.4,2);settle(bird,1.15,.2,1.6,2);a.forEach(v=>arm(v,0,3.8,.3,0));look(tl,first,4.8,-.5);look(tl,mouse,5.3,.4);beat(mouse,6.5,2);nod(first,7.8);beat(first,8.5,2);beat(mouse,10,2);arm(bird,-.55,11.5,.3,3);break;
    case 3: // Write the score, rehearse a false entry, reset and use the new cue.
-    settle(first,-.6,.2);settle(mouse,.45,.7,1.4,2);settle(bird,1.2,.25,1.6,2);openBook(3.7);write(mouse,4.4,4);beat(first,6.7,2);arm(bird,-.8,7,.2,1);a.forEach(v=>arm(v,0,8,.2,0));nod(mouse,8.5);beat(first,9.7,2);beat(mouse,11.1,2);arm(bird,-.6,12.6,.3,3);break;
+    settle(first,-.85,.55);settle(mouse,.45,.7,1.4,2);settle(bird,1.2,.25,1.6,2);openBook(3.7);write(mouse,4.4,4);beat(first,6.7,2);arm(bird,-.8,7,.2,1);a.forEach(v=>arm(v,0,8,.2,0));nod(mouse,8.5);beat(first,9.7,2);beat(mouse,11.1,2);arm(bird,-.6,12.6,.3,3);break;
    case 4: // Perform, pause together when a page blows over, then resume in order.
-    settle(first,-.6,.2);settle(mouse,.4,.7,1.4,2);settle(bird,1.2,.25,1.6,2);beat(first,3.8,2);beat(mouse,5.1,2);arm(bird,-.65,6.4,.28,3);{const page=p('books')?.children.at(-1);rotate(page,{x:-.8,y:.8},7.6,.6);a.forEach(v=>arm(v,0,8.2,.25,0));reach(tl,mouse,8.7,{bend:.35});rotate(page,{x:0,y:0},9.3,.6);}nod(first,10.1);beat(first,10.8,2);beat(mouse,12.1,2);arm(bird,-.6,13.4,.25,3);break;
+    settle(first,-.85,.55);settle(mouse,.4,.7,1.4,2);settle(bird,1.2,.25,1.6,2);beat(first,3.8,2);beat(mouse,5.1,2);arm(bird,-.65,6.4,.28,3);{const page=o.score;rotate(page,{x:-.8,y:.8},7.6,.6);a.forEach(v=>arm(v,0,8.2,.25,0));reach(tl,mouse,8.7,{bend:.35});rotate(page,{x:0,y:0},9.3,.6);}nod(first,10.1);beat(first,10.8,2);beat(mouse,12.1,2);arm(bird,-.6,13.4,.25,3);break;
    case 5: // One quiet encore, bow to each other, pack up and listen while leaving.
-    settle(first,-.65,.3);settle(mouse,.35,.7,1.4,2);settle(bird,1.15,.3,1.6,2);beat(mouse,3.9,2);nod(first,5.5);nod(bird,6.7);reach(tl,mouse,8,{bend:.45});move(drum,{x:-.55,y:.3,z:.6},8.5,1);settle(first,-1.2,1.05,10,2.5);move(drum,{x:-1.15,y:.3,z:1.2},10,2.5);settle(mouse,.15,1.2,10.4,2.5);settle(bird,1.2,1.05,10.8,2.5);look(tl,first,13.2,-.4);look(tl,mouse,13.8,.4);break;
-  }return true;
+    settle(first,-.85,.55);settle(mouse,.35,.7,1.4,2);settle(bird,1.15,.3,1.6,2);beat(mouse,3.9,2);nod(first,5.5);nod(bird,6.7);reach(tl,mouse,8,{bend:.45});move(drum,{x:-.55,y:.3,z:.6},8.5,1);settle(first,-1.2,1.05,10,2.5);move(drum,{x:-1.15,y:.3,z:1.2},10,2.5);settle(mouse,.15,1.2,10.4,2.5);settle(bird,1.2,1.05,10.8,2.5);look(tl,first,13.2,-.4);look(tl,mouse,13.8,.4);break;
+  }applyDetails();return true;
  }
  return false;
 }

@@ -1,3 +1,8 @@
+import {addInterior,animateInterior} from './interiors.js';
+import {arrangeSpread} from './stage-layout.js';
+import {addClassicDetails} from './classic-motion.js';
+import {addLegacyDetails} from './legacy-details.js';
+import {addOriginalDetails} from './original-details.js';
 import {addStoryDetails} from './story-events.js';
 import { buildStoryProp } from './story-props.js';
 import { choreographStory } from './story-motion.js';
@@ -92,7 +97,7 @@ export function buildFairytaleScene(book,c,H){
  }
  if(c.setting==='cloud')for(let n=0;n<4;n++){const cloud=new THREE.Group();cloud.position.set(-1.7+n*1.1,1.9+(n%2)*.4,-2.2);popup.add(cloud);for(let j=0;j<3;j++)ball(.25,.14,.13,'#ececdc',cloud,j*.22,Math.sin(j)*.05,0);}
  const extras=new THREE.Group();popup.add(extras);for(let n=0;n<6;n++){const spark=ball(.035,.06,.035,'#e6c577',extras,Math.sin(n*2.1)*1.8,.7+(n%3)*.6,Math.cos(n)*1.3);spark.rotation.z=n;}
- return addStoryDetails({root,popup,pigs:actors,wolf:null,house:cottage,trees,effects,props,extras},c,H);
+ return arrangeSpread(addInterior(addClassicDetails(addOriginalDetails(addLegacyDetails(addStoryDetails({root,popup,pigs:actors,wolf:null,house:cottage,trees,effects,props,extras},c,H),c,H),c,H),c,H),c,H));
 }
 function makeActor(parent,ch,x,z,H){
  const {THREE,box,ball,cone,mesh,mat}=H;const root=new THREE.Group();root.position.set(x,0,z);root.userData.character=ch.name;parent.add(root);
@@ -153,4 +158,5 @@ export function animateFairytale(tl,s,c){
  for(const [j,a] of s.pigs.entries())tl.from(a.root.scale,{y:.01,duration:.75,ease:'back.out(1.4)'},.3+j*.13);
  tl.to(s.extras.rotation,{y:.22,duration:16,ease:'sine.inOut'},0);
  choreographStory(tl,s,c);
+ animateInterior(tl,s);
 }

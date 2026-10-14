@@ -60,7 +60,7 @@ test('blocked storage remains usable when system voices are unavailable',async({
  await page.locator('#next').click();await expect(page.locator('#chapter-tag')).toHaveText('02 / 08');
 });
 test('automatic page turn advances once and stops after closing',async({page})=>{
- await page.goto('/');await page.locator('#hero-read').click();await page.locator('#auto-toggle').click();
+ await page.goto('/');await page.locator('#hero-read').click();await page.locator('#voice-toggle').click();await page.locator('#auto-toggle').click();
  await page.evaluate(()=>{window.__timelines['pigs-0'].progress(1);});
  await expect(page.locator('#chapter-tag')).toHaveText('02 / 08',{timeout:5000});
  await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');
@@ -78,11 +78,11 @@ test('touch swipe turns a page but vertical reading does not',async({page})=>{
  await page.evaluate(() => { const el=document.getElementById('open-book'); el.dispatchEvent(new TouchEvent('touchend',{bubbles:true,changedTouches:[new Touch({identifier:1,target:el,clientX:80,clientY:255})]})); });
  await expect(page.locator('#chapter-tag')).toHaveText('02 / 08');
 });
-test('character click animates, then stops; closing cancels gestures',async({page})=>{
+test('character click preserves story time; closing cancels gestures',async({page})=>{
  await page.goto('/');await page.locator('#hero-read').click();await page.locator('#actor-controls button').first().click();
  const before=await page.evaluate(()=>window.__timelines['pigs-0'].time());
  await page.waitForTimeout(250);
- expect(await page.evaluate(()=>window.__timelines['pigs-0'].time())).toBeGreaterThan(before);
+ expect(await page.evaluate(()=>window.__timelines['pigs-0'].time())).toBe(before);
  await expect(page.locator('#dialogue')).toContainText('最快完成');
  await page.locator('#close-reader').click();
  const closed=await page.evaluate(()=>window.__timelines['pigs-0'].time());await page.waitForTimeout(250);
