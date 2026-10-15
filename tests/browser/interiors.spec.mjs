@@ -51,3 +51,18 @@ test('full spread camera retains tall actions on desktop and mobile',async({page
   }
  }
 });
+
+test('houses become transparent only after a pig enters and turn solid again on replay',async({page})=>{
+ await page.goto('/');await page.locator('#hero-read').click();await page.locator('#voice-toggle').click();
+ for(const sourceIndex of [4,5,6]){
+  const index=originalIndex('three-little-pigs',sourceIndex);
+  await page.locator(`[data-page="${index}"]`).click();await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');
+  for(const [time,occupied] of [[1.2,false],[6,true],[1.2,false]]){
+   await page.evaluate(({index,time})=>{Object.values(window.__timelines).forEach(t=>t.pause());window.__timelines[`pigs-${index}`].pause(time,true);},{index,time});
+   await expect.poll(()=>page.evaluate(index=>{
+    const room=window.__storybook3d.scenes[index].interior,opacity=[];room.walls.forEach(w=>w.traverse(m=>{if(m.isMesh)opacity.push(m.material.opacity);}));
+    return {occupied:room.occupied,solid:opacity.every(a=>a===1),faint:opacity.every(a=>a>0&&a<.4)};
+   },index)).toEqual({occupied,solid:!occupied,faint:occupied});
+  }
+ }
+});

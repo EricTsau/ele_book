@@ -34,6 +34,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "森林裡，住著三隻感情很好的小豬。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "有一天，牠們背起小包袱，向媽媽揮揮手，準備蓋一間屬於自己的家。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "陽光灑在小路上。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "三隻小豬邊走邊想：什麼樣的房子，才是最棒的家呢？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "小豬大哥",
       "text": "先把稻草捆好，再搭起我的家。",
@@ -55,6 +79,30 @@
       "file": "scene-1-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "沒多久，稻草屋就蓋好了！大哥開心地坐在門口，吹著口哨，等弟弟們一起來玩。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小豬大哥在田邊找到一大堆稻草。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠把稻草捆起來，搭成牆壁，再鋪上一個蓬鬆的屋頂。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "沒多久，稻草屋就蓋好了！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "大哥開心地坐在門口，吹著口哨，等弟弟們一起來玩。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -82,6 +130,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小豬二哥撿來一根根木頭，把它們排整齊，用釘子牢牢釘在一起。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "叩叩叩！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "森林裡響起蓋房子的聲音。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "二哥看著自己的木屋，滿意地點點頭。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "「比稻草厚多了，應該很牢固吧！」",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "小豬弟弟",
       "text": "慢慢來，每一塊磚都要放穩。",
@@ -106,27 +184,21 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-check-together-line-0.mp3",
-      "speaker": "小豬弟弟",
-      "text": "這一塊還會晃，我想再檢查一下。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-check-together-line-1.mp3",
-      "speaker": "小豬二哥",
-      "text": "不確定的地方，我們一起找人問。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-check-together-narration-0.mp3",
+      "file": "scene-3-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "小豬弟弟沒有一放下最後一塊磚就說全部好了。牠請二哥一起看手邊的小模型，輕輕檢查接合的地方，發現有一塊還會搖動。",
+      "text": "小豬弟弟推來一車紅磚，攪拌泥漿，一塊一塊慢慢堆。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-check-together-narration-1.mp3",
+      "file": "scene-3-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "兩隻小豬把那一處指出來，決定請有經驗的大人幫忙確認。二哥發現，願意再看一次、承認還有不懂的地方，也是一種認真，不必假裝自己什麼都會。",
+      "text": "太陽爬得高高的，牠的額頭也冒出了汗。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "哥哥們叫牠去玩，牠卻笑著說：「再等一下！把地基和牆壁做好，我們才能住得安心。」",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -160,6 +232,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "一隻大野狼走進森林，看見了金黃的稻草屋。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠敲敲門，露出尖尖的牙齒。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "大哥不肯開門。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "大野狼鼓起腮幫子，用力一吹——稻草滿天飛！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "大哥趕緊跑向二哥的木屋。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "小豬二哥",
       "text": "大哥別怕，我們一起想辦法！",
@@ -187,6 +289,42 @@
       "file": "scene-5-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "喀啦！木屋搖搖晃晃地倒了。兩隻小豬手拉著手，穿過小路，一起跑向弟弟的磚屋。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "大哥跑進木屋，二哥趕緊關上門。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "可是，大野狼也追來了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "牠吸了好大一口氣，使勁往木屋吹。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "喀啦！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "木屋搖搖晃晃地倒了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "兩隻小豬手拉著手，穿過小路，一起跑向弟弟的磚屋。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -220,27 +358,27 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-help-after-scare-line-0.mp3",
-      "speaker": "小豬大哥",
-      "text": "我還有點怕，可以陪我嗎？",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-help-after-scare-line-1.mp3",
-      "speaker": "小豬弟弟",
-      "text": "我陪你，重建的事可以一起想。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-help-after-scare-narration-0.mp3",
+      "file": "scene-6-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "大野狼離開後，大哥還有一點發抖。弟弟先走到牠身旁，陪牠慢慢放鬆緊繃的肩膀。房子被破壞是大野狼做錯了，不需要用責怪代替安慰。",
+      "text": "弟弟打開門，讓哥哥們進屋休息。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-help-after-scare-narration-1.mp3",
+      "file": "scene-6-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "等大哥覺得好些，兩隻小豬才一起把籃子移到方便取用的地方。今晚先有地方休息，明天再找人商量怎樣重建。困難不用一天解決，也不用一隻小豬獨自承擔。",
+      "text": "大野狼站在門外，吹了一次，又吹了一次，紅磚屋卻動也不動。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-6-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "牠吹得頭昏眼花，最後只好垂著尾巴，灰溜溜地走了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-6-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "三隻小豬從窗邊望出去，終於鬆了一口氣。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -274,6 +412,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-7-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "晚上，三隻小豬圍坐在家門前的小桌旁，一起喝湯、分享麵包。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-7-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "哥哥們說：「我們也要學著把房子蓋牢固！」",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-7-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "從那天起，牠們互相幫忙，認真做好每一件事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-7-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "森林裡的笑聲，又回來了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "小豬大哥",
       "text": "你幫我看看，這一塊穩不穩？",
@@ -295,6 +457,30 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "大哥和弟弟看著積木旁分開的兩片小木板，先看看接合處，再慢慢把它們接好。今天我們也可以從整理玩具開始，慢慢做、一起檢查，累了就先休息一下。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "三隻小豬學會把事情做穩，也學會在同伴害怕時伸出援手。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "住進磚屋不代表什麼都不用注意，遇到不懂或不安全的事，仍然要找人幫忙。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "大哥和弟弟看著積木旁分開的兩片小木板，先看看接合處，再慢慢把它們接好。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "今天我們也可以從整理玩具開始，慢慢做、一起檢查，累了就先休息一下。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

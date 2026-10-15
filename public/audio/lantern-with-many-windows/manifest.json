@@ -28,6 +28,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "阿禾家的門邊掛著一盞橘色燈籠。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "每天傍晚，木爺爺會把裡面的小電燈打開，讓晚歸的鄰居看清門前石階。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "阿禾最喜歡坐在光圈裡畫畫。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "一天夜裡，風把樹枝吹落，燈籠破了三個洞。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "原本橘色的燈紙裂成三片，冷白的光直直照進眼睛，石階旁卻留下暗角。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "阿禾抱住歪掉的燈架，想把熟悉的溫暖找回來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "阿禾",
       "text": "怎麼越補反而越暗呢？",
@@ -49,6 +85,42 @@
       "file": "scene-1-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "她想把補丁藏得誰都看不見，卻把整盞燈包得透不出光。桌下的小鼠豆豆探出頭，指著剩下的薄紙，問它能不能也試一試。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "木爺爺先拔下電源，檢查燈架還很結實。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "阿禾挑出三張橘紙，把破洞仔細蓋住。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "可是新紙太厚，亮起來像三塊黑影。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "她又多貼一層，黑影反而更大。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "她想把補丁藏得誰都看不見，卻把整盞燈包得透不出光。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "桌下的小鼠豆豆探出頭，指著剩下的薄紙，問它能不能也試一試。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -76,27 +148,33 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-lantern-low-view-line-0.mp3",
-      "speaker": "阿禾",
-      "text": "我蹲下來，再看看你看到的地方。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-lantern-low-view-line-1.mp3",
-      "speaker": "豆豆",
-      "text": "這裡還有一小塊暗暗的。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-lantern-low-view-narration-0.mp3",
+      "file": "scene-2-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "彩色小窗貼好了，阿禾站著看，覺得每一片都很亮。豆豆卻停在燈旁，請她蹲低一點。阿禾把手放下，慢慢蹲到和豆豆差不多高，再看看燈照出去的方向。",
+      "text": "豆豆把一張淡黃薄紙放在洞口，牆上的黑影變成柔柔的金色。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-lantern-low-view-narration-1.mp3",
+      "file": "scene-2-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "原來站著看和蹲著看，看到的地方不一樣。她沒有急著說修好了，而是和豆豆一起記住那片暗處，準備請木爺爺再來看看。",
+      "text": "阿禾又試了淺藍和粉紅，先剪成和洞口一樣大的長方形，再一片一片貼回燈架。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她剪下一片深色葉子的輪廓，貼在藍紙上，讓影子落到牆面。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "亮燈時，牆上好像長出一棵小樹。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "阿禾突然不急著把破洞藏起來了，她想讓三個洞變成三扇窗，分別留給樹、月亮和回家的人。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -124,6 +202,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-3-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "燈籠重新掛起來，彩色窗子很好看，門前石階卻依然有一角照不到。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "阿禾這才想起，燈原本是要幫鄰居看路的。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她和木爺爺拿著紙板移來移去，找出遮光的地方，把底下那片厚紙換成透光的白紙。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "豆豆站在最矮的石階上測試，這次連牠的小腳旁邊，也有一條清楚明亮的路。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-4-line-0.mp3",
       "speaker": "木爺爺",
       "text": "屋簷能替薄紙擋住雨。",
@@ -145,6 +247,36 @@
       "file": "scene-4-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "晚上鄰居經過時，先看到亮亮的石階，才看見牆上的小樹和彩色月亮。沒有人問破洞去了哪裡，大家卻停下腳步欣賞。阿禾第一次覺得，那些補過的地方也值得被看見。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "隔天下起細雨，阿禾擔心薄紙會濕，立刻請木爺爺一起查看。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "他們把燈移進門廊，讓屋簷替它擋雨，再調整掛鉤的方向。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "晚上鄰居經過時，先看到亮亮的石階，才看見牆上的小樹和彩色月亮。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "沒有人問破洞去了哪裡，大家卻停下腳步欣賞。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "阿禾第一次覺得，那些補過的地方也值得被看見。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -172,6 +304,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "春天來時，豆豆送來一張畫著鼠尾草的小紙片。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "阿禾替燈籠添上第四扇窗，也在燈架背面寫下修理日期。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "往後紙舊了，他們就一起換一扇新窗，沒有急著把整盞燈丟掉。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "夜色慢慢落下，橘光照著石階，也照著幾雙高矮不同的腳。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "那盞燈不再和從前完全一樣，卻裝進了更多朋友留下的心意。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "阿禾",
       "text": "從你的高度，看得到嗎？",
@@ -193,6 +355,42 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "有時候，我們覺得剛剛好，朋友卻還不方便。先問一問，再一起看看，就能知道要改哪裡。今天你也可以請家人陪你看看，一件常用的東西好不好拿。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "阿禾記得，彩窗漂亮了，豆豆腳邊卻還有暗角。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "現在她把小燈放好，先站著看，再陪豆豆從低一點的地方看。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "兩個朋友停下來，把各自發現的地方說給對方聽。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "有時候，我們覺得剛剛好，朋友卻還不方便。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "先問一問，再一起看看，就能知道要改哪裡。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "今天你也可以請家人陪你看看，一件常用的東西好不好拿。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

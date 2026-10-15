@@ -1,11 +1,12 @@
 import {test,expect} from '@playwright/test';
-import {originalIndex,finishOpening,expectAudio,timelineKey,enableAudioSeeking} from './helpers.mjs';
+import {originalIndex,finishOpening,expectAudio,timelineKey,enableAudioSeeking,beatsFor,beatRole,beatFile,advanceAudioBeat,bookFor} from './helpers.mjs';
 test.beforeEach(async({page})=>enableAudioSeeking(page));
 test('asking a character to speak does not rewind the story or rebuild fallen houses',async({page})=>{
  await page.goto('/');await page.locator('#hero-read').click();
  const id='three-little-pigs',index=originalIndex(id,4),key=timelineKey(id,index);
  await page.locator(`[data-page="${index}"]`).click();await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');
- await page.evaluate(key=>{window.__timelines[key].pause(12);},key);
+ await page.locator('#play-pause').click();
+ await page.evaluate(key=>{window.__timelines[key].pause(12,true);},key);
  const before=await page.evaluate(()=>window.__storybook3d.inspect().houseScale);
  await page.locator('#actor-controls button').last().click();await page.waitForTimeout(350);
  expect(await page.evaluate(key=>window.__timelines[key].time(),key)).toBe(12);
@@ -16,12 +17,18 @@ test('closely spaced story cues wait for the current spoken line instead of cutt
  const id='tortoise-and-hare',index=originalIndex(id,4),key=timelineKey(id,index);
  await page.locator(`[data-page="${index}"]`).click();await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');
  await finishOpening(page,id,index);
- await page.evaluate(key=>{window.__timelines[key].play(7.8);},key);
- await expectAudio(page,'line');
- await expect.poll(()=>page.locator('#story-audio').evaluate(a=>!a.paused&&a.currentTime>0)).toBe(true);
+ const chapter=bookFor(id).chapters[index],beats=await beatsFor(page,id,index);
+ const first=beats.findIndex(b=>b.kind==='line'&&b.index===0);
+ await expectAudio(page,'line',beatFile(chapter,beats[first]));
  await page.waitForTimeout(1000);
  expect(await page.locator('#story-audio').getAttribute('src')).toContain('line-0.mp3');
- await expect.poll(()=>page.locator('#story-audio').getAttribute('src'),{timeout:10000}).toContain('line-1.mp3');
+ // Finish each intervening real sentence before the second authored line.
+ for(let n=first;n<beats.length-1;n++){
+  await advanceAudioBeat(page);
+  const next=beats[n+1];await expectAudio(page,beatRole(next),beatFile(chapter,next));
+  if(next.kind==='line'&&next.index===1)return;
+ }
+ throw new Error('Second character line was not reached');
 });
 test('pig construction starts with an unbuilt house and finishes with a standing house',async({page})=>{
  await page.goto('/');await page.locator('#hero-read').click();

@@ -28,6 +28,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "傑克和媽媽的日子很辛苦。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "有一天，傑克拿家裡的老牛換回了三顆據說會長到雲上、但長成的藤只活一天的豆子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "媽媽很擔心，傑克也發現自己沒有先商量。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "他把豆子種在窗外，答應往後做重要決定，一定先和媽媽討論。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "傑克",
       "text": "哇！豆子真的長到雲上了！",
@@ -49,6 +73,30 @@
       "file": "scene-1-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "傑克驚訝地張大嘴。他和媽媽約好回家的時間，準備好背包，小心握住豆莖，向未知的天空出發。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "第二天早晨，窗前一片翠綠。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "豆莖粗得像樹幹，葉子大得像雨傘，直直伸進了雲裡。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "傑克驚訝地張大嘴。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "他和媽媽約好回家的時間，準備好背包，小心握住豆莖，向未知的天空出發。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -76,27 +124,33 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-way-back-line-0.mp3",
-      "speaker": "傑克",
-      "text": "我先看清楚，回去要走哪裡。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-way-back-line-1.mp3",
-      "speaker": "傑克",
-      "text": "有些事情，不能只靠自己硬闖。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-way-back-narration-0.mp3",
+      "file": "scene-2-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "傑克聽見金鵝想回家，沒有立刻拉開門。他先退到門邊，看一看豆藤在哪裡，再確認通往門口的方向，也留意路旁掛著的鈴鐺。",
+      "text": "傑克爬呀爬，終於穿過白雲。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-way-back-narration-1.mp3",
+      "file": "scene-2-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "金鵝還在籠裡，傑克記著牠想離開的心願。他知道光有好意還不夠，得先想清楚回去的路。如果情況不對，就要停下，不能只靠自己硬闖。",
+      "text": "雲上竟然有一座大城堡，門把比他整個人還要高。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "城堡外，一隻金鵝輕聲呼救。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "原來牠被巨人關了起來，想回到地面的池塘。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "傑克決定先觀察四周，尋找安全的辦法。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -124,6 +178,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-3-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "巨人吃飽後，在城堡裡打起呼來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "傑克找到掛在牆上的鑰匙，輕輕打開金鵝的籠子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "他們踮著腳走向門口，卻不小心碰響了鈴鐺。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "巨人醒了！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "傑克牽著金鵝，趕緊沿著來時的路離開。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-4-line-0.mp3",
       "speaker": "傑克",
       "text": "別慌，我們沿著原路回家。",
@@ -148,27 +232,39 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-home-again-line-0.mp3",
-      "speaker": "傑克",
-      "text": "剛才我也很怕，不知道該怎麼辦。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-home-again-line-1.mp3",
-      "speaker": "媽媽",
-      "text": "謝謝你告訴我，我們一起找幫忙。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-home-again-narration-0.mp3",
+      "file": "scene-4-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "回到家，傑克先坐到媽媽身旁，把雲上的經過一段段說出來。說到巨人醒來時，他的聲音變小了；媽媽停下手邊的事，陪他把話說完。",
+      "text": "傑克抓緊豆莖，一步一步往下爬。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-home-again-narration-1.mp3",
+      "file": "scene-4-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "媽媽沒有要求他再去證明勇敢。他們約好，真實生活遇到高處、陌生地方或需要救援的事，要先找能負責的大人。故事裡的魔豆，不是可以照做的路。",
+      "text": "金鵝拍著翅膀，緊緊跟在旁邊。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "巨人追到豆藤旁，發現葉柄承受不了自己的重量，只能留在城堡。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "回到地面後，傑克告訴媽媽雲上的經過。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "媽媽陪他等在安全的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "到了傍晚，只活一天的魔豆藤自然枯萎，雲上的通道慢慢落下了。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -196,6 +292,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "金鵝回到自己的家，傑克也學會珍惜每天的生活。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "他和媽媽把普通的豆子種進菜園，用耐心照顧它們。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "豆子沒有再長到雲上，卻結出了飽滿的豆莢。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "傑克明白，真正讓日子變好的，是勇氣、商量和每天的努力。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "傑克",
       "text": "妳需要幫忙嗎？我們一起做哪一部分？",
@@ -217,6 +337,36 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "傑克問媽媽，能不能一起看看豆苗。等媽媽回答後，他才走近豆苗。幫忙可以從詢問、聽回答開始；遇到自己做不到的事，找大人一起做也是好辦法。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "傑克想幫助金鵝，也發現一個人有時會想不到危險。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "媽媽陪他看著一盆小豆苗，先商量今天能做的小事，不再急著自己決定全部。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "傑克問媽媽，能不能一起看看豆苗。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "等媽媽回答後，他才走近豆苗。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "幫忙可以從詢問、聽回答開始；遇到自己做不到的事，找大人一起做也是好辦法。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

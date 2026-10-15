@@ -28,6 +28,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "汐汐在院子的小水道邊摺了一艘紙船，想讓它從東邊花圃一路漂到西邊的淺池。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她在地上畫一條筆直的線，當作航行地圖。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "小鴨波波走來看，問水會不會也照直線流。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "汐汐覺得只要船尖朝對方向就行，便把船放下去。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "沒想到紙船才走一小段，就轉進花圃旁的彎道，離她畫的終點越來越遠，最後卡在一片葉子後面。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "汐汐",
       "text": "怎麼每次都離開我的路線？",
@@ -49,6 +79,42 @@
       "file": "scene-1-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "波波幫忙把船拖回淺處，汐汐將它撈起放進回收籃，沒有讓紙留在水裡。她有點難過，覺得這艘船不肯聽話。波波卻指著漂過的花瓣，花瓣也轉了同樣的彎，像在悄悄回答她。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "汐汐站在乾燥的石板路上，用細枝輕輕推船，想把它趕回直線。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "船轉回來一會兒，又被水帶往另一側。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她越推越用力，船頭終於濕軟下去。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "波波幫忙把船拖回淺處，汐汐將它撈起放進回收籃，沒有讓紙留在水裡。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "她有點難過，覺得這艘船不肯聽話。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "波波卻指著漂過的花瓣，花瓣也轉了同樣的彎，像在悄悄回答她。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -76,27 +142,33 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-boat-finger-route-line-0.mp3",
-      "speaker": "汐汐",
-      "text": "小圓片走到這裡，就先停一停。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-boat-finger-route-line-1.mp3",
-      "speaker": "波波",
-      "text": "我們把等船的地方也想好。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-boat-finger-route-narration-0.mp3",
+      "file": "scene-2-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "看過水道後，汐汐和波波把路分成三段，放在一張練習圖上。小圓片當作紙船，先從出發處移到中間，停一下，讓兩個朋友一起想想，這裡要怎麼等待。",
+      "text": "這次汐汐沒有急著摺新船。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-boat-finger-route-narration-1.mp3",
+      "file": "scene-2-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "等波波說完，小圓片才繼續移到終點。汐汐發現，先把放船和等船的地方說清楚，遇到轉彎時就比較不會著急。她記住約好的位置，準備帶著新辦法再試一次。",
+      "text": "她觀察幾片原本就在水面的花瓣，記下它們經過的彎道、慢慢打轉的小窩，以及繞過石頭的方向。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "波波在水裡走一段，也讓她看見石頭後面水流比較慢。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "汐汐把直線擦掉，畫上彎曲的藍線。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "原來她不是要讓河照著地圖走，而是先看懂水道，才能畫出對下一艘船有用的地圖。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -124,6 +196,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-3-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "新紙船做好後，汐汐替它取名叫繞一繞。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她選在彎道前面一處平緩水面放船，波波則在淺池入口等候，準備協助回收。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "船果然順著藍線前進，卻在小水窩轉了兩圈才離開。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "汐汐差點伸枝去推，最後決定再觀察一下。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "轉完圈的船自己找到出口，緩緩通過石頭旁邊。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "她在地圖上補了一個小圓圈，記下這裡需要多等一會兒。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-4-line-0.mp3",
       "speaker": "汐汐",
       "text": "路變了，我們要重新確認。",
@@ -145,6 +253,42 @@
       "file": "scene-4-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "水口一通，紙船就悠悠進入淺池，波波把它推向岸邊。汐汐用網兜收回船，也收起兩張紙屑。她沒忘記給地圖加上一個記號，提醒下次出發前先看看入口。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "接近淺池時，一片新落下的大葉子堵住水口。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "汐汐看見船越漂越慢，知道這次情況和地圖不同。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她請在旁邊照看的大人幫忙，用工具清理水道，自己留在穩固的岸上等待。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "水口一通，紙船就悠悠進入淺池，波波把它推向岸邊。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "汐汐用網兜收回船，也收起兩張紙屑。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "她沒忘記給地圖加上一個記號，提醒下次出發前先看看入口。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -172,6 +316,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "紙船晾乾後，汐汐把紙船放在地圖旁，先比對船走過的轉彎，再把它壓平貼上，旁邊記著出發日期和當天的水流。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "幾天後水變少，原本轉圈的地方變成一小灘，她便再畫一張新圖。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "波波看著一條比一條不同的藍線，覺得水道像會換姿勢的朋友。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "汐汐也不再只問紙船到了多遠。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "她更想知道，下一次出發時，這條小水道又會讓她發現什麼以前沒注意的事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "汐汐",
       "text": "先看看是哪裡不一樣。",
@@ -193,6 +367,42 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "玩積木或拼圖時，遇到不合適的地方，也可以先停手看看。請家人陪你找出卡住的位置，再選一個小改變試試。發現不同的結果，就把新發現告訴對方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "汐汐記得，越用力推，紙船也不會照直線走。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "今天她和波波把兩組積木放好，用放大鏡先看一組，再看另一組。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她先說出不同的地方，接著停下來，聽波波補充。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "玩積木或拼圖時，遇到不合適的地方，也可以先停手看看。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "請家人陪你找出卡住的位置，再選一個小改變試試。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "發現不同的結果，就把新發現告訴對方。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

@@ -28,27 +28,27 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-say-my-wish-line-0.mp3",
-      "speaker": "灰姑娘",
-      "text": "我想休息，可以請妳陪我想辦法嗎？",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-say-my-wish-line-1.mp3",
-      "speaker": "仙女",
-      "text": "可以，妳的感受值得被聽見。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-say-my-wish-narration-0.mp3",
+      "file": "scene-0-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "仙女來到花園時，灰姑娘沒有只說自己還有多少工作。她停下手邊的事，說自己也想休息、聽音樂，卻不知道怎樣讓家人聽見。",
+      "text": "灰姑娘每天忙著掃地、洗衣，卻常常得不到家人的公平對待。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-say-my-wish-narration-1.mp3",
+      "file": "scene-0-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "灰姑娘先問仙女，能不能陪自己想想辦法，再等她回答。仙女聽完，輕輕點點頭。她不需要把所有事情都做完，才有資格說出感受，也不需要靠忍耐證明自己善良。",
+      "text": "她仍然照顧窗邊的小花，也對遇見的人保有善意。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "城堡要舉辦舞會的消息傳來了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "她也想去看看燈光和音樂，不是為了變成誰，只是想給自己一個快樂的夜晚。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -66,13 +66,43 @@
     {
       "file": "scene-1-narration-0.mp3",
       "speaker": "故事旁白",
-      "text": "聽完灰姑娘的願望，仙女在花園裡揮動魔杖，把南瓜變成馬車，把舊衣變成漂亮的禮服。她另外送給灰姑娘一雙真正的玻璃鞋，這份禮物不會隨午夜的魔法消失。",
+      "text": "一位仙女出現在花園，聽見灰姑娘的願望。她揮動魔杖，把南瓜變成馬車，把舊衣變成漂亮的禮服。她另外送給灰姑娘一雙真正的玻璃鞋，這份禮物不會隨午夜的魔法消失。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
       "file": "scene-1-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "仙女提醒她，魔法到午夜就會結束。灰姑娘記住時間，也明白真正讓她踏出家門的，是願意為自己勇敢一次的心。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "一位仙女出現在花園，聽見灰姑娘的願望。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她揮動魔杖，把南瓜變成馬車，把舊衣變成漂亮的禮服。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她另外送給灰姑娘一雙真正的玻璃鞋，這份禮物不會隨午夜的魔法消失。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "仙女提醒她，魔法到午夜就會結束。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "灰姑娘記住時間，也明白真正讓她踏出家門的，是願意為自己勇敢一次的心。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -100,6 +130,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "馬車停在城堡前，灰姑娘走進燈火溫暖的大廳。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她不太熟悉舞步，卻願意慢慢試著跟上節奏。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "王子邀她一起跳舞，兩人聊起花園和生活。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "讓人想繼續聽下去的，不只是衣服，而是她真誠又有想法的話語。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "灰姑娘",
       "text": "時間到了，我得回家了！",
@@ -121,6 +175,36 @@
       "file": "scene-3-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "她跑得太急，一隻玻璃鞋留在了階梯上。馬車和禮服恢復原樣，卻帶不走她心裡那段明亮的回憶。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "噹！",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "午夜的第一聲鐘響了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "灰姑娘想起仙女的提醒，向王子道別，趕緊往外跑。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "她跑得太急，一隻玻璃鞋留在了階梯上。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "馬車和禮服恢復原樣，卻帶不走她心裡那段明亮的回憶。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -148,27 +232,27 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-my-own-plan-line-0.mp3",
-      "speaker": "灰姑娘",
-      "text": "我想照顧花，也要留時間休息。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-my-own-plan-line-1.mp3",
-      "speaker": "王子",
-      "text": "我們一起商量，妳可以說出不同想法。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-my-own-plan-narration-0.mp3",
+      "file": "scene-4-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "王子認出灰姑娘後，先聽她說想過怎樣的生活。她想繼續照顧花園，也想有自己的休息時間，不再由別人把所有工作都交給她。",
+      "text": "王子帶著那隻鞋，尋找舞會上的朋友。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-my-own-plan-narration-1.mp3",
+      "file": "scene-4-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "他們把一天想做的事分成幾小段，留下一段空白。那不是忘記安排，而是留給休息和新的選擇。灰姑娘可以說願意，也可以說這樣的安排不適合自己。",
+      "text": "當他來到灰姑娘家時，灰姑娘沒有躲起來，而是勇敢走上前。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "鞋子剛好合腳，但更讓王子認出她的，是她說話時的笑容。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "她說出自己的名字，也說出對未來生活的期待。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -196,6 +280,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "灰姑娘有了選擇生活的機會。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她繼續照顧花園，也和王子一起讓城堡成為歡迎每一個人的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她不再默默接受不公平。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "那一夜的魔法早已結束，但善良、勇敢和尊重自己的心，仍然陪著她走向新的日子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "灰姑娘",
       "text": "我累了，想先休息一下。",
@@ -217,6 +325,36 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "她放下手中的布，先坐下休息，再告訴仙女現在的感覺。今天你也可以練習說：我累了，想休息一下。需要幫助時，可以找信任的大人一起說。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "灰姑娘的願望在穿上禮服以前，就值得被聽見。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她曾經需要別人幫忙，也慢慢學會說出不舒服的安排，不把沉默當成唯一的選擇。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她放下手中的布，先坐下休息，再告訴仙女現在的感覺。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "今天你也可以練習說：我累了，想休息一下。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "需要幫助時，可以找信任的大人一起說。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

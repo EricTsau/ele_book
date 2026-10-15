@@ -33,7 +33,7 @@ export function legacyEvent(tl,s,c,M){
   if(i===1){go(hare,-.75,-.65,1.5,1.6,{run:true});go(turtle,.45,.4,2,10);turn(hare,5,2.8);wave(hare,7);}
   if(i===2){go(hare,-1,.2,1.4,2);rest(hare,4);go(turtle,.45,.05,3,9);turn(turtle,12,-.45);}
   if(i===3){tl.set(hare.root.position,{x:-1.35,z:.2},0);rest(hare,0);go(turtle,.6,.1,1.5,4);bend(turtle,6,1,.12);go(turtle,.6,-1.1,7,6);}
-  if(i===4){tl.set(hare.root.position,{x:-1,z:.25},0);tl.set(turtle.root.position,{x:.2,z:-1.1},0);rest(hare,0);go(turtle,.2,-1.93,1.5,6.5);upright(hare,7.2);turn(hare,8,3.14);go(hare,-.7,-1.9,9,2.5,{run:true});hop(tl,turtle,11.7,.14);bend(hare,12.7,1,.3);}
+  if(i===4){tl.set(hare.root.position,{x:-1,z:.25},0);tl.set(turtle.root.position,{x:.2,z:-1.1},0);tl.set(hare.root.rotation,{z:-1.35},0);tl.set(hare.root.position,{y:.3},0);upright(hare,.2);go(turtle,.2,-1.93,1.5,6.5);turn(hare,1.4,3.14);go(hare,-.7,-1.9,4,7.5,{run:true});hop(tl,turtle,11.7,.14);bend(hare,12.7,1,.3);}
   if(i===5){meet(hare,turtle);bend(hare,5,1,.45);bend(turtle,7,1,.12);go(hare,1.15,1.15,9,4);go(turtle,.45,1.15,9,4);}
   return true;
  }
@@ -59,9 +59,9 @@ export function legacyEvent(tl,s,c,M){
   if(i===0){A.forEach((x,j)=>{bend(x,1.5+j*.5,1,.25);go(x,j===0?-1.2:j===1?.6:-.3,2.2,4+j*.4,4);turn(x,10,-.4);});}
   if(i===1){go(a,-.75,.15,1.5,2,{face:Math.PI});bend(a,4,1,.55);go(a,0,.15,5.5,2,{face:Math.PI});bend(a,8,1,.55);go(a,.75,.15,9.5,1.6,{face:Math.PI});bend(a,11.5,2,.55);if(e.bowls?.[2])tl.set(e.bowls[2],{visible:false},12.5);}
   if(i===2){go(a,-1.25,-.35,1,1);bend(a,2.1,1,.2);go(a,1.25,-.35,2.8,1.5);bend(a,4.4,1,.2);go(a,.1,-.1,5.2,1);tl.to(a.root.position,{y:.25,duration:.6},6.3);a.legs.forEach(leg=>tl.to(leg.rotation,{x:-1.3,duration:.6},6.3));a.legs.forEach(leg=>tl.to(leg.rotation,{x:0,duration:.3},8.5));tl.to(a.root.rotation,{z:.13,duration:.2,repeat:3,yoyo:true},7);breakChair(8);tl.to(a.root.position,{y:0,x:.5,z:.5,duration:.6},8.5);tl.to(a.root.rotation,{z:0,duration:.3},8.5);go(a,-1.1,1.45,10,2);turn(a,12,.6);}
-  if(i===3){bedRest(a,0);go(b,-.5,1.25,5,3);go(d,1.4,1.2,6,3);wave(d,10);tl.to(a.root.rotation,{z:0,duration:.6},11);tl.to(a.root.position,{x:.6,y:0,z:1.35,duration:1},11);turn(a,12,.55);}
+  if(i===3){go(a,.65,1.1,.2,1.5);bedRest(a,2);go(b,-.5,1.25,5,3);go(d,1.4,1.2,6,3);wave(d,10);tl.to(a.root.rotation,{z:0,duration:.6},11);tl.to(a.root.position,{x:.6,y:0,z:1.35,duration:1},11);turn(a,12,.55);}
   if(i===4){meet();go(d,1.25,1.25,3,2);bend(a,5,2,.45);turn(b,6,-.5);turn(a,10,-.4);bend(a,11,1,.2);}
-  if(i===5){go(a,-1.3,1.4,1.5,2);wave(a,4);go(b,.35,1.25,4.5,2);wave(b,7);go(a,-.65,.95,8,2);go(d,1.4,1.1,8.5,2);bend(a,11,2,.35);bend(d,12,2,.3);}
+  if(i===5){if(e.chairSeat){tl.set(e.chairSeat.rotation,{z:.38},0);tl.to(e.chairSeat.rotation,{z:0,duration:1},1.2);}if(e.chairBack){tl.set(e.chairBack.rotation,{z:.3},0);tl.to(e.chairBack.rotation,{z:0,duration:1},1.2);}e.chairLegs?.forEach((leg,j)=>{tl.set(leg.rotation,{z:j%2?.5:-.5},0);tl.to(leg.rotation,{z:0,duration:1},1.2);});bend(a,.2,2,.35);go(a,-1.3,1.4,2.3,1.2);wave(a,4);go(b,.35,1.25,4.5,2);wave(b,7);go(a,-.65,.95,8,2);go(d,1.4,1.1,8.5,2);bend(a,11,2,.35);bend(d,12,2,.3);}
   return true;
  }
  if(id==='hansel-and-gretel'){
@@ -86,7 +86,7 @@ export function legacyEvent(tl,s,c,M){
   if(i===0){go(a,-.65,1.15);bend(a,4,4,.6);go(a,.6,.95,8,2);bend(a,10,2,.35);turn(a,13,-.55);}
   if(i===1){if(e.magic)tl.set(e.magic.scale,{x:.04,y:.04,z:.04},0);meet();wave(b,5);if(e.dressMaterial)tl.to(e.dressMaterial.color,{r:.2384,g:.3864,b:.521,duration:2},5);if(e.pumpkin)tl.to(e.pumpkin.scale,{x:.01,y:.01,z:.01,duration:1},5);if(e.magic)tl.to(e.magic.scale,{x:1,y:1,z:1,duration:2},5);go(a,-.35,1.4,9,2);wave(a,12);}
   if(i===2){meet();A.forEach((x,j)=>{go(x,j?-.6:.6,1.25,5,3);tl.to(x.root.rotation,{y:Math.PI*2,duration:2.5},8.5);go(x,j?.6:-.6,.85,11.3,2.5);});}
-  if(i===3){if(e.hand){tl.set(e.hand.rotation,{z:Math.PI/3},0);tl.to(e.hand.rotation,{z:0,duration:4},1.5);}turn(a,5,.8);wave(a,6);go(a,-1.55,1.55,7,2,{run:true});if(e.dressMaterial)tl.to(e.dressMaterial.color,{r:.328,g:.314,b:.279,duration:1.5},8);if(p('shoe')){tl.set(p('shoe').position,{x:-.6,y:.04,z:1.15},7.5);tl.set(p('shoe'),{visible:true},7.5);}go(b,-.4,1.05,9.5,2);bend(b,12,1,.65);}
+  if(i===3){if(e.hand)tl.set(e.hand.rotation,{z:0},0);turn(a,5,.8);wave(a,6);go(a,-1.55,1.55,7,2,{run:true});if(e.dressMaterial)tl.to(e.dressMaterial.color,{r:.328,g:.314,b:.279,duration:1.5},8);if(p('shoe')){tl.set(p('shoe').position,{x:-.6,y:.04,z:1.15},7.5);tl.set(p('shoe'),{visible:true},7.5);}go(b,-.4,1.05,9.5,2);bend(b,12,1,.65);}
   if(i===4){go(b,.65,1.1);bend(b,4,1,.4);go(a,-.4,1.1,4.5,3);object(p('shoe'),{x:-.25,y:.06,z:1.25},7,2);bend(a,9,2,.6);turn(b,11,-.6);wave(a,12);}
   if(i===5){meet();bend(a,4,3,.5);bend(b,6,3,.5);go(a,-1.1,1.5,10,2);go(b,.95,1.5,10.3,2);wave(a,12.5);wave(b,12.8);}
   return true;

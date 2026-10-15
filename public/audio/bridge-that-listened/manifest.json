@@ -28,6 +28,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "草原中央有條淺河，雨後水會漫過踏腳石。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "小築想做一座橋，讓朋友去對岸的圖書屋時不用等水退。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "他畫了高高的拱橋，覺得曲線像彩虹一定很漂亮。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "阿驢看見圖紙，高興地幫忙找木料。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "慢慢也來看，卻把想說的話吞了回去。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "大家都在談橋頂能看多遠，沒有注意牠一直望著圖紙上那條陡陡的坡。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "慢慢",
       "text": "這個坡對我的腳太陡了。",
@@ -52,27 +88,39 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-bridge-stay-line-0.mp3",
-      "speaker": "慢慢",
-      "text": "我想過去，可是這裡讓我害怕。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-bridge-stay-line-1.mp3",
-      "speaker": "小築",
-      "text": "我們先站穩，不急著再試。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-bridge-stay-narration-0.mp3",
+      "file": "scene-1-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "慢慢退回平地，低著頭，沒有再往坡上走。小築走到牠旁邊，也停下來。他沒有叫慢慢再用力，只陪牠看看眼前的小橋模型，等牠願意把擔心說出來。",
+      "text": "真正動工前，小築用小木塊做了模型。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-bridge-stay-narration-1.mp3",
+      "file": "scene-1-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "慢慢說，自己不是不想去圖書屋，是怕又往後滑。小築聽完，陪牠一起離開陡坡。現在他知道，要改的是走起來不合適的路，不是催朋友趕快走。",
+      "text": "阿驢跨過模型旁的練習坡，說高度很合適；慢慢才走幾步，背殼就往後滑。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "小築先在小木模型旁鋪一小段低矮練習坡，以為加上粗繩就可以，可是慢慢的腳抓不住繩。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "他把坡面刷得更粗，又發現雨水積在凹縫裡。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "試了半天，慢慢還是到不了橋頂。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "小築望著漂亮的模型，第一次不知道該不該照圖做下去。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -100,6 +148,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小築把工具收起來，在河邊擺好椅子，邀請朋友說說過河的需要。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "阿驢希望橋面別太滑，慢慢需要平緩的坡，也需要走累時能停下來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "他們一起量了河岸，發現旁邊的空地足以讓引道轉個小彎。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "小築將原本尖尖的拱頂擦掉，畫出一條更長、更低的曲線。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "這次他畫完一段，就停下來請朋友試著走走看。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "小築",
       "text": "路繞一點，大家卻更自在。",
@@ -124,27 +202,33 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-bridge-books-line-0.mp3",
-      "speaker": "慢慢",
-      "text": "我先停一下，再走下一小段。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-bridge-books-line-1.mp3",
-      "speaker": "小築",
-      "text": "我在旁邊等，你不用急。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-bridge-books-narration-0.mp3",
+      "file": "scene-3-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "正式通橋以前，小築在安全的平地排了三個記號，把圖書屋的書放在終點旁。慢慢先走到第一個記號，停下來。小築留在旁邊，示意牠可以照自己的速度繼續。",
+      "text": "新的模型比以前長，占了更多紙，小築起初有點捨不得那條像彩虹的線。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-bridge-books-narration-1.mp3",
+      "file": "scene-3-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "慢慢走過中間，再走到最後，沒有誰催牠快一點。牠發現，走得慢也能走到想去的地方。小築也記住了，等朋友時，要讓出空間，而不是一直伸手催促。",
+      "text": "不過慢慢先在地上鋪好的低坡試走，確認自己不會向後滑，再請大人照這個坡度造橋。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "阿驢也試過帶書經過，發現平台寬得可以讓兩人互相禮讓。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "大家把模型交給有經驗的大人檢查，確認木料與支撐方式，再一起從安全的岸邊協助整理材料。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "小築負責記錄每一項修改。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -172,6 +256,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "橋完成後，大家等來第一場雨。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "經過大人檢查可以通行，小築才和朋友走上橋面。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "雨水沿著邊緣排走，扶手下留著能讓慢慢看見河面的空隙。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "阿驢在平台停下，等一位帶著籃子的鄰居先過。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "慢慢慢慢走，沒有誰催牠。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "小築摸著平穩的欄杆，發現自己最喜歡的地方，已經從橋頂變成這個能停下來的小平台。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "慢慢",
       "text": "橋還在聽我們說話呢。",
@@ -196,6 +316,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "圖書屋重新熱鬧起來，小築替橋掛上一塊木牌，上面沒有寫自己的名字，而是畫了一隻耳朵。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "木牌旁放著小盒子，歡迎大家留下使用時的想法。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "冬天有人提醒橋邊落葉太滑，朋友們便安排輪流清掃。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "橋雖然已經蓋好，聽大家說話的工作卻沒有結束。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "每次慢慢經過，都會向那隻木頭耳朵點點頭，再安心地往前走。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "小築",
       "text": "哪個地方讓你不方便？",
@@ -217,6 +367,42 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "和朋友一起玩，也可以先問問對方需要什麼。有人走得慢，有人需要大一點的位置。我們不必替朋友猜完，聽見答案，再一起想一個做得到的辦法。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小築記得，漂亮的高橋不一定適合慢慢。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "今天他陪慢慢停在路邊，先問哪裡不好走，再把手放下，等牠說完。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "慢慢開口時，小築留在原地聽，不急著替牠回答。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "和朋友一起玩，也可以先問問對方需要什麼。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "有人走得慢，有人需要大一點的位置。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "我們不必替朋友猜完，聽見答案，再一起想一個做得到的辦法。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

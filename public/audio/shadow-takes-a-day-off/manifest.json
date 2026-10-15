@@ -28,6 +28,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "這是一座有魔法的花園：影子能離開腳邊，變成扁扁的人形，自己畫畫、說話。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "圓圓的影子叫影影，她們總是一起出門。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "圓圓跳舞，影影就跳舞；圓圓轉圈，影影也跟著轉。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "有一天，圓圓跑到日光下，腳邊卻空空的，只剩一張葉子便條，寫著影影想休息一天。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "圓圓從沒想過影子也會累，拿起便條就往花園跑。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "她想趕快把影影找回來，好讓今天的遊戲照原來的計畫開始。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "圓圓",
       "text": "我都跳舞了，它怎麼不來？",
@@ -49,6 +85,42 @@
       "file": "scene-1-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "花匠請她坐到樹下，問影影最喜歡玩什麼。圓圓張開嘴，突然回答不出來。原來她每天排滿許多遊戲，卻從來沒有停下來問問影影是否也喜歡。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "圓圓對樹叢喊，叫影影快點出來，又在石路上跳了平常最愛的舞。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "可是花叢裡只有蝴蝶，石階上只有搖晃的樹影。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她越找越急，連花匠的話也聽不進去。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "花匠請她坐到樹下，問影影最喜歡玩什麼。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "圓圓張開嘴，突然回答不出來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "原來她每天排滿許多遊戲，卻從來沒有停下來問問影影是否也喜歡。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -76,6 +148,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "花匠指向舊牆後面，圓圓悄悄走近，看見影影正在牆上描樹枝的形狀。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "一旁排著圓葉、尖葉和彎彎的花梗，像一場小小的畫展。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "影影沒有生氣，只說每天跟著奔跑，沒有時間看看慢慢移動的樹影。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "圓圓原本想立刻拉它回家，這次卻把手收回來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "她在牆角坐下，第一次認真看完影影喜歡的每一幅畫。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "圓圓",
       "text": "我們可以喜歡不同的遊戲。",
@@ -97,6 +199,36 @@
       "file": "scene-3-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "兩張葉子上都有散步，便把散步安排在傍晚。至於下午那一小段時間，她們約好各自做喜歡的事，結束後再分享今天發現的新東西。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "圓圓提出輪流當隊長，可是影影搖搖頭，說有時候它想獨自待一會兒。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "於是她們拿兩片大葉子，各自寫下想做的事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "圓圓想跑步、踢葉球，影影想畫畫、看日光慢慢轉彎。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "兩張葉子上都有散步，便把散步安排在傍晚。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "至於下午那一小段時間，她們約好各自做喜歡的事，結束後再分享今天發現的新東西。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -124,6 +256,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "下午，圓圓獨自玩了一會兒葉球，起初總忍不住回頭找影影。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "後來她發現自己可以慢慢練習，把揉成圓團的落葉球輕輕踢向兩顆石頭之間，不必表演給誰看。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "影影在另一面牆上畫完了三種葉子，也沒有擔心圓圓會不高興。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "花匠路過時，看見兩個朋友各自在忙，臉上卻都很放鬆。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "她替花澆水，沒有打斷這個剛剛好的安靜下午。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "影影",
       "text": "謝謝你讓我慢慢畫完。",
@@ -148,6 +310,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "傍晚到了，圓圓和影影在約好的樹下見面。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "一個帶來葉球的小技巧，一個帶來枝葉畫。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她們沒有急著讓對方選出哪個比較好，而是輪流說完今天的發現。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "夕陽把兩道影子拉得長長的，並排越過石路。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "圓圓知道，明天還是可以邀請影影一起跳舞；影影也知道，想休息時能好好說出來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "一起走路因此變得更輕鬆了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "圓圓",
       "text": "你現在想一起玩，還是再等一下？",
@@ -169,6 +367,42 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "邀請朋友時，可以等一等他的回答。朋友想休息，也不表示不喜歡你；你們能約別的時間。你想自己待一下時，也可以把需要好好說出來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "圓圓記得，影影有時想安靜畫畫。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "今天葉球已經放在旁邊，她先停在一點距離外，問影影要不要一起玩。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "影影抬手示意，說自己準備好了，圓圓才開心地靠近。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "邀請朋友時，可以等一等他的回答。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "朋友想休息，也不表示不喜歡你；你們能約別的時間。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "你想自己待一下時，也可以把需要好好說出來。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

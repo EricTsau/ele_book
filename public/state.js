@@ -1,3 +1,4 @@
+import {retiredPageSuccessors} from './retired-pages.js';
 export const STORAGE_KEY = 'little-leaf:pigs:v1';
 export function restoreProgress(raw, count) {
   try {
@@ -18,7 +19,7 @@ export function restoreLibrary(raw, books, legacyRaw=null) {
   let saved=value?.books?.[book.id];
   if(!saved&&book.id==='three-little-pigs'){try{saved=JSON.parse(legacyRaw);}catch{}}
   const state=restoreProgress(saved?JSON.stringify(saved):null,book.chapters.length);
-  if(saved?.pageId){const index=book.chapters.findIndex(c=>c.id===saved.pageId);state.page=index>=0?index:0;}
+  if(saved?.pageId){const pageId=retiredPageSuccessors[saved.pageId]||saved.pageId;const index=book.chapters.findIndex(c=>c.id===pageId);state.page=index>=0?index:0;}
   else if(value?.version!==3&&Number.isInteger(saved?.page)){
    const index=book.chapters.findIndex(c=>c.kind==='story'&&c.storyIndex===saved.page);
    if(index>=0)state.page=index;

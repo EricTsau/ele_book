@@ -28,6 +28,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小螞蟻忙了一上午，終於把找到的種子搬回蟻窩。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠沿著熟悉的小徑，來到溪邊想喝一口水。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "今天溪水比平常流得急，岸邊的石頭也濕濕滑滑。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "小螞蟻扶著草莖，慢慢靠近水面，卻沒注意腳下的一小塊泥土正被水沖鬆。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "泥塊突然滑落，牠還來不及抓牢草根，就掉進了水裡，隨著波紋往下游漂去。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "白鴿",
       "text": "別怕，我看見你了！",
@@ -49,6 +79,36 @@
       "file": "scene-1-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "白鴿沒有急著用嘴去夾，因為那樣可能弄傷牠。牠環顧四周，挑了一片又大又完整的葉子，啄斷葉柄，再看準水流的方向，把葉子放了下去。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "白鴿站在溪旁的大樹上，原本正在整理翅膀。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠聽見細細的求救聲，低頭才發現水面上有一隻小螞蟻。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "小螞蟻的身體太小，浪花卻像一座座小山，牠怎麼划也靠不了岸。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "白鴿沒有急著用嘴去夾，因為那樣可能弄傷牠。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "牠環顧四周，挑了一片又大又完整的葉子，啄斷葉柄，再看準水流的方向，把葉子放了下去。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -76,27 +136,39 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-dry-bank-rest-line-0.mp3",
-      "speaker": "小螞蟻",
-      "text": "我還有點怕，可以陪我一下嗎？",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-dry-bank-rest-line-1.mp3",
-      "speaker": "白鴿",
-      "text": "可以，我們先在這裡休息。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-dry-bank-rest-narration-0.mp3",
+      "file": "scene-2-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "小螞蟻爬到乾燥的岸上，腳還微微發抖。白鴿在離水邊遠一點的地方停下，陪牠放下葉子，到長凳歇一會兒，沒有催牠趕快恢復精神。",
+      "text": "葉子落在小螞蟻旁邊，像一艘剛剛好的小船。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-dry-bank-rest-narration-1.mp3",
+      "file": "scene-2-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "小螞蟻看看穩穩的地面，慢慢把身體伸直。白鴿等到朋友自己站起來，才準備離開。小螞蟻知道，平安上岸後仍然可以害怕，也可以請朋友多陪自己一下。",
+      "text": "小螞蟻用盡力氣抓住葉邊，慢慢爬到比較乾的中央。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "牠先伏下身體，等呼吸穩定，才抬頭向白鴿揮動觸角。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "溪水把葉子送進岸邊的小彎，葉尖碰到了一根垂下來的草莖。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "小螞蟻沿著草莖爬回陸地，終於踏到不再搖晃的泥土。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "白鴿一直留在旁邊，確定牠平安才放下心來。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -124,6 +196,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-3-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "過了幾天，小螞蟻又到溪邊找種子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠已經學會先看水勢，選擇平穩的地方走。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "忽然，草叢間出現一雙大靴子，一個捕鳥人正悄悄靠近大樹。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "他拿著捕鳥的工具，眼睛望著枝頭，腳步放得很輕。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "小螞蟻沿著他的視線看上去，發現白鴿正在樹上休息，完全不知道危險靠近。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "小螞蟻趕快想辦法，要讓朋友及時聽見警告。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-4-line-0.mp3",
       "speaker": "捕鳥人",
       "text": "哎呀，什麼碰到我的腳？",
@@ -145,6 +253,36 @@
       "file": "scene-4-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "白鴿聽見聲響，立刻看清樹下的情況，張開翅膀飛向高處。等捕鳥人重新抬頭，枝上只剩搖晃的葉子，小螞蟻也已經回到安全的草根旁。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小螞蟻知道自己的聲音太小，白鴿不一定聽得見。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠跑到捕鳥人的腳邊，在他剛要動手時，朝露出的腳踝咬了一小口。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "捕鳥人嚇了一跳，低頭拍了拍褲腳，手裡的工具也跟著晃動。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "白鴿聽見聲響，立刻看清樹下的情況，張開翅膀飛向高處。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "等捕鳥人重新抬頭，枝上只剩搖晃的葉子，小螞蟻也已經回到安全的草根旁。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -172,6 +310,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "捕鳥人離開後，白鴿飛回溪邊，停在離小螞蟻不遠的石頭上。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠知道剛才那一聲動靜，讓自己有機會避開危險，便低下頭認真道謝。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "小螞蟻抬起觸角，想起那片載自己回岸邊的綠葉。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "牠們的身體差很多，能做到的事也不同，卻都曾在對方需要的時候伸出援手。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "溪水繼續流，兩位朋友也繼續用各自的方式，照顧這段珍貴的友情。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "白鴿",
       "text": "先看看，哪裡可以安全地站著？",
@@ -193,6 +361,30 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "故事裡，小螞蟻用自己的方法提醒朋友；小朋友可以留在安全的地方，大聲叫可信任的大人。幫忙不一定要靠近危險，也不必等別人先幫過你，才願意關心。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "白鴿記得朋友在水裡呼救，小螞蟻記得白鴿一直守在岸邊。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "現在牠們站在乾燥的小路旁，一起看看安全的位置，想好遇到困難時可以向哪裡求助。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "故事裡，小螞蟻用自己的方法提醒朋友；小朋友可以留在安全的地方，大聲叫可信任的大人。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "幫忙不一定要靠近危險，也不必等別人先幫過你，才願意關心。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

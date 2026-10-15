@@ -28,6 +28,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "鄉下老鼠住在田邊的小洞裡，門口有一叢搖晃的麥穗。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "這天，城市老鼠提著小包袱來看牠。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "鄉下老鼠高高興興鋪好乾草，把收藏的穀粒和豆子一樣樣端出來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "桌子不大，食物也不豪華，卻都是牠細心準備的。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "兩位朋友一邊吃，一邊聽外頭的鳥叫。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "城市老鼠嚐了幾口，開始說起城裡閃亮的大屋和吃也吃不完的晚餐。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "城市老鼠",
       "text": "跟我來，看看城裡的晚餐。",
@@ -49,6 +85,36 @@
       "file": "scene-1-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "兩隻老鼠沿著田埂、穿過小巷，越走越接近城市。鄉下老鼠從沒看過那麼多窗戶，覺得每一扇窗都像藏著一個陌生的新故事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "城市老鼠說，大屋裡有柔軟的麵包、香香的乳酪，還有盤邊掉下來的甜點。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "鄉下老鼠聽得好奇，決定跟朋友去住一晚。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "牠先把洞口整理好，把明天要吃的穀粒收進乾燥的地方，才背起行李出發。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "兩隻老鼠沿著田埂、穿過小巷，越走越接近城市。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "鄉下老鼠從沒看過那麼多窗戶，覺得每一扇窗都像藏著一個陌生的新故事。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -76,6 +142,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "天色暗下來，城市老鼠帶朋友鑽進大屋的牆洞。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "等人們離開餐廳，牠們才沿著桌腳爬上長桌。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "盤子像小山一樣高，麵包屑多得像田裡的石子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "鄉下老鼠小心嚐了一口乳酪，驚訝地睜大眼睛。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "城市老鼠得意地請牠多吃一點。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "可是鄉下老鼠剛拿起第二塊麵包，門外就傳來沉重的腳步聲，朋友的耳朵立刻豎了起來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "城市老鼠",
       "text": "快進來，先別出聲。",
@@ -100,27 +202,39 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-safe-pause-line-0.mp3",
-      "speaker": "城市老鼠",
-      "text": "先坐一下，我陪著你。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-safe-pause-line-1.mp3",
-      "speaker": "鄉下老鼠",
-      "text": "等我不那麼緊張，再說好嗎？",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-safe-pause-narration-0.mp3",
+      "file": "scene-3-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "兩隻老鼠終於退回安全的小洞，鄉下老鼠放下小籃子，到長凳坐下。城市老鼠在旁邊陪著，沒有急著介紹下一道甜點，只安靜等朋友喘勻氣。",
+      "text": "城市老鼠拉著朋友，飛快躲進窗簾後的小縫。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-safe-pause-narration-1.mp3",
+      "file": "scene-3-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "坐了一會兒，鄉下老鼠知道自己還可以慢慢來，不必立刻回到餐桌。等牠重新站起來，兩隻老鼠準備先談談今晚還想不想留下；朋友的邀請，也可以好好說出自己的想法。",
+      "text": "有人進來收盤子，椅腳在地板上發出刺耳的聲音。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "鄉下老鼠抱緊麵包屑，大氣也不敢出。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "等餐廳再次安靜，兩隻老鼠才慢慢探出頭。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "牠們回到桌邊，還沒坐穩，門口又出現一隻大貓。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "大貓的腳步幾乎沒有聲音，眼睛卻一直望向牆角，讓這頓豐盛的晚餐變得十分緊張。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -148,6 +262,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "好不容易回到牆洞裡，鄉下老鼠把麵包放下，認真謝謝朋友的招待。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠承認城裡的食物很美味，卻也發現自己不喜歡吃一口就擔心下一個聲音。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "城市老鼠熟悉這裡的路線，或許能適應這種生活；牠自己卻更想念田野的風和安靜的小桌。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "牠沒有責怪朋友，也沒有說城市不好，只清楚地說出自己想回家的理由，然後收好包袱。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "鄉下老鼠",
       "text": "我的小桌子，真讓人安心。",
@@ -172,6 +310,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "清晨，鄉下老鼠回到自己的洞口。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "麥穗仍在風裡搖晃，昨晚收好的穀粒也好端端地放著。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "牠坐下吃早餐，聽見遠處的鳥叫，這一次沒有需要立刻逃跑的腳步聲。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "牠想念城市的朋友，便決定下次邀請牠再來田邊散步。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "兩隻老鼠仍然是朋友，只是喜歡不同的生活。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "鄉下老鼠嚼著普通的穀子，覺得能安心吃完一頓飯，就是很珍貴的幸福。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "城市老鼠",
       "text": "我想出去看看，你想呢？",
@@ -193,6 +367,36 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "城市老鼠想去看看新地方，鄉下老鼠想找能歇腳的小路。牠們不必說服對方變得一模一樣，可以一起挑舒服的安排。你和朋友想玩不同遊戲時，也可以先聽完彼此的想法。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "鄉下老鼠喜歡安靜，城市老鼠熟悉熱鬧的生活。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "下次見面，牠們先輪流說想怎樣度過下午，一隻說話時，另一隻就停下來聽。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "城市老鼠想去看看新地方，鄉下老鼠想找能歇腳的小路。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "牠們不必說服對方變得一模一樣，可以一起挑舒服的安排。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "你和朋友想玩不同遊戲時，也可以先聽完彼此的想法。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

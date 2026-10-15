@@ -52,8 +52,7 @@ export function addInterior(s,c,H){
  const trim=royal?'#b5a278':kind==='candy'?'#bc8892':'#a38a65';
  const floor=box(width,.05,depth,royal?'#d3c7b0':'#cfb58f',root,cx,-.025,cz);
  for(let x=L+.38;x<R;x+=.38)box(.012,.003,depth,'#b9a17e',root,x,.002,cz);
- // A roofless miniature set with translucent walls. Even the front outline
- // remains visible, but none of the wall materials writes over figure depth.
+ // Walls start solid; occupied rooms reveal the actors during rendering.
  const walls=[];
  const wall=(side)=>{const g=new THREE.Group();g.userData.side=side;root.add(g);walls.push(g);return g;};
  const rear=wall('back'),leftWall=wall('left'),rightWall=wall('right'),front=wall('front');
@@ -156,13 +155,26 @@ export function makeWallsTranslucent(room){
  for(const wall of room.walls)wall.traverse(m=>{
   if(!m.isMesh)return;
   m.material=m.material.clone();m.material.transparent=true;
-  m.material.opacity=wall.userData.side==='front'?.08:.26;
-  m.material.depthWrite=false;m.castShadow=false;
+  m.material.opacity=1;
+  m.material.depthWrite=true;
+ });
+}
+
+export function roomHasOccupants(s){
+ const room=s.interior;if(!room)return false;
+ const point=room.actorLocal||(room.actorLocal=room.root.position.clone());
+ const actors=[...(s.pigs||[]).map(a=>a.root),s.wolf?.root,...(s.effects?.classic?.thieves||[])].filter(Boolean);
+ return actors.some(actor=>{
+  for(let node=actor;node&&node!==s.root;node=node.parent)if(!node.visible||Math.abs(node.scale.x*node.scale.y*node.scale.z)<1e-6)return false;
+  actor.getWorldPosition(point);room.root.worldToLocal(point);
+  const b=room.spec;
+  return point.x>b.left&&point.x<b.right&&point.z>b.back&&point.z<b.front;
  });
 }
 
 export function updateInteriorVisibility(s,camera){
  const room=s.interior;if(!room)return;
+ const occupied=roomHasOccupants(s);room.occupied=occupied;
  // Cache a vector on the room instead of allocating during every frame.
  const v=room.cameraLocal||(room.cameraLocal=camera.position.clone());
  camera.getWorldPosition(v);room.root.worldToLocal(v);
@@ -170,6 +182,6 @@ export function updateInteriorVisibility(s,camera){
   const side=wall.userData.side,b=room.spec;
   const near=side==='front'||(side==='back'?v.z<b.back:side==='left'?v.x<b.left:v.x>b.right);
   wall.visible=true;
-  wall.traverse(m=>{if(m.isMesh)m.material.opacity=side==='front'?.08:near?.12:.26;});
+  wall.traverse(m=>{if(m.isMesh){m.material.opacity=occupied?(side==='front'?.08:near?.12:.26):1;m.material.depthWrite=!occupied;m.castShadow=!occupied;}});
  }
 }

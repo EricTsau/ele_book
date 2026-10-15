@@ -12,7 +12,7 @@ VOICE = 'zh-TW-HsiaoChenNeural'
 async def main():
     books = json.loads(subprocess.check_output([
         'node', '--input-type=module', '-e',
-        "import {books} from './public/books.js'; console.log(JSON.stringify(books));"
+        "import {books} from './public/books.js'; import {narrationSentences} from './public/speech-sync.js'; console.log(JSON.stringify(books.map(b=>({...b,chapters:b.chapters.map(c=>({...c,sentences:narrationSentences(c)}))}))));"
     ], cwd=ROOT, text=True))
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--book', action='append', help='Generate only this book id; repeat to select several.')
@@ -53,6 +53,7 @@ async def main():
             key = chapter['audioKey']
             jobs.extend(render(book,key,j,line,existing) for j,line in enumerate(chapter['lines']))
             jobs.extend(render(book,key,j,['故事旁白',text],existing,'narration') for j,text in enumerate(chapter['narration']))
+            jobs.extend(render(book,key,j,['故事旁白',sentence['text']],existing,'sentence') for j,sentence in enumerate(chapter['sentences']))
         records = await asyncio.gather(*jobs)
         manifest.write_text(json.dumps({'voice':VOICE,'locale':'zh-TW','description':'Taiwanese Mandarin female synthetic voice','lines':records},ensure_ascii=False,indent=2)+'\n')
     await asyncio.gather(*(render_book(book) for book in books))

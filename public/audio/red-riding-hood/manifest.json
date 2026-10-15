@@ -28,27 +28,27 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-route-line-0.mp3",
-      "speaker": "小紅帽",
-      "text": "如果我不確定，就先停下來問。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-route-line-1.mp3",
-      "speaker": "巡林員",
-      "text": "遇到困難，不用自己撐著。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-route-narration-0.mp3",
+      "file": "scene-0-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "走到熟悉的路口，小紅帽先在巡林員的值勤處停下。她拿出和媽媽看過的小路圖，說出約好碰面的地方，也記住可以在哪裡找到幫忙。",
+      "text": "小紅帽把剛出爐的麵包放進籃子。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-route-narration-1.mp3",
+      "file": "scene-0-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "巡林員和她一起看看路線。小紅帽知道，遇到不舒服或不確定的事，可以先停下來求助；路線變了，也要先讓照顧自己的大人知道。",
+      "text": "外婆生病了，她想帶些好吃的，陪外婆說說話。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "媽媽替她整理紅斗篷，叮嚀她走熟悉的小路，不要跟陌生人透露家人的住處。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "小紅帽點點頭，揮手出發。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -76,6 +76,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-1-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "樹叢後面，出現一隻笑咪咪的大野狼。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠早就看見小紅帽和外婆一起走過這條路，知道林邊的小屋是外婆家。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "牠假裝問小紅帽要去哪裡，又指著遠處的花，說那裡有最漂亮的禮物。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "小紅帽差點走進陌生的小徑。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "她忽然想起媽媽的叮嚀，緊緊握住籃子，留在大家都看得見的路上。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-2-line-0.mp3",
       "speaker": "小紅帽",
       "text": "外婆，妳的聲音怎麼不一樣？",
@@ -97,6 +127,30 @@
       "file": "scene-2-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "小紅帽走到門口，發現門竟然開著。屋裡靜悄悄的，床上的聲音也和平常不同。她停下腳步，沒有立刻靠近。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "大野狼抄近路到了外婆家，把外婆關進儲藏室，自己躲進被窩，戴上外婆的睡帽。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "小紅帽走到門口，發現門竟然開著。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "屋裡靜悄悄的，床上的聲音也和平常不同。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "她停下腳步，沒有立刻靠近。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -124,27 +178,27 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-tell-ranger-line-0.mp3",
-      "speaker": "小紅帽",
-      "text": "我還有點怕，可以在這裡等嗎？",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-tell-ranger-line-1.mp3",
-      "speaker": "巡林員",
-      "text": "可以，接下來由我來處理。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-tell-ranger-narration-0.mp3",
+      "file": "scene-3-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "巡林員先陪小紅帽留在門外。小紅帽吸一口氣，慢慢說出奇怪的聲音和被子旁的尾巴。巡林員等她說完，沒有催她再進屋看看。",
+      "text": "被子底下露出毛茸茸的大尾巴。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-tell-ranger-narration-1.mp3",
+      "file": "scene-3-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "他們確認了安全的等候位置。小紅帽不用證明自己勇敢，也不用回去質問大野狼。接下來確認屋裡的情況，是巡林員要負責的事。",
+      "text": "小紅帽覺得不對勁，往後退到門外，大聲呼喊巡林員。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她站在安全的地方，把看到的情況說清楚。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "聽到求助聲的巡林員，很快就沿著小路趕來了。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -172,6 +226,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "巡林員打開儲藏室的門，找到了外婆。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "大野狼見自己的把戲被識破，慌慌張張逃進森林。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "小紅帽撲進外婆懷裡。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "外婆拍拍她的背，謝謝她有勇氣求助，也謝謝巡林員及時伸出援手。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "小紅帽",
       "text": "下次來看妳，我也會注意安全。",
@@ -196,6 +274,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "麵包切好了，熱茶也倒好了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "小紅帽和外婆在窗邊，分享今天的冒險。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "從此以後，小紅帽出門前會說好路線，遇到奇怪的事情就尋求可信任的大人幫忙。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "關心別人，也要好好保護自己。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "小紅帽",
       "text": "我覺得不舒服，請陪我一下。",
@@ -217,6 +319,30 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "籃子放在兩人中間，她們輪流練習說一句求助的話。聽的人先停下手邊的事，認真回答：我聽到了，我會陪你找幫忙的人。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小紅帽沒有獨自靠近奇怪的聲音，而是退開，把看到的事告訴巡林員。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "外婆告訴她，就算一時沒有想到辦法，也不是她的錯。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "籃子放在兩人中間，她們輪流練習說一句求助的話。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "聽的人先停下手邊的事，認真回答：我聽到了，我會陪你找幫忙的人。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

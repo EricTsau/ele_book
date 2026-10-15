@@ -28,6 +28,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "老驢替磨坊運了很多年的穀袋，如今腿腳慢了，主人卻只嫌牠不夠快，連休息的地方也不願好好準備。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "老驢決定離開，去不來梅碰碰運氣，說不定自己的大嗓門可以加入樂隊。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "走到路旁，牠遇見一隻喘氣的老狗，因為追不上獵物而被趕出家門。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "老驢聽完，邀牠一起上路。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "兩個疲倦的身影並肩走著，遠方忽然沒有剛才那麼陌生。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "老貓",
       "text": "我的聲音，也能加入嗎？",
@@ -52,27 +82,33 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-taking-turns-line-0.mp3",
-      "speaker": "老貓",
-      "text": "這次讓我先唱，你聽聽看。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-taking-turns-line-1.mp3",
-      "speaker": "公雞",
-      "text": "好，唱完再換我。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-taking-turns-narration-0.mp3",
+      "file": "scene-1-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "走累了，老貓和公雞在路旁停下來。剛才大家一起唱，老貓常常聽不見自己的聲音，公雞也不知道朋友是不是已經唱完，兩個聲音總撞在一起。",
+      "text": "村口的牆上，一隻老貓低著頭，擔心自己不再像從前那樣會抓老鼠，家裡就容不下牠。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-taking-turns-narration-1.mp3",
+      "file": "scene-1-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "牠們決定先輪流試試。老貓唱時，公雞安靜聽；換公雞唱時，老貓點頭等牠。歌沒有立刻變整齊，牠們卻找到一個彼此都能加入的節奏，再回到伙伴身邊。",
+      "text": "老驢請牠試試唱歌，老貓拉長聲音，逗得老狗直搖尾巴。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "再往前走，牠們遇到一隻急著離開農家的公雞，牠不想被主人拿來做晚餐。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "四隻動物決定一起前往不來梅。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "牠們一路輪流唱歌，雖然還沒有整齊的節拍，卻都找到了願意聽自己說話的朋友。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -100,6 +136,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "太陽下山了，不來梅還在很遠的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "四位朋友決定先在森林裡過夜，公雞飛上枝頭，看見遠處有一點燈光。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "牠們循著光走去，找到一間小屋。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "老驢從窗邊望進去，看見一群強盜圍著桌子，正分著偷來的財物和食物。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "朋友們又冷又餓，卻不敢直接闖進去。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "牠們退到樹後，小聲討論，想利用四種不同的聲音，把壞人從屋裡嚇走。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "老驢",
       "text": "準備好了嗎？一起唱！",
@@ -121,6 +193,36 @@
       "file": "scene-3-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "強盜以為森林裡來了怪物，慌忙丟下東西，從後門逃走。四位朋友連忙一個接著一個回到地上，互相確認平安，才推開小屋的門。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "老驢站在窗前，老狗爬到牠背上，老貓又爬上老狗的背，最後公雞穩穩停在最上方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "大家等老驢點頭，一起放聲大叫。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "驢叫、狗吠、貓叫和雞啼混成了從沒聽過的聲音，窗上還映出一個高高的奇怪影子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "強盜以為森林裡來了怪物，慌忙丟下東西，從後門逃走。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "四位朋友連忙一個接著一個回到地上，互相確認平安，才推開小屋的門。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -148,27 +250,33 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-making-room-line-0.mp3",
-      "speaker": "老驢",
-      "text": "我走得慢，想先停一下。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-making-room-line-1.mp3",
-      "speaker": "老狗",
-      "text": "我陪你，我們一起慢慢搬。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-making-room-narration-0.mp3",
+      "file": "scene-4-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "天亮了，老驢想把擋在休息角落的籃子移開，才走幾步就停下來。老狗看見了，走到牠身旁，問清楚要放的位置，再陪牠一起慢慢搬。",
+      "text": "朋友們吃了一點食物，分別在屋裡找到舒服的角落休息。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-making-room-narration-1.mp3",
+      "file": "scene-4-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "籃子移到旁邊，地上多出一塊能坐下的空間。老驢不用勉強走快，老狗也不用獨自扛完。牠們留好休息的位置，準備和朋友商量接下來怎樣照顧這個家。",
+      "text": "半夜，一名強盜偷偷回來查看，摸黑把老貓發亮的眼睛當成火星。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "老貓嚇得叫起來，老狗也立刻吠叫，老驢跺了跺腳，公雞更在屋頂大聲報警。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "強盜聽到四面八方都是聲音，轉身逃走，再也不敢回來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "朋友們沒有追出去，只把門重新關好，確定大家都沒受傷，便繼續安心睡覺。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -196,6 +304,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "清晨，陽光照進乾淨的小屋，四位朋友決定先住下來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "他們請路過的村民協助，把強盜留下的失物送回主人手中，自己則整理院子，修補門窗。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "老驢搬得慢，大家就一起搬；老狗聽聲音，老貓看角落，公雞每天叫早。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "牠們最後沒有走到不來梅，卻找到可以安心生活的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "傍晚，小屋傳來四種不太整齊的歌聲，那是朋友們最喜歡的樂曲。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "老狗",
       "text": "你可以和我一起，不用先表演。",
@@ -217,6 +355,36 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "兩位朋友安靜待在一起，老貓慢慢抬起頭。有時候，一句「你可以和我一起」就很溫暖。你看到有人落單，可以先邀請，也讓對方選擇要不要加入，不必催他馬上笑起來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "老貓想起自己曾經擔心，抓不到老鼠就沒有地方留下。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "老狗走到牠身旁，和牠並肩站著，沒有先要求牠唱歌，也沒有請牠證明自己能做多少事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "兩位朋友安靜待在一起，老貓慢慢抬起頭。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "有時候，一句「你可以和我一起」就很溫暖。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "你看到有人落單，可以先邀請，也讓對方選擇要不要加入，不必催他馬上笑起來。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

@@ -28,6 +28,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "好幾天沒有下雨，草地上的小水窪都不見了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "烏鴉飛過田野，又飛過果園，喉嚨乾得很不舒服。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "牠停在樹枝上休息，仔細聽四周有沒有流水的聲音。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "遠處的井太深，舊水盆又空空的。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "烏鴉沒有繼續漫無目的地飛，而是慢慢觀察院子裡每一個角落。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "終於，牆邊一只長長的陶壺，引起了牠的注意。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "烏鴉",
       "text": "真的有水，可是太低了。",
@@ -49,6 +85,36 @@
       "file": "scene-1-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "陶壺裡映著亮亮的天空，看起來那麼清涼，偏偏一滴也喝不到。烏鴉收回脖子，站穩腳步，知道光是重複伸嘴巴，事情不會改變。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "烏鴉跳到陶壺旁，伸長脖子往裡看，果然看見壺底有一小灘清水。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠高興地把嘴探進去，卻發現壺口窄窄的，水面又離得太遠。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "牠換到另一邊再試，還是差了一大段距離。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "陶壺裡映著亮亮的天空，看起來那麼清涼，偏偏一滴也喝不到。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "烏鴉收回脖子，站穩腳步，知道光是重複伸嘴巴，事情不會改變。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -76,6 +142,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "烏鴉想把陶壺推倒，讓水流進旁邊的淺碟，可是陶壺又厚又重，怎麼推都不動。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠又繞著壺走了一圈，看看有沒有裂口，結果壺身十分完整。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "折騰了一會兒，牠退到陰影裡喘口氣。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "這時，腳旁幾顆圓滑的小石子碰在一起，發出輕輕的聲音。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "烏鴉低頭看看石子，再抬頭看看壺口，心裡突然有了一個新主意。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "烏鴉",
       "text": "放一顆，看看有什麼變化。",
@@ -97,6 +193,36 @@
       "file": "scene-3-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "為了確認，牠又放進第二顆，再用壺壁上的花紋做記號。這一次牠看清楚了，石子沉到壺底，占去一些空間，原來留在低處的水就慢慢往上升了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "烏鴉挑了一顆比壺口小的石子，用嘴叼起來，輕輕放進陶壺。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "噗通一聲，水面起了小小的波紋。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "牠等水靜下來，仔細看看，發現水好像比剛才高了一點。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "為了確認，牠又放進第二顆，再用壺壁上的花紋做記號。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "這一次牠看清楚了，石子沉到壺底，占去一些空間，原來留在低處的水就慢慢往上升了。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -124,6 +250,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "有了方向，烏鴉不再著急。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠挑選乾淨的小石子，一顆一顆放進壺裡，每放幾顆就停下來看看水面。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "太大的石頭牠不勉強搬，會卡住壺口的也留在地上。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "石子慢慢堆高，水面也一點一點靠近。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "雖然工作需要時間，烏鴉卻能清楚看見進展。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "最後，牠伸長脖子試了一次，涼涼的水終於碰到了嘴尖，真是再好不過的消息。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "烏鴉",
       "text": "真好喝，我終於做到了。",
@@ -148,6 +310,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "烏鴉終於喝到清水，乾燥的喉嚨舒服多了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠沒有把壺弄破，也沒有搬動沉重的壺身，只用附近的小石子解決了問題。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "喝完水，牠停在牆上梳理羽毛，回想剛才每一次觀察和嘗試。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "原來遇到困難時，可以先休息，再找出真正卡住的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "烏鴉記住了這個午後，也記住一個小主意經過耐心實行，能帶來多大的改變。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "烏鴉",
       "text": "先走一步，停下來看看。",
@@ -169,6 +361,30 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "走到最後，牠沒有一口氣衝過去，而是把長長的路分成三小步。你也可以和大人在平地上練習，走一步，停一下，看看下一步；需要幫忙，隨時都可以開口。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "烏鴉想起第一顆石子落下後，自己先看水面，才決定接著做。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "今天地上有三個記號，牠先走到第一個，停下來看看，再往下一個記號慢慢走。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "走到最後，牠沒有一口氣衝過去，而是把長長的路分成三小步。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "你也可以和大人在平地上練習，走一步，停一下，看看下一步；需要幫忙，隨時都可以開口。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

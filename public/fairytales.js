@@ -75,7 +75,7 @@ export const fairytales=[
  id:'cinderella',title:'灰姑娘',english:'CINDERELLA',subtitle:'魔法會消失，善良與勇氣卻能一直發光。',age:'5 歲以上',theme:'palace',color:'#788ea4',cover:'coach',characters:{'灰姑娘':{type:'girl',color:'#86a7bf'},'仙女':{type:'fairy',color:'#c4a6c5'},'王子':{type:'prince',color:'#8593b0'}},
  chapters:[
  S('窗邊的一個願望','灰姑娘每天忙著掃地、洗衣，卻常常得不到家人的公平對待。她仍然照顧窗邊的小花，也對遇見的人保有善意。\n\n城堡要舉辦舞會的消息傳來了。她也想去看看燈光和音樂，不是為了變成誰，只是想給自己一個快樂的夜晚。',[['灰姑娘','我也想有一次，為自己好好跳支舞。'],['灰姑娘','我的願望，應該也值得被聽見。']],['灰姑娘'],'cottage','greet',['cottage','flowers']),
- S('南瓜裡的驚喜','聽完灰姑娘的願望，仙女在花園裡揮動魔杖，把南瓜變成馬車，把舊衣變成漂亮的禮服。她另外送給灰姑娘一雙真正的玻璃鞋，這份禮物不會隨午夜的魔法消失。\n\n仙女提醒她，魔法到午夜就會結束。灰姑娘記住時間，也明白真正讓她踏出家門的，是願意為自己勇敢一次的心。',[['仙女','午夜之前回家，記得照顧好自己。'],['灰姑娘','謝謝妳，我一定會記住時間。']],['灰姑娘','仙女'],'garden','magic',['coach','flowers']),
+ S('南瓜裡的驚喜','一位仙女出現在花園，聽見灰姑娘的願望。她揮動魔杖，把南瓜變成馬車，把舊衣變成漂亮的禮服。她另外送給灰姑娘一雙真正的玻璃鞋，這份禮物不會隨午夜的魔法消失。\n\n仙女提醒她，魔法到午夜就會結束。灰姑娘記住時間，也明白真正讓她踏出家門的，是願意為自己勇敢一次的心。',[['仙女','午夜之前回家，記得照顧好自己。'],['灰姑娘','謝謝妳，我一定會記住時間。']],['灰姑娘','仙女'],'garden','magic',['coach','flowers']),
  S('音樂亮起的夜晚','馬車停在城堡前，灰姑娘走進燈火溫暖的大廳。她不太熟悉舞步，卻願意慢慢試著跟上節奏。\n\n王子邀她一起跳舞，兩人聊起花園和生活。讓人想繼續聽下去的，不只是衣服，而是她真誠又有想法的話語。',[['王子','可以邀妳跳一支舞嗎？'],['灰姑娘','可以呀，不熟的舞步，我們慢慢學。']],['灰姑娘','王子'],'palace','dance',['castle','clock']),
  S('十二點的鐘聲','噹！午夜的第一聲鐘響了。灰姑娘想起仙女的提醒，向王子道別，趕緊往外跑。\n\n她跑得太急，一隻玻璃鞋留在了階梯上。馬車和禮服恢復原樣，卻帶不走她心裡那段明亮的回憶。',[['灰姑娘','時間到了，我得回家了！'],['王子','等等，至少讓我知道妳的名字！']],['灰姑娘','王子'],'palace','clock',['castle','clock','shoe']),
  S('這一次，我自己站出來','王子帶著那隻鞋，尋找舞會上的朋友。當他來到灰姑娘家時，灰姑娘沒有躲起來，而是勇敢走上前。\n\n鞋子剛好合腳，但更讓王子認出她的，是她說話時的笑容。她說出自己的名字，也說出對未來生活的期待。',[['灰姑娘','那天跳舞的人是我，我叫仙杜瑞拉。'],['王子','我記得妳，也想繼續聽妳的故事。']],['灰姑娘','王子'],'cottage','reveal',['shoe','cottage']),
@@ -121,7 +121,7 @@ const impactCues={
  'jack-and-beanstalk':{3:[{time:6,type:'knock'},{time:9,type:'chime'}],4:[{time:10,type:'crumble'}]},
  'goldilocks':{2:[{time:8,type:'crumble'}]},
  'hansel-and-gretel':{4:[{time:6.5,type:'knock'}]},
- 'cinderella':{1:[{time:5,type:'sparkle'}],3:[{time:5.5,type:'chime'}]},
+ 'cinderella':{1:[{time:5,type:'sparkle'}],3:[{time:0,type:'chime'}]},
  'lion-and-mouse':{3:[{time:2,type:'drop'}],4:[{time:7,type:'crumble'}]},
 };
 for(const book of fairytales)book.chapters.forEach((chapter,i)=>{chapter.cues=pageCues[book.id][i];if(impactCues[book.id]?.[i])chapter.soundCues=impactCues[book.id][i];});

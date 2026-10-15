@@ -28,6 +28,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小秒把一天分成六格，寫在紙卡上，貼到家裡的小鐘旁。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "六格排滿畫畫、讀書、練琴，連吃點心都要盯著指針。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "他以為安排得越滿，一天就越精彩。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "可是傍晚到了，畫少了一隻翅膀，故事只讀了一半，點心也忘在桌上。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "小鼠滴答來邀他散步，他卻找不到一格空位。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "小秒望著滿滿的紙卡，覺得自己一直忙，卻什麼也沒有好好做完。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "小秒",
       "text": "指針停了，天怎麼還會黑？",
@@ -49,6 +85,42 @@
       "file": "scene-1-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "小秒開心得立刻按鈕，想趁時間不動多做三件事。他忙了一陣，抬頭才發現天色已暗。原來停的是鐘，並不是世界。鐘師傅說，這顆按鈕是提醒人休息的，不能把一天變長，也不能替任何人完成工作。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "鐘師傅看過那張紙卡，借給小秒一只放在桌上的小鐘，頂端裝了一顆綠色圓鈕。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "按下圓鈕可以暫停指針，再按一次又會繼續轉動，但窗外的太陽仍照常前進。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "小秒開心得立刻按鈕，想趁時間不動多做三件事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "他忙了一陣，抬頭才發現天色已暗。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "原來停的是鐘，並不是世界。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "鐘師傅說，這顆按鈕是提醒人休息的，不能把一天變長，也不能替任何人完成工作。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -76,6 +148,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "第二天，小秒畫到手酸時，又碰到那顆圓鈕。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "他差點伸手去拿另一本書，想起鐘師傅的話，便把鉛筆放下。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "房間安靜以後，他才聽見肚子咕嚕叫，也發現肩膀緊緊縮著。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "滴答替他挪出一張椅子，兩人喝水、吃點心，看看窗外的雲。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "只過一小會兒，小秒再回到畫前，竟然很快想到那隻翅膀應該怎麼畫。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "滴答",
       "text": "這一格為什麼什麼都沒寫？",
@@ -97,6 +199,30 @@
       "file": "scene-3-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "滴答問空格算不算浪費，小秒想了想，畫了一朵正在飄的雲。空格可以用來發呆、走路，或者把上一件事好好收尾，不必每天都用同一種方式填滿。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小秒拿出一張分成六格的新紙卡，先寫下今天最重要的兩件事，其他想做的畫在旁邊，留到有精神的時候再選。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "他把另外四格留白，決定完成一件事後先看看自己餓不餓、累不累，再選下一件。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "滴答問空格算不算浪費，小秒想了想，畫了一朵正在飄的雲。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "空格可以用來發呆、走路，或者把上一件事好好收尾，不必每天都用同一種方式填滿。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -124,6 +250,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "下午忽然下雨，原本安排的散步只好延後。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "從前的小秒一定急著改表，這次他和滴答坐在窗邊，聽雨珠敲窗台。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "雨小了，他們才穿好鞋，去看葉子上的水滴。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "回家時少做了一件練習，多畫了一張雨後花園。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "小秒沒有把漏做的那件事當成失敗，而是寫在明天的旁邊，準備睡飽之後再做。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "原先留白的格子，讓他有時間等雨停，也有時間看看花園。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "小秒",
       "text": "現在我能自己留下一點空白。",
@@ -148,6 +310,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "一週後，小秒把特別的鐘還給鐘師傅。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "他把有六格的新紙卡帶在身邊，忙得忘記休息時，就看看空白那一格，再放下手上的事情，喝水或走動一下。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "鐘師傅請他留下一張六格紙卡，掛在工作桌邊提醒自己。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "那天小秒和滴答散步回家，沒有一邊走一邊趕下一件事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "他們停下來數一數樹上的新葉，發現沒有排進行程的風，也能把一天吹得很豐富。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "小秒",
       "text": "我想先停一下，看看身體怎麼了。",
@@ -169,6 +361,48 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "休息不必等到所有事情做完。你可以問問自己：口渴嗎、肚子餓嗎、身體累嗎？把感覺告訴照顧你的大人，一起選擇喝水、吃點心，或安靜歇一會兒。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小秒以前連點心都忘了吃，後來才學會停一下。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "現在他把杯子放穩，走到椅子旁坐一會兒。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "滴答留在旁邊陪著，沒有催他立刻做下一件事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "休息後，小秒才慢慢站起來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "休息不必等到所有事情做完。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "你可以問問自己：口渴嗎、肚子餓嗎、身體累嗎？",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-6.mp3",
+      "speaker": "故事旁白",
+      "text": "把感覺告訴照顧你的大人，一起選擇喝水、吃點心，或安靜歇一會兒。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

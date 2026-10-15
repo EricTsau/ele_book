@@ -1,6 +1,7 @@
 import {readFileSync,statSync} from 'node:fs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {narrationSentences} from '../public/speech-sync.js';
 import {books} from '../public/books.js';
 test('twenty additional stories have complete distinct chapters and provenance',()=>{
  const added=books.slice(11);assert.equal(added.length,20);
@@ -21,4 +22,18 @@ test('bundled dialogue matches every story line and voice manifest',()=>{
  }
  assert.equal(clips,books.reduce((n,b)=>n+b.chapters.reduce((m,c)=>m+c.lines.length,0),0));
  for(const b of books){const directory=new URL(`../public/${b.audioBase}/`,import.meta.url),manifest=JSON.parse(readFileSync(new URL('manifest.json',directory))),lines=new Map(manifest.lines.map(r=>[r.file,r]));for(const c of b.chapters)c.narration.forEach((text,i)=>{const file=`${c.audioKey}-narration-${i}.mp3`;assert.deepEqual(lines.get(file),{file,speaker:'故事旁白',text,voice:'zh-TW-HsiaoChenNeural'});assert.ok(statSync(new URL(file,directory)).size>1000);});}
+});
+
+
+test('every sentence audio clip exactly matches its complete narration text',()=>{
+ let count=0;
+ for(const b of books){
+  const directory=new URL(`../public/${b.audioBase}/`,import.meta.url),manifest=JSON.parse(readFileSync(new URL('manifest.json',directory))),records=new Map(manifest.lines.map(r=>[r.file,r]));
+  for(const c of b.chapters)narrationSentences(c).forEach(({text},i)=>{
+   const file=`${c.audioKey}-sentence-${i}.mp3`;
+   assert.deepEqual(records.get(file),{file,speaker:'故事旁白',text,voice:'zh-TW-HsiaoChenNeural'});
+   assert.ok(statSync(new URL(file,directory)).size>1000);count++;
+  });
+ }
+ assert.equal(count,1072);
 });

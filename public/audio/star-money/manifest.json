@@ -28,6 +28,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "很久以前，一個失去家人的小女孩，帶著一小塊別人送的麵包走在鄉間。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她身上的衣服雖然舊，卻洗得很乾淨；口袋裡沒有錢，心裡仍盼望能遇到一處願意收留她的地方。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "太陽快下山了，她走得有些累，便在路旁停下來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "這時，一位飢餓的老人坐在石頭上，望著遠方的村子，說自己已經很久沒有吃東西，小女孩聽見後慢慢走了過去。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "小女孩",
       "text": "這塊麵包，請您吃吧。",
@@ -49,6 +73,36 @@
       "file": "scene-1-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "小女孩繼續走路，肚子雖然空空的，卻記得剛才那雙重新有了精神的眼睛。她沒有期待禮物或獎賞，只是看見眼前有人需要幫忙，便做了自己當時願意做的事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小女孩看看手裡的麵包，又看看老人。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她把麵包分成兩塊，先請老人吃，見對方仍然很餓，便把剩下的一塊也交了出去。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "老人捧著食物，認真向她道謝，並告訴她前方村子的方向。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "小女孩繼續走路，肚子雖然空空的，卻記得剛才那雙重新有了精神的眼睛。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "她沒有期待禮物或獎賞，只是看見眼前有人需要幫忙，便做了自己當時願意做的事。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -76,6 +130,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "越靠近森林，風就越涼。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "一個小男孩縮在路旁，頭髮被風吹得亂亂的，身上的衣服也很薄。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "小女孩停下來，問清楚他的情況，把自己的帽子交給他，又把一條圍巾披在他肩上。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "小男孩搓搓冰冷的手，慢慢露出笑容。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "小女孩指著老人說的方向，請他往有燈光的村莊走，自己也繼續前進。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "天邊還留著一條亮光，像在替兩個孩子指路。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "小妹妹",
       "text": "謝謝妳，我終於暖一點了。",
@@ -97,6 +187,36 @@
       "file": "scene-3-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "小女孩仍穿著乾淨的舊衣，獨自站在林間，覺得夜晚比剛才更安靜。她也需要溫暖和安全的住處，於是抬頭望向星空，盼望自己同樣能被世界好好接住。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "暮色更深時，小女孩又遇見一個凍得發抖的小妹妹。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她看看手邊最後一條披肩，輕輕披到妹妹的肩上，還替她把鬆開的衣領整理好。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "小妹妹指著遠方村莊的燈光，說自己的家人就在那裡等她，便道謝離開了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "小女孩仍穿著乾淨的舊衣，獨自站在林間，覺得夜晚比剛才更安靜。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "她也需要溫暖和安全的住處，於是抬頭望向星空，盼望自己同樣能被世界好好接住。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -124,6 +244,42 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "就在小女孩站在林間空地時，天空忽然亮了起來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "一點、兩點，星光像小小的流星，緩緩落到草地上。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她低頭一看，那些光竟變成一枚枚閃亮的銀幣；她身上也出現一件柔軟又溫暖的新衣。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "她驚喜地彎下身，用衣襬接住銀幣。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "寂靜的森林不再只是黑暗，連葉子邊緣都亮著柔光。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-5.mp3",
+      "speaker": "故事旁白",
+      "text": "古老故事用這場奇蹟，回答了一個孤單孩子想被照顧的願望。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "小女孩",
       "text": "我有家了，也有熱熱的晚餐。",
@@ -148,27 +304,33 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-enough-to-share-line-0.mp3",
-      "speaker": "小女孩",
-      "text": "我留好自己的，這一份請你吃。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-enough-to-share-line-1.mp3",
-      "speaker": "小男孩",
-      "text": "謝謝，你也有晚餐，我很高興。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-enough-to-share-narration-0.mp3",
+      "file": "scene-5-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "住下來以後，小女孩又見到戴著帽子的小男孩。這次她先留好自己的晚餐，看看旁邊還有一份能分享的麵包，才伸出手，把那一份交給身旁的朋友。",
+      "text": "有了銀幣，小女孩終於能找到安全的住處，買足夠的食物，也不必再獨自挨餓受凍。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-enough-to-share-narration-1.mp3",
+      "file": "scene-5-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "小男孩接過麵包，問她有沒有吃的。她指指自己留下的那一份，笑著點頭。幫助朋友的時候，她也可以吃飽；一份小小的分享，不需要換來任何禮物才算有意義。",
+      "text": "她把剩下的錢妥善收好，先照顧自己的生活，再幫助需要的人。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "每當夜晚看到星星，她就想起那片安靜的林間空地。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "故事裡，天空送來一份回應；故事外，我們也可以請可信任的大人一起幫忙。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "善意不必以讓自己受苦來證明，願意伸手的人，也值得有人伸手照顧。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -193,6 +355,30 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "星星變成錢是童話裡的奇蹟，現實裡，照顧不需要靠禮物交換。你可以關心別人，也能告訴可信任的大人自己需要吃飯、保暖或陪伴；沒有東西可送，也一樣值得被關心。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "小女孩記得在森林裡，自己也會餓、會冷。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "小妹妹走到身旁，陪她站近一點，聽她說今天的感覺，沒有拿出銀幣，也沒有要求誰先做一件好事。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "星星變成錢是童話裡的奇蹟，現實裡，照顧不需要靠禮物交換。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "你可以關心別人，也能告訴可信任的大人自己需要吃飯、保暖或陪伴；沒有東西可送，也一樣值得被關心。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

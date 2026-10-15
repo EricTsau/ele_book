@@ -28,6 +28,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "栗老師開了一間種子圖書館，架上沒有厚書，只有一包包豆子、花種和香草種子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "大家借回家種，收成時帶回一些種子，再寫下照顧的方法。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "芽芽第一次辦借書卡，挑了最喜歡的紫花種子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "栗老師交給牠一本小冊子，請牠記錄每天的變化。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "芽芽想像自己抱著滿滿一籃新種子回來，連走路都比平常輕快。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "芽芽",
       "text": "我這麼照顧，怎麼還沒長？",
@@ -52,27 +82,33 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-seed-bring-notes-line-0.mp3",
-      "speaker": "阿粒",
-      "text": "我陪你一起把冊子帶回去，好嗎？",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-seed-bring-notes-line-1.mp3",
-      "speaker": "芽芽",
-      "text": "好，我們一起去問。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-seed-bring-notes-narration-0.mp3",
+      "file": "scene-1-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "芽芽站在小冊子旁，遲遲沒有拿起來。牠怕栗老師看見空白，就知道自己沒有種好。阿粒走到牠身邊，問要不要一起把冊子帶回去，沒有叫牠別再難過。",
+      "text": "芽芽拿一只沒有底孔的舊盆種花，每天早晚都往盆裡倒水，卻沒想到多餘的水必須排出去。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-seed-bring-notes-narration-1.mp3",
+      "file": "scene-1-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "芽芽慢慢抬起頭，答應一起試試。兩人扶著冊子，往前走一段，再一起把它放穩。冊子還沒有答案，可是芽芽不必一個人帶著擔心。牠決定先把每天澆水的事說出來。",
+      "text": "幾天後，隔壁的嫩芽都冒出來，牠的花盆卻只有濕濕的土。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "牠不敢把空花盆帶回圖書館，便把小冊子藏到枕頭下。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "阿粒經過時，發現盆底沒有洞，泥土黏得像糨糊。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "芽芽這才明白，每天很努力做一件事，也可能需要先停下來看看方法是否合適。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -100,6 +136,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "芽芽鼓起勇氣帶著花盆找栗老師，原本準備好說種子一定壞掉了，最後還是承認自己澆了太多水。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "栗老師和牠翻看土壤，說種子也需要空氣，長期泡水就可能腐壞。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "牠們把日期、澆水次數和盆底沒有孔都記下來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "芽芽問沒有收成能不能還書，栗老師指著那些記錄，說這正是下一位借種子的人會需要的經驗。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "阿粒",
       "text": "這盆正努力朝光彎過去。",
@@ -121,6 +181,36 @@
       "file": "scene-3-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "等嫩芽出現，牠們發現靠窗那盆比較挺直，角落那盆朝亮處彎腰。芽芽把花盆移到合適的位置，沒有再一下子改動所有事情。牠想弄清楚，每一個小改變究竟帶來什麼影響。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "這次芽芽借了少量新種子，請栗老師幫忙挑有排水孔的花盆。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠和阿粒把同樣大小、同樣有排水孔的兩盆種子放在不同光線的位置，每次澆水前先摸摸土，並把變化記在冊子裡。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "等嫩芽出現，牠們發現靠窗那盆比較挺直，角落那盆朝亮處彎腰。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "芽芽把花盆移到合適的位置，沒有再一下子改動所有事情。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "牠想弄清楚，每一個小改變究竟帶來什麼影響。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -148,6 +238,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-4-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "夏天快結束時，芽芽的花盆開出一朵紫花，比牠原先想像的小很多。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "牠卻每天都去看，記錄花瓣張開又合攏的時候。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "花謝之後，留下幾顆成熟種子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "芽芽沒有急著把整包填滿，而是仔細晾乾，寫好採收日期，另外畫出盆底排水孔的位置，提醒別人別把洞堵住。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "牠終於帶著小小的紙包回到圖書館，這一次，懷裡最厚的是記滿字的冊子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-5-line-0.mp3",
       "speaker": "阿粒",
       "text": "你的第一盆也幫上忙了。",
@@ -172,6 +292,36 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "隔年春天，一位新客人借走芽芽留下的種子，也拿走牠畫的花盆卡。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "架子旁多了一本大家共同寫的種植簿，裡面有成功，也有沒發芽的春天。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "芽芽翻到自己第一頁濕透的土壤圖，不再覺得難為情。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "阿粒在旁邊補上排水孔的位置，兩個朋友笑了起來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "圖書館借出去的是種子，慢慢累積回來的，還有願意誠實分享的經驗。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "芽芽",
       "text": "我試過這個，可是還沒成功。",
@@ -193,6 +343,36 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "有件事還沒做好時，你不用急著說自己不行。可以先告訴信任的大人：我試了什麼，卡在哪裡。一起選一個小地方再試，新的發現也值得記下來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "芽芽曾經想藏起沒有發芽的記錄，後來才知道，朋友可以一起找原因。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "現在牠和阿粒把兩本種植記錄放好，用放大鏡先看這一本，再看那一本，輪流說出自己的發現。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "有件事還沒做好時，你不用急著說自己不行。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "可以先告訴信任的大人：我試了什麼，卡在哪裡。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "一起選一個小地方再試，新的發現也值得記下來。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

@@ -28,6 +28,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-0-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "森林的小木屋裡，住著熊爸爸、熊媽媽和小熊。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "每天早上，桌上都會擺著大、中、小三碗粥。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "今天的粥太燙了，三隻熊決定先出門散步，等回來時再一起吃早餐。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-0-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "小木屋暫時安靜了下來。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-1-line-0.mp3",
       "speaker": "金髮女孩",
       "text": "這一小碗，溫度剛剛好。",
@@ -49,6 +73,24 @@
       "file": "scene-1-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "她嚐了桌上的粥，大碗太燙，中碗太冷，小碗剛剛好。她把小碗吃光，卻忘了這是別人的早餐。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "金髮女孩在森林裡走累了，看見一間小木屋，卻沒有先敲門或等待邀請，就推門走了進去。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她嚐了桌上的粥，大碗太燙，中碗太冷，小碗剛剛好。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-1-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她把小碗吃光，卻忘了這是別人的早餐。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -76,6 +118,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-2-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "吃飽後，金髮女孩試著坐上三張椅子。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "大椅子太高，中椅子太寬，小椅子看起來正適合她。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "她坐下去搖呀搖，突然喀的一聲，小椅子裂開了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-2-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "她嚇了一跳，第一次想起：這個家，有人在認真愛惜著。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "scene-3-line-0.mp3",
       "speaker": "小熊",
       "text": "我的粥不見了，椅子也壞了！",
@@ -97,6 +163,30 @@
       "file": "scene-3-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "這時，三隻熊散步回家。他們看見空碗、壞椅子和床上的陌生女孩，既驚訝又難過。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "金髮女孩又累又睏，走進房間，看見小熊的床。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她沒有先得到同意，就躺了上去，很快就睡著了。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "這時，三隻熊散步回家。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-3-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "他們看見空碗、壞椅子和床上的陌生女孩，既驚訝又難過。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -124,27 +214,27 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-make-amends-line-0.mp3",
-      "speaker": "金髮女孩",
-      "text": "我可以先幫你整理木板嗎？",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-make-amends-line-1.mp3",
-      "speaker": "小熊",
-      "text": "可以，但我還需要一點時間。",
-      "voice": "zh-TW-HsiaoChenNeural"
-    },
-    {
-      "file": "bridge-make-amends-narration-0.mp3",
+      "file": "scene-4-sentence-0.mp3",
       "speaker": "故事旁白",
-      "text": "金髮女孩先問小熊，希望她怎樣幫忙。小熊說，現在還有點難過，但願意讓她把散開的木板整理好。她聽完回答，才開始動手。",
+      "text": "金髮女孩醒來，看見三隻熊，趕緊坐起來。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
-      "file": "bridge-make-amends-narration-1.mp3",
+      "file": "scene-4-sentence-1.mp3",
       "speaker": "故事旁白",
-      "text": "她把零件一塊塊排齊，請家人和熊爸爸協助固定。不是說了對不起，就要求小熊立刻開心；慢慢修補，也讓小熊有時間把自己的感覺說出來。",
+      "text": "她把事情一五一十說清楚，沒有找藉口。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "熊爸爸告訴她，進入別人的家、使用別人的東西，都應該先得到同意。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-4-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "她低下頭，真心說了對不起。",
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
@@ -172,6 +262,30 @@
       "voice": "zh-TW-HsiaoChenNeural"
     },
     {
+      "file": "scene-5-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "金髮女孩回家後，和家人一起帶來木板，幫小熊修好了椅子，也煮了一鍋新粥。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "這一次，她先敲門，得到邀請才走進屋裡。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "大家圍著桌子吃早餐。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "scene-5-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "剛剛好的不只是粥，還有彼此舒服的距離。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
       "file": "reflection-line-0.mp3",
       "speaker": "金髮女孩",
       "text": "這塊積木，我現在可以借用嗎？",
@@ -193,6 +307,36 @@
       "file": "reflection-narration-1.mp3",
       "speaker": "故事旁白",
       "text": "小熊回答後，她才走近積木，看看準備借用的東西。如果小熊說現在不想借，她也可以換一樣玩具。尊重不是只說一句有禮貌的話，還包括真的聽對方的回答。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-0.mp3",
+      "speaker": "故事旁白",
+      "text": "金髮女孩記得，小熊的椅子和早餐都屬於小熊。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-1.mp3",
+      "speaker": "故事旁白",
+      "text": "她把想借的積木留在原處，先問能不能使用，沒有一邊問、一邊伸手拿走。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-2.mp3",
+      "speaker": "故事旁白",
+      "text": "小熊回答後，她才走近積木，看看準備借用的東西。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-3.mp3",
+      "speaker": "故事旁白",
+      "text": "如果小熊說現在不想借，她也可以換一樣玩具。",
+      "voice": "zh-TW-HsiaoChenNeural"
+    },
+    {
+      "file": "reflection-sentence-4.mp3",
+      "speaker": "故事旁白",
+      "text": "尊重不是只說一句有禮貌的話，還包括真的聽對方的回答。",
       "voice": "zh-TW-HsiaoChenNeural"
     }
   ]

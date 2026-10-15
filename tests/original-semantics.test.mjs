@@ -30,8 +30,8 @@ test('bridge: inspect a model, slide back, revise its slope, test, yield and kee
  fixture('bridge-that-listened',0,f=>{f.seek(3);assert.ok(details(f).bridge.scale.x<.7);assert.ok(shown(details(f).river),'bridge spans actual water');});
  fixture('bridge-that-listened',1,f=>{const high=f.seek(6.3).pigs[1].root.position.y;const low=f.seek(8).pigs[1].root.position.y;assert.ok(high>.3&&low<.05);});
  fixture('bridge-that-listened',2,f=>{f.seek(12);assert.ok(details(f).bridge.scale.y<.8);assert.ok(details(f).planInk.scale.y<.6);});
- fixture('bridge-that-listened',3,f=>{assert.ok(f.seek(10).pigs[1].root.position.y>.3);assert.ok(f.seek(14).pigs[1].root.position.x>1.6);});
- fixture('bridge-that-listened',4,f=>{const s=f.seek(7.8);assert.ok(s.pigs[0].root.position.z<-.95);assert.ok(s.pigs[1].root.position.z>-.6);for(const t of [6.1,7.8,9]){f.seek(t);assert.ok(s.pigs[0].root.position.distanceTo(s.pigs[1].root.position)>.5,'opposing walkers have passing space');}f.seek(15.2);assert.ok(s.pigs[2].root.position.x>1.7);near(s.pigs[2].root.position.y,0,'last walker leaves deck');});
+ fixture('bridge-that-listened',3,f=>{assert.ok(f.seek(5.3).pigs[1].root.position.y>.3);assert.ok(f.seek(14).pigs[1].root.position.x>1.6);});
+ fixture('bridge-that-listened',4,f=>{const s=f.seek(7.8);assert.ok(s.pigs[1].root.position.z<-.95);assert.ok(s.pigs[0].root.position.z>-.6);for(const t of [6.1,7.8,9]){f.seek(t);assert.ok(s.pigs[0].root.position.distanceTo(s.pigs[1].root.position)>.5,'opposing walkers have passing space');}f.seek(15.2);assert.ok(s.pigs[2].root.position.x>1.7);near(s.pigs[2].root.position.y,0,'last walker leaves deck');});
  fixture('bridge-that-listened',5,f=>{f.seek(5);assert.ok(shown(details(f).bridgeSign));assert.ok(f.seek(14).pigs[1].root.position.x>1.7);});
 });
 

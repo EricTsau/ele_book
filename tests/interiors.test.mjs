@@ -68,3 +68,17 @@ test('mixed scenes cross the room boundary only when the story enters or leaves'
  const midnight=sceneFixture('cinderella',3);midnight.seek(5);assert.ok(inside(midnight.scene,midnight.scene.pigs[0]));midnight.seek(10);assert.ok(!inside(midnight.scene,midnight.scene.pigs[0]));midnight.dispose();
  const rescue=sceneFixture('red-riding-hood',4);rescue.seek(.5);assert.equal(rescue.scene.interior.storageDoor.rotation.y,0);rescue.seek(1.9);assert.ok(rescue.scene.interior.storageDoor.rotation.y< -1.5);assert.ok(rescue.scene.pigs[1].root.position.z<0,'grandmother leaves after the door opens');rescue.seek(6);assert.ok(rescue.scene.pigs[1].root.position.z>.5);rescue.dispose();
 });
+
+test('empty rooms stay opaque until a visible actor enters, and restore after exit or replay',()=>{
+ const f=sceneFixture('goldilocks',1),s=f.seek(8),camera=new H.THREE.PerspectiveCamera();camera.position.set(0,7,9);
+ const actor=s.pigs[0].root;
+ const check=(opacity)=>{s.root.updateMatrixWorld(true);updateInteriorVisibility(s,camera);for(const w of s.interior.walls)w.traverse(m=>{if(m.isMesh){assert.equal(m.material.opacity===1,opacity===1);assert.equal(m.material.depthWrite,opacity===1);}});};
+ actor.position.set(0,0,3);check(1);
+ actor.position.set(0,0,0);check(.08);
+ actor.visible=false;check(1);
+ actor.visible=true;check(.08);
+ actor.position.set(5,0,0);check(1);
+ actor.position.set(0,0,-3);check(1);
+ actor.position.set(0,0,3);check(1);
+ f.dispose();
+});

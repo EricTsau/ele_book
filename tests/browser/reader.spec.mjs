@@ -68,6 +68,8 @@ test('blocked storage remains usable when system voices are unavailable',async({
 test('automatic page turn advances once and stops after closing',async({page})=>{
  await page.goto('/');await page.locator('#hero-read').click();await page.locator('#voice-toggle').click();await page.locator('#auto-toggle').click();
  await page.evaluate(()=>{window.__timelines['pigs-0'].progress(1);});
+ // Check the three-second dwell and the animated turn as separate phases.
+ await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','true',{timeout:5000});
  await expect(page.locator('#chapter-tag')).toHaveText(tag(pigs,1),{timeout:5000});
  await expect(page.locator('#open-book')).toHaveAttribute('aria-busy','false');
  await page.evaluate(()=>{window.__timelines['pigs-1'].progress(1);});await page.locator('#close-reader').click();

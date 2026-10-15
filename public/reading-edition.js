@@ -1,6 +1,5 @@
 // Original scene and audio identities never depend on their displayed page.
-// This lets an expanded edition insert a cause, decision or recovery without
-// replaying the wrong choreography or moving an existing bookmark elsewhere.
+// The plot keeps its original event sequence; reflection follows the ending.
 export function splitNarration(text){
  const [opening,...closing]=text.split(/\n\s*\n/);
  if(closing.length)return [opening,closing.join(' ')];
@@ -36,7 +35,7 @@ export function expandEdition(book,plan){
    prompt:kind==='reflection'?page.question:page.prompt||'看看角色先做了什麼，又發生了什麼。'};
  };
  const chapters=[];
- original.forEach((c,i)=>{chapters.push(c);for(const page of plan.additions||[])if(page.after===i)chapters.push(makePage(page,'bridge'));});
+ chapters.push(...original);
  chapters.push(makePage({...plan.reflection,id:'reflection'},'reflection'));
  return {...book,review:{reason:plan.reason,originalPages:original.length,addedPages:chapters.length-original.length},chapters};
 }
