@@ -1,3 +1,4 @@
+import {motionSound} from './action-sounds.js';
 // Chapter-specific blocking for the ten original books. All state belongs to the
 // finite GSAP timeline: no timers, reparenting, callbacks, or random destinations.
 export function originalEvent(tl,s,c,M){
@@ -27,7 +28,7 @@ export function originalEvent(tl,s,c,M){
   const target=c.storyId==='orchestra-of-small-sounds'?{x:-.35,z:.15}:c.storyId==='rain-post-office'||c.storyId==='bakery-under-the-stars'?{x:0,z:.43}:c.storyId==='seed-library-notebook'?{x:0,z:.15}:c.storyId==='clock-with-a-breath'?{x:.3,z:.1}:c.storyId==='shadow-takes-a-day-off'?{x:.85,z:-.7}:c.storyId==='bridge-that-listened'?{x:0,z:-.75}:c.storyId==='paper-boat-map'?{x:.25,z:-.2}:{x:0,z:.05};
   focus(actor,target,Math.max(0,t-.3));gesture(timeline,actor,t,options);
  };
- const flap=(bird,t,duration=3)=>{if(bird)for(const [j,w]of bird.arms.entries())tl.to(w.rotation,{z:j?-.82:.82,duration:.25,repeat:Math.max(1,Math.floor(duration/.25)-1),yoyo:true},t);};
+ const flap=(bird,t,duration=3)=>{if(bird)for(let at=t;at<t+duration;at+=.75)motionSound(tl,'flutter',at);if(bird)for(const [j,w]of bird.arms.entries())tl.to(w.rotation,{z:j?-.82:.82,duration:.25,repeat:Math.max(1,Math.floor(duration/.25)-1),yoyo:true},t);};
  const face=(actor,y,t)=>{if(actor)rotate(actor.root,{y},t,.4);};
  const settle=(actor,x,z,t=1.2,d=2,options={})=>{
   // Explicit first stride also fixes exact-start seeking after a replay: GSAP's
@@ -53,6 +54,7 @@ export function originalEvent(tl,s,c,M){
   face(actor,xs.at(-1)>xs[0]?Math.PI/2:-Math.PI/2,t);
   for(let n=1;n<xs.length;n++)move(actor.root,{x:xs[n],y:deckY(xs[n]),z},t+(n-1)*d/(xs.length-1),d/(xs.length-1));
   const cycles=Math.max(2,Math.floor(d/.46)*2);
+  for(let n=1;n<cycles;n+=2)motionSound(tl,'step',t+n*d/cycles);
   for(const [n,leg]of actor.legs.entries())tl.fromTo(leg.rotation,{x:n%2?-.28:.28},{x:n%2?.28:-.28,duration:d/cycles,repeat:cycles-1,yoyo:true,immediateRender:false},t);
   actor.legs.forEach(leg=>tl.to(leg.rotation,{x:0,duration:.1},t+d));
  };

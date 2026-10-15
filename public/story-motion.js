@@ -1,3 +1,4 @@
+import {motionSound} from './action-sounds.js';
 import {storyEvent} from './story-events.js';
 // Finite story blocking: actors travel, face their partners, and affect the set.
 // All motion is scheduled on the owning GSAP timeline so seek, replay, and pause agree.
@@ -5,6 +6,8 @@ const routes=new WeakMap();
 export function walk(tl,a,x,z,at=2,duration=3,{run=false,face=0,height=a?.root.position.y||0}={}){
  if(!a)return;
  const stride=run?.12:.23,cycles=Math.max(2,Math.floor(duration/stride/2)*2);
+ // Each contact is attached to this walk, so conversations never invent steps.
+ for(let t=at+stride;t<at+duration;t+=stride*2)motionSound(tl,'step',t);
  if(!routes.has(tl))routes.set(tl,new Map());
  const route=routes.get(tl);if(!route.has(a))route.set(a,[]);
  const steps=route.get(a),previous=steps.filter(p=>p.at<at).sort((a,b)=>b.at-a.at)[0]||a.root.position;
@@ -23,7 +26,7 @@ function reach(tl,a,at=5,{bend=.25,repeat=1}={}){
  tl.to(a.root.rotation,{x:bend,duration:.4,repeat:repeat*2-1,yoyo:true,ease:'sine.inOut'},at);
  for(const arm of a.arms)tl.to(arm.rotation,{x:-1.15,duration:.4,repeat:repeat*2-1,yoyo:true},at);
 }
-function hop(tl,a,at=8,height=.24){if(a)tl.to(a.root.position,{y:height,duration:.28,repeat:3,yoyo:true,ease:'power1.out'},at);}
+function hop(tl,a,at=8,height=.24){if(a){motionSound(tl,'thud',at+.56);motionSound(tl,'thud',at+1.12);}if(a)tl.to(a.root.position,{y:height,duration:.28,repeat:3,yoyo:true,ease:'power1.out'},at);}
 function look(tl,a,at=7,direction=.45){if(a)tl.to(a.root.rotation,{y:direction,duration:.5,repeat:1,yoyo:true},at);}
 function moveObject(tl,p,x,z,at,duration=2){if(p)tl.to(p.position,{x,z,duration,ease:'sine.inOut'},at);}
 export function choreographStory(tl,s,c){

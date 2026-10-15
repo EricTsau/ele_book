@@ -1,3 +1,4 @@
+import {motionSound} from './action-sounds.js';
 // Plot-specific sets and finite timelines for the ten public-domain additions.
 // All coordinates are in the popup's space. Detached gifts never remain parented
 // to a moving actor, and every magic/outcome transition has a measurable object.
@@ -107,7 +108,7 @@ export function classicEvent(tl,s,c,M){
  const face=(actor,y,at=4)=>{if(actor)tl.to(actor.root.rotation,{y,duration:.35},at);};
  const lean=(actor,at=4,repeat=1,bend=.22)=>{if(actor)M.reach(tl,actor,at,{repeat,bend});};
  const signal=(actor,at=4)=>{if(actor)for(const [j,arm]of actor.arms.entries())tl.to(arm.rotation,{x:-.9,z:j?-.4:.4,duration:.35,repeat:3,yoyo:true},at);};
- const flight=(bird,to,at,duration)=>{if(!bird)return;move(bird.root,to,at,duration);for(const [j,w]of bird.arms.entries())tl.to(w.rotation,{z:j?-.85:.85,duration:.25,repeat:Math.max(1,Math.round(duration/.25)-1),yoyo:true},at);};
+ const flight=(bird,to,at,duration)=>{if(!bird)return;for(let t=at;t<at+duration;t+=.75)motionSound(tl,'flutter',t);move(bird.root,to,at,duration);for(const [j,w]of bird.arms.entries())tl.to(w.rotation,{z:j?-.85:.85,duration:.25,repeat:Math.max(1,Math.round(duration/.25)-1),yoyo:true},at);};
  const toss=(obj,to,at,duration=1.5)=>move(obj,to,at,duration);
  const lookUp=(actor,at=4)=>{if(actor)tl.to(actor.head.rotation,{x:-.18,duration:.5,repeat:1,yoyo:true},at);};
  if(id==='north-wind-and-sun'){

@@ -1,3 +1,4 @@
+import {motionSound} from './action-sounds.js';
 // Finite, seekable scene blocking for the ten original classic retellings.
 // Story indexes are zero-based; actor scales are never reset to an assumed size.
 export function legacyEvent(tl,s,c,M){
@@ -8,7 +9,7 @@ export function legacyEvent(tl,s,c,M){
  const bend=(x,at=5,repeat=1,amount=.3)=>{if(x)reach(tl,x,at,{repeat,bend:amount});};
  const turn=(x,at=5,y=.5)=>{if(x)look(tl,x,at,y);};
  const wave=(x,at=5)=>{if(x)for(const [j,arm]of x.arms.entries())tl.to(arm.rotation,{z:j?-.7:.7,duration:.3,repeat:5,yoyo:true},at);};
- const flap=(x,at=4,duration=5)=>{if(x)for(const [j,arm]of x.arms.entries())tl.to(arm.rotation,{z:j?-.8:.8,duration:.25,repeat:Math.floor(duration/.25)-1,yoyo:true},at);};
+ const flap=(x,at=4,duration=5)=>{if(x)for(let t=at;t<at+duration;t+=.75)motionSound(tl,'flutter',t);if(x)for(const [j,arm]of x.arms.entries())tl.to(arm.rotation,{z:j?-.8:.8,duration:.25,repeat:Math.floor(duration/.25)-1,yoyo:true},at);};
  const object=(o,v,at=5,duration=2)=>{if(o)tl.to(o.position,{...v,duration,ease:'sine.inOut'},at);};
  const rest=(x,at=4)=>{if(x){tl.to(x.root.rotation,{z:-1.35,y:0,duration:.8},at);tl.to(x.root.position,{y:.3,duration:.8},at);}};
  const upright=(x,at=7)=>{if(x){tl.to(x.root.rotation,{z:0,x:0,duration:.6},at);tl.to(x.root.position,{y:0,duration:.6},at);}};

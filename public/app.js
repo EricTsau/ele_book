@@ -192,7 +192,7 @@ function syncPlayback(){
  $('auto-toggle').disabled=reduced.matches;
 }
 function renderPage(){
- const c=chapters[current];soundscape.scene(c);
+ const c=chapters[current];soundscape.scene(c,timelines[current].data?.motionSounds||[]);
  $('story-copy').innerHTML=`<span class="chapter-number">Chapter ${String(current+1).padStart(2,'0')}</span><h3>${c.title}</h3>${c.text.split('\n\n').map(p=>`<p>${p}</p>`).join('')}${current===chapters.length-1?'<span class="end-message">— 故事說完了，想像還在繼續。 —</span>':''}`;
  $('chapter-tag').textContent=`${String(current+1).padStart(2,'0')} / ${String(chapters.length).padStart(2,'0')}`;$('chapter-name').textContent=c.label;
  world?.show(current);
